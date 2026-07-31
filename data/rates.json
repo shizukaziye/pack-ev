@@ -175,10 +175,10 @@
       "from": "2025-09-26",
       "cardsPerPack": 10,
       "packsPerBox": 36,
-      "confidence": "estimated",
-      "sample": "carried over from the 676-pack Scarlet & Violet study — nobody has counted a Mega Evolution set yet",
+      "confidence": "measured",
+      "sample": "a Mega Evolution pull-rate study reporting 95% confidence intervals (roughly 8,000 packs, judging by the interval widths)",
       "source": "https://www.digitaltq.com/scarlet-violet-pull-rates-pokemon-tcg",
-      "note": "Read the top line with care. Mega Evolution sets are small and often hold a SINGLE Mega Hyper Rare, where a Scarlet & Violet set spread that tier over half a dozen gold cards. The 1.9% rate below was measured on those larger sets; if the tier is handed out per-card rather than per-tier, this rate is several times too generous and the pack EV with it. It is the least certain number on this page — the chase share column shows how much rides on it.",
+      "note": "Measured on Mega Evolution packs, so the chase tiers are far tighter than the Scarlet & Violet numbers this template used to borrow: a Mega Hyper Rare is about 1 in 956 packs, not 1 in 52. Commons, uncommons, the reverse slots and the rare slot are still era structure rather than counted figures.",
       "rates": [
         {
           "label": "Commons",
@@ -240,7 +240,7 @@
         },
         {
           "label": "Double Rare (ex)",
-          "perPack": 0.141,
+          "perPack": 0.203,
           "match": {
             "rarity": [
               "Double Rare"
@@ -252,7 +252,7 @@
         },
         {
           "label": "Illustration Rare",
-          "perPack": 0.077,
+          "perPack": 0.1066,
           "match": {
             "rarity": [
               "Illustration Rare"
@@ -264,7 +264,7 @@
         },
         {
           "label": "Ultra Rare",
-          "perPack": 0.065,
+          "perPack": 0.0829,
           "match": {
             "rarity": [
               "Ultra Rare"
@@ -276,7 +276,7 @@
         },
         {
           "label": "Special Illustration Rare",
-          "perPack": 0.031,
+          "perPack": 0.0121,
           "match": {
             "rarity": [
               "Special Illustration Rare"
@@ -288,7 +288,7 @@
         },
         {
           "label": "Mega Hyper / Mega Attack Rare",
-          "perPack": 0.019,
+          "perPack": 0.001,
           "match": {
             "rarity": [
               "Hyper Rare",
