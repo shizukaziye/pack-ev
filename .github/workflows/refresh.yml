@@ -42,6 +42,10 @@ jobs:
       - name: Build data/cards.json
         run: node scripts/merge.mjs
 
+      # After the merge, so it can check each set it finds against the priced sets.
+      - name: Refresh per-set pull rates from TCGplayer
+        run: node scripts/pull_rates.mjs
+
       - name: Check the model against the data
         run: node scripts/qc.mjs
 

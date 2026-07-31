@@ -1,12 +1,12 @@
 {
   "_readme": [
     "Pull rates for the EV model, as EXPECTED CARDS PER PACK per bucket.",
-    "Nobody publishes official odds — not Pokemon, not Bandai, not Riot. Every number",
-    "here comes from community pack-opening studies, so each template carries its",
-    "sample size and a confidence flag. Expected-count form is deliberate: EV is",
-    "linear in it, so the model stays exact without pretending to know slot internals.",
-    "A rate matches buckets by rarity/printing/variant; when several buckets match,",
-    "they are weighted by how many cards each holds, because a pull is uniform over cards."
+    "No publisher releases odds. `setRates` holds per-set figures from studies that counted",
+    "packs — TCGplayer's Authentication Center for Pokemon, release-window box openings for",
+    "Riftbound — and those win. `templates` are era fallbacks for sets nobody has counted.",
+    "Expected-count form is deliberate: EV is linear in it, so the model stays exact without",
+    "pretending to know slot internals. A rate matches buckets by rarity/printing/variant;",
+    "when several match, they are weighted by card count, because a pull is uniform over cards."
   ],
   "templates": {
     "pkmn-sv": {
@@ -18,7 +18,7 @@
       "confidence": "estimated",
       "sample": "era structure carried from neighbouring sets — this set has no study of its own",
       "source": "https://www.digitaltq.com/scarlet-violet-pull-rates-pokemon-tcg",
-      "note": "Two reverse slots per pack; the rare slot upgrades into the hit rarities. Observed hits totalled 1.12 per pack, which is why the rare-or-better rates sum above 1.",
+      "note": "Two reverse slots per pack, and the rare slot upgrades into the hit rarities, which is why the rare-or-better rates add to more than one. These are era figures; a set with a study of its own overrides them and says so.",
       "rates": [
         {
           "label": "Commons",
@@ -178,7 +178,7 @@
       "confidence": "estimated",
       "sample": "era structure carried from neighbouring sets — this set has no study of its own",
       "source": "https://www.digitaltq.com/scarlet-violet-pull-rates-pokemon-tcg",
-      "note": "Measured on Mega Evolution packs, so the chase tiers are far tighter than the Scarlet & Violet numbers this template used to borrow: a Mega Hyper Rare is about 1 in 956 packs, not 1 in 52. Commons, uncommons, the reverse slots and the rare slot are still era structure rather than counted figures.",
+      "note": "Same ten-card structure as Scarlet & Violet. Mega Evolution sets are small and often hold a single Mega Hyper Rare, and the counted sets put that at roughly 1 in 1,000 packs — so a set left on these era figures should be read with care.",
       "rates": [
         {
           "label": "Commons",
@@ -1099,8 +1099,8 @@
       "cardsPerPack": 14,
       "unpricedPerPack": 1,
       "packsPerBox": 24,
-      "confidence": "measured",
-      "sample": "168 packs (TCGTalk, Unleashed release-day boxes)",
+      "confidence": "estimated",
+      "sample": "carried from neighbouring sets — this set has no count of its own",
       "source": "https://tcgtalk.com/guides/unleashed-riftbound-pull-rates-box-opening",
       "note": "Two premium slots per pack plus a dedicated foil common/uncommon slot. About 65% of packs give nothing above Rare in both premium slots. The 14th card is a token or rune, which has no market value and is not priced here.",
       "rates": [
@@ -1584,6 +1584,39 @@
         "Illustration Rare": 0.0767,
         "Special Illustration Rare": 0.0315,
         "Hyper / Mega Hyper Rare": 0.018500000000000003
+      }
+    },
+    "Origins": {
+      "confidence": "measured",
+      "sample": "release-window box openings; Riot published the Epic rate, the rest are counted from boxes",
+      "source": "https://harlequinsgames.com/blogs/riftbound/riftbound-tcg-pull-rates-and-set-overview-origins-and-spiritforged",
+      "rates": {
+        "Epic": 0.25,
+        "Showcase / alt art": 0.083,
+        "Overnumbered": 0.014,
+        "Signature overnumbered": 0.0014
+      }
+    },
+    "Unleashed": {
+      "confidence": "measured",
+      "sample": "168 packs opened at release (TCGTalk)",
+      "source": "https://tcgtalk.com/guides/unleashed-riftbound-pull-rates-box-opening",
+      "rates": {
+        "Epic": 0.27,
+        "Showcase / alt art": 0.1,
+        "Overnumbered": 0.017,
+        "Signature overnumbered": 0.0014
+      }
+    },
+    "Vendetta": {
+      "confidence": "measured",
+      "sample": "90 packs opened at release (TCGTalk) — creator boxes, which may have run hot",
+      "source": "https://tcgtalk.com/guides/vendetta-riftbound-pull-rates-box-opening",
+      "rates": {
+        "Epic": 0.27,
+        "Showcase / alt art": 0.09,
+        "Overnumbered": 0.02,
+        "Signature overnumbered": 0.0014
       }
     }
   }

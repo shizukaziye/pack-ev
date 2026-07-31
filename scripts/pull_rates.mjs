@@ -240,7 +240,11 @@ async function main() {
   const articles = await findArticles();
   console.log(`Found ${articles.length} Pokemon pull-rate articles.\n`);
 
-  const setRates = {}; // rebuilt each run so a removed article cannot leave a stale entry
+  // Rebuilt each run so a pulled article cannot leave a stale entry behind — but
+  // hand-entered rates for the other two games are not this script's to delete.
+  const setRates = Object.fromEntries(
+    Object.entries(rates.setRates || {}).filter(([, v]) => !/tcgplayer\.com/.test(v.source || ""))
+  );
   const unmapped = new Map();
   let wrote = 0, skipped = 0;
 

@@ -40,17 +40,33 @@ that way (`301/298` overnumbered, `301*/298` signature).
 
 ## Odds
 
-Nobody publishes real pull rates — not The Pokémon Company, not Bandai, not Riot.
-Everything in `data/rates.json` traces to community pack-opening counts, and each
-template carries its sample size, its source and a confidence flag. **The card prices
-are firm and the odds are not**, and the odds are what dominate the answer.
+No publisher releases pull rates — not The Pokémon Company, not Bandai, not Riot.
+What exists is counted packs, and how much has been counted differs sharply by game:
 
-Sets are matched to an era template by release date (`assign` in `rates.json`). The
-page shows one of three badges:
+| Game | Per-set counts | Source |
+| --- | --- | --- |
+| Pokémon | 22 of 101 sets | TCGplayer's Authentication Center opens several thousand packs per set and publishes per-rarity odds with 95% confidence intervals |
+| Riftbound | 3 of 4 sets | Release-window box openings; Spiritforged has none |
+| One Piece | none | Every source publishes one rate covering the whole game |
 
-- **measured** — a counted study of that era
-- **estimated** — an era template applied to a set nobody has counted
-- **thin** — much of the set has not sold yet, so the prices themselves are shaky
+`scripts/pull_rates.mjs` pulls the Pokémon numbers straight from TCGplayer, finding
+the articles by listing the editor who writes them, so a set published next month is
+picked up without touching the code. Anything with no count of its own falls back to
+an era template matched by release date (`assign` in `rates.json`).
+
+**The card prices are firm and the odds are not**, and the odds dominate the answer.
+Badges:
+
+- **measured** — that set was counted, and the row links to the study
+- **estimated** — odds borrowed from neighbouring sets
+- **thin** — something else is wrong: the set is too new for prices to have settled,
+  it doesn't follow its era's structure, or the study itself left a tier unmeasured
+
+Two things are deliberately left alone rather than guessed. Sword & Shield articles
+that split a Trainer Gallery subset out of the same Ultra Rare and Secret Rare buckets
+give no way to divide the two, so those sets keep their era template. And Black Bolt's
+Black White Rare — the most valuable card in the set — is listed as *unknown* even by
+the people who counted the packs, so it gets a placeholder and the set gets flagged.
 
 Any rate can be edited in an open row, and everything recalculates. Edits are in-page
 only; reload restores the published numbers.
