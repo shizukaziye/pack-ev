@@ -1248,7 +1248,7 @@
       "structureUnknown": false,
       "sample": "Bandai publishes the pack size and the two guaranteed Jolly Roger foils; the rest of the split is inferred",
       "source": "https://en.onepiece-cardgame.com/products/boosters/prb02.php",
-      "note": "Ten cards a pack, twenty packs a box, and two guaranteed premium foils — Jolly Roger in the first set, Pirate Foil in the second — those three are published. How the other eight slots divide is not, so they are inferred from the set's rarity counts. Every card here is a reprint of an older card, and the premium treatments (Full Art, Jolly Roger, Textured, Pirate) are priced in their own buckets rather than averaged in with the plain reprints, which is what the plain Common line means.",
+      "note": "Ten cards a pack, twenty packs a box, and two guaranteed premium foils — Jolly Roger in the first set, Pirate Foil in the second — those three are published. How the other eight slots divide is not, so they are inferred from the set's rarity counts. Every card here is a reprint of an older card, and the premium treatments (Full Art, Jolly Roger, Textured, Pirate) are priced in their own buckets rather than averaged in with the plain reprints, which is what the plain Common line means. Manga Rares are not a slot you can hit: they come only in a god pack, a whole pack of 9 Manga Rares and a Gold DON!! at roughly 1 in 20,000. That is spread across packs here because expectation adds up either way, but no ordinary pack contains one — the value is all-or-nothing, and the chase share says how much of the total rides on it.",
       "rates": [
         {
           "label": "Premium foils (2 guaranteed)",
@@ -1352,11 +1352,19 @@
           }
         },
         {
-          "label": "Manga / gold",
+          "label": "Manga (god pack only)",
+          "perPack": 0.00045,
+          "match": {
+            "variant": [
+              "manga"
+            ]
+          }
+        },
+        {
+          "label": "Gold / special art",
           "perPack": 0.01,
           "match": {
             "variant": [
-              "manga",
               "special"
             ]
           }
@@ -1732,6 +1740,27 @@
         "Illustration Rare": 0.0767,
         "Special Illustration Rare": 0.0315,
         "Hyper / Mega Hyper Rare": 0.018500000000000003
+      }
+    },
+    "Premium Booster -The Best-": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "god pack odds from carton-level community reports; the rest of the pack is inferred",
+      "source": "https://www.samuraiswordtokyo.com/blogs/news/prb-01-premium-booster-best-cards-pull-rates",
+      "note": "The manga god pack is 9 Manga Rares and a Gold DON!!, about 1 in 100 cartons — 1 in 20,000 packs.",
+      "rates": {
+        "Manga (god pack only)": 0.00045
+      }
+    },
+    "Premium Booster -The Best- Vol. 2": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "god pack odds from carton-level community reports; the rest of the pack is inferred",
+      "source": "https://samuraiswordtokyo.com/blogs/news/prb-02-the-best-vol2-pull-rates-best-cards",
+      "note": "This set's god pack is a Gold DON!! pack, roughly 1 in 15-20 cartons — commoner than PRB-01's manga pack but still a carton-level event.",
+      "rates": {
+        "Manga (god pack only)": 0.000286,
+        "Gold / special art": 0.002857
       }
     }
   },
