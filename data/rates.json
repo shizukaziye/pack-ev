@@ -1,0 +1,1259 @@
+{
+  "_readme": [
+    "Pull rates for the EV model, as EXPECTED CARDS PER PACK per bucket.",
+    "Nobody publishes official odds — not Pokemon, not Bandai, not Riot. Every number",
+    "here comes from community pack-opening studies, so each template carries its",
+    "sample size and a confidence flag. Expected-count form is deliberate: EV is",
+    "linear in it, so the model stays exact without pretending to know slot internals.",
+    "A rate matches buckets by rarity/printing/variant; when several buckets match,",
+    "they are weighted by how many cards each holds, because a pull is uniform over cards."
+  ],
+  "templates": {
+    "pkmn-sv": {
+      "label": "Scarlet & Violet / Mega Evolution",
+      "game": "pokemon",
+      "from": "2023-03-31",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "measured",
+      "sample": "676 packs (DigitalTQ), cross-checked against PokeBeach set reports",
+      "source": "https://www.digitaltq.com/scarlet-violet-pull-rates-pokemon-tcg",
+      "note": "Two reverse slots per pack; the rare slot upgrades into the hit rarities. Observed hits totalled 1.12 per pack, which is why the rare-or-better rates sum above 1.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 4,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slots",
+          "perPack": 2,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare (holo)",
+          "perPack": 0.789,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Holofoil",
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Double Rare (ex)",
+          "perPack": 0.141,
+          "match": {
+            "rarity": [
+              "Double Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Illustration Rare",
+          "perPack": 0.077,
+          "match": {
+            "rarity": [
+              "Illustration Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare",
+          "perPack": 0.065,
+          "match": {
+            "rarity": [
+              "Ultra Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Special Illustration Rare",
+          "perPack": 0.031,
+          "match": {
+            "rarity": [
+              "Special Illustration Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Hyper / Mega Hyper Rare",
+          "perPack": 0.019,
+          "match": {
+            "rarity": [
+              "Hyper Rare",
+              "Mega Hyper Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "ACE SPEC Rare",
+          "perPack": 0.09,
+          "match": {
+            "rarity": [
+              "ACE SPEC Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Shiny / other chase",
+          "perPack": 0.02,
+          "match": {
+            "rarity": [
+              "Shiny Rare",
+              "Shiny Ultra Rare",
+              "Shiny Holo Rare",
+              "Black White Rare",
+              "Mega Attack Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-me": {
+      "label": "Mega Evolution",
+      "game": "pokemon",
+      "from": "2025-09-26",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "carried over from the 676-pack Scarlet & Violet study — nobody has counted a Mega Evolution set yet",
+      "source": "https://www.digitaltq.com/scarlet-violet-pull-rates-pokemon-tcg",
+      "note": "Read the top line with care. Mega Evolution sets are small and often hold a SINGLE Mega Hyper Rare, where a Scarlet & Violet set spread that tier over half a dozen gold cards. The 1.9% rate below was measured on those larger sets; if the tier is handed out per-card rather than per-tier, this rate is several times too generous and the pack EV with it. It is the least certain number on this page — the chase share column shows how much rides on it.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 4,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slots",
+          "perPack": 2,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare (holo)",
+          "perPack": 0.789,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Holofoil",
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Double Rare (ex)",
+          "perPack": 0.141,
+          "match": {
+            "rarity": [
+              "Double Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Illustration Rare",
+          "perPack": 0.077,
+          "match": {
+            "rarity": [
+              "Illustration Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare",
+          "perPack": 0.065,
+          "match": {
+            "rarity": [
+              "Ultra Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Special Illustration Rare",
+          "perPack": 0.031,
+          "match": {
+            "rarity": [
+              "Special Illustration Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Mega Hyper / Mega Attack Rare",
+          "perPack": 0.019,
+          "match": {
+            "rarity": [
+              "Hyper Rare",
+              "Mega Hyper Rare",
+              "Mega Attack Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-swsh": {
+      "label": "Sword & Shield",
+      "game": "pokemon",
+      "from": "2020-02-07",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "era template from community box-opening aggregates, not a single counted study",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "note": "One reverse slot. Rares were still non-holo by default in this era, so the plain Rare bucket carries most of the rare slot.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 5,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slot",
+          "perPack": 1,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare",
+          "perPack": 0.66,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Holo Rare",
+          "perPack": 0.2,
+          "match": {
+            "rarity": [
+              "Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare (V / VMAX / full art)",
+          "perPack": 0.11,
+          "match": {
+            "rarity": [
+              "Ultra Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Secret / Rainbow / Gold",
+          "perPack": 0.035,
+          "match": {
+            "rarity": [
+              "Secret Rare",
+              "Rainbow Rare",
+              "Hyper Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Amazing / Radiant / ACE SPEC",
+          "perPack": 0.04,
+          "match": {
+            "rarity": [
+              "Amazing Rare",
+              "Radiant Rare",
+              "Rare Ace",
+              "ACE SPEC Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-sm": {
+      "label": "Sun & Moon",
+      "game": "pokemon",
+      "from": "2017-02-03",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "era template from community aggregates",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 5,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slot",
+          "perPack": 1,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare",
+          "perPack": 0.63,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Holo Rare",
+          "perPack": 0.22,
+          "match": {
+            "rarity": [
+              "Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare (GX / full art)",
+          "perPack": 0.09,
+          "match": {
+            "rarity": [
+              "Ultra Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Prism Rare",
+          "perPack": 0.06,
+          "match": {
+            "rarity": [
+              "Prism Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Secret / Rainbow / Shiny",
+          "perPack": 0.03,
+          "match": {
+            "rarity": [
+              "Secret Rare",
+              "Rainbow Rare",
+              "Shiny Holo Rare",
+              "Rare Ace"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-xy": {
+      "label": "XY",
+      "game": "pokemon",
+      "from": "2014-02-05",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "era template from community aggregates",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 5,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slot",
+          "perPack": 1,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare",
+          "perPack": 0.66,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Holo Rare",
+          "perPack": 0.24,
+          "match": {
+            "rarity": [
+              "Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare (EX / full art)",
+          "perPack": 0.08,
+          "match": {
+            "rarity": [
+              "Ultra Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "BREAK / Secret / ACE",
+          "perPack": 0.05,
+          "match": {
+            "rarity": [
+              "Rare BREAK",
+              "Secret Rare",
+              "Rare Ace",
+              "Shiny Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-bw": {
+      "label": "Black & White",
+      "game": "pokemon",
+      "from": "2011-04-25",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "era template from community aggregates",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 5,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slot",
+          "perPack": 1,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare",
+          "perPack": 0.68,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Holo Rare",
+          "perPack": 0.26,
+          "match": {
+            "rarity": [
+              "Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare / Secret / ACE",
+          "perPack": 0.06,
+          "match": {
+            "rarity": [
+              "Ultra Rare",
+              "Secret Rare",
+              "Rare Ace",
+              "Shiny Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-mid": {
+      "label": "e-Card / EX / Diamond & Pearl / HGSS",
+      "game": "pokemon",
+      "from": "2002-05-24",
+      "cardsPerPack": 10,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "era template from community aggregates",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "note": "Reverse holos start here, with Legendary Collection in May 2002. Sealed packs from this era trade well above the value of their contents, so a deeply negative return is the right answer rather than a fault.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 5,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal",
+              "Unlimited",
+              "1st Edition"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal",
+              "Unlimited",
+              "1st Edition"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Reverse holo slot",
+          "perPack": 1,
+          "match": {
+            "printing": [
+              "Reverse Holofoil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare",
+          "perPack": 0.66,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Normal",
+              "Unlimited",
+              "1st Edition"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Holo Rare",
+          "perPack": 0.34,
+          "match": {
+            "rarity": [
+              "Holo Rare",
+              "Shiny Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ],
+            "printing": [
+              "Holofoil",
+              "1st Edition Holofoil",
+              "Unlimited Holofoil",
+              "Normal"
+            ]
+          }
+        },
+        {
+          "label": "Ultra Rare / Secret / Prime",
+          "perPack": 0.06,
+          "match": {
+            "rarity": [
+              "Ultra Rare",
+              "Secret Rare",
+              "Rare Ace",
+              "Amazing Rare"
+            ],
+            "variant": [
+              "base"
+            ],
+            "printing": [
+              "Holofoil",
+              "1st Edition Holofoil",
+              "Unlimited Holofoil",
+              "Normal"
+            ]
+          }
+        }
+      ]
+    },
+    "pkmn-classic": {
+      "label": "Vintage WotC (Base through Legendary Collection)",
+      "game": "pokemon",
+      "from": "1999-01-09",
+      "cardsPerPack": 11,
+      "packsPerBox": 36,
+      "confidence": "estimated",
+      "sample": "era template; holo rate is the long-standing 1-in-3 community figure",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Booster_pack_(TCG)",
+      "note": "Reverse holos did not exist yet, so there is no reverse slot. Sealed vintage packs trade far above the value of their contents — a deeply negative return is the correct answer, not a bug. 1st Edition and Unlimited are priced together here, which flatters any pack you would actually be buying as Unlimited.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 7,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal",
+              "Unlimited",
+              "1st Edition"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal",
+              "Unlimited",
+              "1st Edition"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rare",
+          "perPack": 0.67,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "printing": [
+              "Normal",
+              "Unlimited",
+              "1st Edition"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Holo Rare",
+          "perPack": 0.33,
+          "match": {
+            "rarity": [
+              "Holo Rare"
+            ],
+            "variant": [
+              "base"
+            ],
+            "printing": [
+              "Holofoil",
+              "1st Edition Holofoil",
+              "Unlimited Holofoil",
+              "Normal"
+            ]
+          }
+        }
+      ]
+    },
+    "onepiece": {
+      "label": "One Piece booster",
+      "game": "onepiece",
+      "from": "2022-12-02",
+      "cardsPerPack": 12,
+      "packsPerBox": 24,
+      "confidence": "estimated",
+      "sample": "community box-opening aggregates; Bandai publishes no odds",
+      "source": "https://tcgtalk.com/guides/one-piece-tcg-box-pull-rates",
+      "note": "A Super Rare replaces the second Rare in its pack, so the Rare rate is under 2. Alt arts run about 2 per 24-pack box across all rarities. Bandai publishes nothing, so the top three lines are read off per-case reports and are the least certain numbers here — a $4,800 Sabo sits in the Super Alt line. Where the chase share is high, treat the total as a guess.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 6,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "DON!!",
+          "perPack": 0.042,
+          "match": {
+            "rarity": [
+              "DON!!"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rares",
+          "perPack": 1.5,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Leader",
+          "perPack": 0.5,
+          "match": {
+            "rarity": [
+              "Leader"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Super Rare",
+          "perPack": 0.333,
+          "match": {
+            "rarity": [
+              "Super Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Secret Rare",
+          "perPack": 0.042,
+          "match": {
+            "rarity": [
+              "Secret Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Alternate art (any rarity)",
+          "perPack": 0.083,
+          "match": {
+            "variant": [
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Manga / special art",
+          "perPack": 0.005,
+          "match": {
+            "variant": [
+              "manga",
+              "special"
+            ]
+          }
+        },
+        {
+          "label": "Super alt art / Wanted Poster",
+          "perPack": 0.002,
+          "match": {
+            "variant": [
+              "superalt"
+            ]
+          }
+        },
+        {
+          "label": "Treasure Rare",
+          "perPack": 0.004,
+          "match": {
+            "rarity": [
+              "Treasure Rare"
+            ]
+          }
+        }
+      ]
+    },
+    "riftbound": {
+      "label": "Riftbound booster",
+      "game": "riftbound",
+      "from": "2025-10-31",
+      "cardsPerPack": 14,
+      "unpricedPerPack": 1,
+      "packsPerBox": 24,
+      "confidence": "measured",
+      "sample": "168 packs (TCGTalk, Unleashed release-day boxes)",
+      "source": "https://tcgtalk.com/guides/unleashed-riftbound-pull-rates-box-opening",
+      "note": "Two premium slots per pack plus a dedicated foil common/uncommon slot. About 65% of packs give nothing above Rare in both premium slots. The 14th card is a token or rune, which has no market value and is not priced here.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 7,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "printing": [
+              "Normal"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Foil slot (common / uncommon)",
+          "perPack": 1,
+          "match": {
+            "rarity": [
+              "Common",
+              "Uncommon"
+            ],
+            "printing": [
+              "Foil"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rares (2 premium slots)",
+          "perPack": 1.63,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "variant": [
+              "base",
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Epic",
+          "perPack": 0.27,
+          "match": {
+            "rarity": [
+              "Epic"
+            ],
+            "variant": [
+              "base",
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Showcase / alt art",
+          "perPack": 0.1,
+          "match": {
+            "rarity": [
+              "Showcase"
+            ],
+            "variant": [
+              "base",
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Overnumbered",
+          "perPack": 0.017,
+          "match": {
+            "variant": [
+              "overnumbered"
+            ]
+          }
+        },
+        {
+          "label": "Signature overnumbered",
+          "perPack": 0.0014,
+          "match": {
+            "variant": [
+              "signature"
+            ]
+          }
+        },
+        {
+          "label": "Ultimate",
+          "perPack": 0.0005,
+          "match": {
+            "variant": [
+              "ultimate"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "assign": {
+    "pokemon": [
+      {
+        "from": "2025-09-26",
+        "template": "pkmn-me"
+      },
+      {
+        "from": "2023-03-31",
+        "template": "pkmn-sv"
+      },
+      {
+        "from": "2020-02-07",
+        "template": "pkmn-swsh"
+      },
+      {
+        "from": "2017-02-03",
+        "template": "pkmn-sm"
+      },
+      {
+        "from": "2014-02-05",
+        "template": "pkmn-xy"
+      },
+      {
+        "from": "2011-04-25",
+        "template": "pkmn-bw"
+      },
+      {
+        "from": "2002-05-24",
+        "template": "pkmn-mid"
+      },
+      {
+        "from": "1900-01-01",
+        "template": "pkmn-classic"
+      }
+    ],
+    "onepiece": [
+      {
+        "from": "1900-01-01",
+        "template": "onepiece"
+      }
+    ],
+    "riftbound": [
+      {
+        "from": "1900-01-01",
+        "template": "riftbound"
+      }
+    ]
+  }
+}

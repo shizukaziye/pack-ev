@@ -1,0 +1,57 @@
+name: Refresh prices
+
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 12:00 UTC daily — cron does not follow daylight saving
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Sets come and go, so re-find which ones still sell packs before pricing them.
+      - name: Find sets that still sell packs
+        run: node scripts/discover_sets.mjs
+
+      # One game at a time, each writing its own file. TCGplayer throttles by request
+      # rate and answers with a 500, so a slow game must not take the others down
+      # with it — and a run that dies half way still leaves the finished games behind.
+      - name: Price Pokemon
+        run: node scripts/scrape_cards.mjs pokemon
+
+      - name: Price One Piece
+        run: node scripts/scrape_cards.mjs onepiece
+
+      - name: Price Riftbound
+        run: node scripts/scrape_cards.mjs riftbound
+
+      - name: Build data/cards.json
+        run: node scripts/merge.mjs
+
+      - name: Check the model against the data
+        run: node scripts/qc.mjs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet && echo "nothing changed" && exit 0
+          git commit -m "chore: refresh prices $(date -u +%Y-%m-%d)"
+          # main may have moved while the scrape ran
+          git pull --rebase --autostash origin main
+          git push

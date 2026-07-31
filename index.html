@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pack EV — what a booster pack is actually worth</title>
+<meta name="description" content="Expected value of Pokemon, One Piece and Riftbound booster packs, priced off TCGplayer market prices.">
+<style>
+  :root{
+    --bg:#0e1116; --panel:#161b22; --panel2:#1c232c; --line:#2a323d;
+    --tx:#e6edf3; --dim:#8b97a6; --dimmer:#5f6b7a;
+    --good:#3fb950; --bad:#f85149; --warn:#d29922; --acc:#58a6ff;
+    --pokemon:#f5c518; --onepiece:#ff6b4a; --riftbound:#4ecdc4;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--acc);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:1500px;margin:0 auto;padding:0 16px 80px}
+
+  header{padding:26px 0 14px;border-bottom:1px solid var(--line);margin-bottom:16px}
+  h1{margin:0 0 4px;font-size:24px;letter-spacing:-.3px}
+  .sub{color:var(--dim);font-size:13px;max-width:76ch}
+  .stamp{color:var(--dimmer);font-size:12px;margin-top:8px}
+
+  /* ---- tabs ---- */
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 12px}
+  .tab{
+    background:var(--panel);border:1px solid var(--line);color:var(--dim);
+    padding:7px 14px;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;
+  }
+  .tab:hover{color:var(--tx);border-color:#3d4854}
+  .tab.on{color:#0e1116;background:var(--tx);border-color:var(--tx)}
+  .tab.on[data-game=pokemon]{background:var(--pokemon);border-color:var(--pokemon)}
+  .tab.on[data-game=onepiece]{background:var(--onepiece);border-color:var(--onepiece);color:#fff}
+  .tab.on[data-game=riftbound]{background:var(--riftbound);border-color:var(--riftbound)}
+
+  /* ---- controls ---- */
+  .controls{
+    display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+    background:var(--panel);border:1px solid var(--line);border-radius:9px;
+    padding:11px 13px;margin-bottom:14px;position:sticky;top:0;z-index:20;
+  }
+  .ctl{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--dim)}
+  input[type=search],select{
+    background:var(--panel2);border:1px solid var(--line);color:var(--tx);
+    padding:6px 9px;border-radius:6px;font:inherit;font-size:13px;
+  }
+  input[type=search]{min-width:190px}
+  input[type=search]:focus,select:focus{outline:none;border-color:var(--acc)}
+  .sw{display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none;color:var(--dim);font-size:12px}
+  .sw input{accent-color:var(--acc);width:15px;height:15px;cursor:pointer}
+  .sw:hover{color:var(--tx)}
+  .count{margin-left:auto;color:var(--dimmer);font-size:12px}
+
+  /* ---- table ---- */
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:9px;background:var(--panel)}
+  table{border-collapse:collapse;width:100%;min-width:1080px}
+  th{
+    text-align:right;font-size:11px;font-weight:600;color:var(--dim);text-transform:uppercase;
+    letter-spacing:.4px;padding:10px 11px;border-bottom:1px solid var(--line);
+    white-space:nowrap;cursor:pointer;background:var(--panel);position:sticky;top:0;
+  }
+  th:hover{color:var(--tx)}
+  th.l{text-align:left} th .ar{color:var(--acc);font-size:9px}
+  td{padding:9px 11px;text-align:right;border-bottom:1px solid #20262e;white-space:nowrap;font-variant-numeric:tabular-nums}
+  td.l{text-align:left;white-space:normal}
+  tr.row{cursor:pointer}
+  tr.row:hover td{background:#1b222b}
+  tr.row.open td{background:#1f2732}
+  .setname{font-weight:600;display:flex;align-items:center;gap:8px}
+  .dot{width:7px;height:7px;border-radius:50%;flex:none}
+  .rel{color:var(--dimmer);font-size:12px}
+  .ev{font-weight:700}
+  .ret{font-weight:700;padding:2px 7px;border-radius:5px;font-size:12.5px}
+  .ret.g{color:var(--good);background:rgba(63,185,80,.12)}
+  .ret.b{color:var(--bad);background:rgba(248,81,73,.11)}
+  .ret.n{color:var(--warn);background:rgba(210,153,34,.12)}
+  .na{color:var(--dimmer)}
+  .badge{font-size:10.5px;padding:2px 7px;border-radius:20px;font-weight:600;letter-spacing:.2px}
+  .badge.measured{color:var(--good);background:rgba(63,185,80,.13)}
+  .badge.estimated{color:var(--warn);background:rgba(210,153,34,.13)}
+  .badge.thin{color:var(--dim);background:rgba(139,151,166,.13)}
+
+  /* ---- detail ---- */
+  .detail{background:#12171e}
+  /* white-space:normal matters: the td rule above sets nowrap for the number
+     columns, and without this the prose in here never wraps and overlaps. */
+  .detail > td{padding:0;border-bottom:1px solid var(--line);white-space:normal}
+  /* text-align:left matters: these sit inside a right-aligned td and inherit it */
+  .dgrid{display:grid;grid-template-columns:minmax(380px,1.15fr) minmax(280px,1fr);
+    gap:22px;padding:18px 16px;text-align:left}
+  @media(max-width:980px){.dgrid{grid-template-columns:1fr}}
+  .dsec{min-width:0}
+  .dsec h3{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+  .dsec .hint{color:var(--dimmer);font-size:11.5px;margin:0 0 10px;line-height:1.45}
+  table.mini{min-width:0;width:100%}
+  table.mini td,table.mini th{padding:5px 8px;font-size:12.5px;border-bottom:1px solid #1e242c}
+  table.mini th{position:static;cursor:default;background:none}
+  input.rate{
+    width:74px;background:var(--panel2);border:1px solid var(--line);color:var(--tx);
+    padding:3px 6px;border-radius:5px;font:inherit;font-size:12.5px;text-align:right;
+    font-variant-numeric:tabular-nums;
+  }
+  input.rate:focus{outline:none;border-color:var(--acc)}
+  input.rate.edited{border-color:var(--warn);color:var(--warn)}
+  .empty{color:var(--bad);font-size:11px}
+  .cov{color:var(--dimmer);font-size:11px}
+  .totrow td{font-weight:700;border-top:1px solid var(--line);border-bottom:none}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:9px}
+  .card{background:var(--panel2);border:1px solid var(--line);border-radius:7px;overflow:hidden;text-align:center}
+  .card img{width:100%;display:block;aspect-ratio:.72;object-fit:cover;background:#0b0e12}
+  .card .p{font-size:11.5px;font-weight:700;padding:4px 3px 2px}
+  .card .n{font-size:10px;color:var(--dimmer);padding:0 3px 5px;line-height:1.25;
+    overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  .noteline{color:var(--dim);font-size:12px;line-height:1.55;margin:10px 0 0;
+    background:var(--panel2);border-left:2px solid var(--line);padding:9px 11px;border-radius:0 6px 6px 0}
+  .reasons{margin:8px 0 0;padding-left:16px;color:var(--dimmer);font-size:11.5px;line-height:1.6}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--dim);padding:4px 10px;
+    border-radius:6px;cursor:pointer;font:inherit;font-size:11.5px}
+  .btn:hover{color:var(--tx);border-color:#3d4854}
+
+  details.method{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:9px}
+  details.method summary{padding:13px 15px;cursor:pointer;font-weight:600;font-size:13px;user-select:none}
+  details.method summary:hover{color:var(--acc)}
+  .mbody{padding:0 18px 18px;color:var(--dim);font-size:13px;line-height:1.7;max-width:88ch}
+  .mbody h4{color:var(--tx);margin:18px 0 6px;font-size:13px}
+  .mbody code{background:var(--panel2);padding:1.5px 5px;border-radius:4px;font-size:12px;color:#a5d6ff}
+  .mbody ul{padding-left:20px;margin:6px 0}
+  .loading{padding:60px 0;text-align:center;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Pack EV</h1>
+  <div class="sub">
+    What the cards inside a booster pack are worth, against what the pack costs.
+    Every card is priced at its TCGplayer market price. Pull rates come from community
+    pack-opening studies — no publisher releases real odds — so the prices here are firm
+    and the odds are not. Open any row to see the breakdown and change the odds yourself.
+  </div>
+  <div class="stamp" id="stamp">Loading…</div>
+</header>
+
+<div class="tabs" id="tabs"></div>
+
+<div class="controls">
+  <input type="search" id="q" placeholder="Search a set…" autocomplete="off">
+  <label class="ctl">Sort
+    <select id="sort">
+      <option value="release">Newest first</option>
+      <option value="packReturn">Pack return %</option>
+      <option value="boxReturn">Box return %</option>
+      <option value="ev">Pack EV $</option>
+      <option value="packPrice">Pack price</option>
+    </select>
+  </label>
+  <label class="sw"><input type="checkbox" id="fees"> Net of TCGplayer fees (13.25%)</label>
+  <label class="sw"><input type="checkbox" id="modern" checked> Modern only (2020+)</label>
+  <label class="sw"><input type="checkbox" id="haspack" checked> Priced packs only</label>
+  <span class="count" id="count"></span>
+</div>
+
+<div class="tblwrap">
+  <table>
+    <thead><tr id="head"></tr></thead>
+    <tbody id="body"><tr><td class="loading" colspan="10">Loading prices…</td></tr></tbody>
+  </table>
+</div>
+
+<details class="method">
+  <summary>How this is worked out — and what it can't tell you</summary>
+  <div class="mbody">
+    <h4>The number</h4>
+    <p>For each pack slot the model holds an <em>expected number of cards per pack</em> for
+    each rarity. Value is the sum over all of them:</p>
+    <p><code>EV = Σ (cards per pack × average market price of the cards that slot can give you)</code></p>
+    <p>Expectation adds up regardless of how the slots actually interact, so writing the
+    odds this way keeps the sum exact without having to guess the pack's internal wiring.
+    It also matches how community data gets reported — "1 in 13 packs" is just 0.077 per pack.</p>
+
+    <h4>Where the prices come from</h4>
+    <ul>
+      <li>Every card in every set, at its TCGplayer <strong>market price</strong>, Near Mint.</li>
+      <li>Pokémon prices come from TCGplayer's price guide, which names each printing, so a
+      reverse holo is priced as a reverse holo and not as its plain version.</li>
+      <li>One Piece needs no split — each rarity there exists in exactly one printing.</li>
+      <li>Riftbound commons and uncommons are priced separately as normal and foil, because
+      the pack has a dedicated foil slot and the premium is large.</li>
+      <li>Alternate arts are kept apart from their plain prints. They share a rarity on
+      TCGplayer, so averaging them together would badly distort the result.</li>
+    </ul>
+
+    <h4>Where the odds come from</h4>
+    <p>Nobody publishes real pull rates — not The Pokémon Company, not Bandai, not Riot.
+    Everything here traces to community pack-opening counts, and each set says which study
+    and how many packs. A <span class="badge measured">measured</span> badge means a counted
+    study of that era; <span class="badge estimated">estimated</span> means an era template
+    applied to a set nobody has counted; <span class="badge thin">thin</span> means the set is
+    new enough that much of it hasn't sold yet, so the prices themselves are shaky.
+    Change any rate in an open row and everything recalculates.</p>
+
+    <h4>Four reasons not to trust EV alone</h4>
+    <ul>
+      <li><strong>The average is not the typical pack.</strong> Value sits in cards you will
+      almost never pull. The <em>chase share</em> column shows how much of the EV rides on
+      rarities appearing less than once in 20 packs. Where that share is high, most packs come
+      in far under EV and a rare few carry everything.</li>
+      <li><strong>Market price is not what you get.</strong> Selling means fees, shipping, time
+      and undercutting. The fees switch takes 13.25% off, which is still optimistic.</li>
+      <li><strong>Prices fall as a set is opened.</strong> A new set's EV is measured against
+      prices that the opening itself pushes down.</li>
+      <li><strong>Sealed vintage is not an EV play.</strong> Old packs trade on being sealed,
+      not on their contents, so a deeply negative return there is the right answer.</li>
+    </ul>
+
+    <h4>Assumptions worth knowing</h4>
+    <ul>
+      <li>Within a rarity, every card is assumed equally likely. Real sets sometimes short-print.</li>
+      <li>Box EV is pack EV times the pack count. Box toppers and promos aren't counted.</li>
+      <li>Cards with no market price yet are valued at their rarity's average rather than zero;
+      the coverage figure in each open row shows how much of the pool that affects.</li>
+      <li>Energy, token, rune and code cards are treated as worthless.</li>
+    </ul>
+  </div>
+</details>
+</div>
+
+<script type="module">
+import { packEV, templateFor, confidenceOf } from "./ev.js";
+
+const $ = (s) => document.querySelector(s);
+const GAMES = { pokemon:"Pokémon", onepiece:"One Piece", riftbound:"Riftbound" };
+const money = (n,d=2) => n==null ? null : "$"+n.toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+
+let DATA=null, RATES=null, BASE=null;
+// Newest first by default: a set released days ago prices off a handful of listings
+// and its return looks great for reasons that have nothing to do with the odds, so
+// leading with the return column would put the least trustworthy rows on top.
+let game="all", sortKey="release", asc=false, open=new Set();
+
+const COLS=[
+  {k:"set",     t:"Set", l:true},
+  {k:"release", t:"Released"},
+  {k:"packPrice",t:"Pack"},
+  {k:"ev",      t:"Pack EV"},
+  {k:"packReturn",t:"Return"},
+  {k:"boxPrice",t:"Box"},
+  {k:"boxEV",   t:"Box EV"},
+  {k:"boxReturn",t:"Box return"},
+  {k:"chase",   t:"Chase share"},
+  {k:"conf",    t:"Confidence"},
+];
+
+async function load(){
+  const [c,r] = await Promise.all([
+    fetch("data/cards.json").then(x=>x.json()),
+    fetch("data/rates.json").then(x=>x.json()),
+  ]);
+  DATA=c; RATES=r; BASE=JSON.parse(JSON.stringify(r));
+  $("#stamp").textContent =
+    `TCGplayer market prices, ${new Date(c.updated).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"})}. `+
+    `${Object.values(c.games).reduce((a,b)=>a+b.length,0)} sets.`;
+  buildTabs(); render();
+}
+
+function buildTabs(){
+  const t=$("#tabs"); t.innerHTML="";
+  const mk=(k,label,n)=>{
+    const b=document.createElement("button");
+    b.className="tab"+(game===k?" on":""); b.dataset.game=k;
+    b.textContent=n==null?label:`${label} (${n})`;
+    b.onclick=()=>{game=k;buildTabs();render()}; t.appendChild(b);
+  };
+  mk("all","All sets",Object.values(DATA.games).reduce((a,b)=>a+b.length,0));
+  for(const [k,label] of Object.entries(GAMES)) mk(k,label,(DATA.games[k]||[]).length);
+}
+
+/** Every set, with its EV computed under the current (possibly edited) rates. */
+function rows(){
+  const netOfFees=$("#fees").checked;
+  const out=[];
+  for(const [g,sets] of Object.entries(DATA.games)){
+    if(game!=="all" && game!==g) continue;
+    for(const s of sets){
+      const tpl=templateFor(RATES,g,s.release);
+      if(!tpl) continue;
+      const r=packEV(s,tpl,{netOfFees});
+      const conf=confidenceOf(s,tpl,r);
+      // How much of the EV rides on things you almost never pull.
+      const chaseVal=r.lines.filter(l=>l.perPack<0.05).reduce((a,l)=>a+l.value,0);
+      out.push({game:g,set:s,tpl,r,conf,chase:r.ev?chaseVal/r.ev:0});
+    }
+  }
+  return out;
+}
+
+function filtered(){
+  const q=$("#q").value.trim().toLowerCase();
+  const modern=$("#modern").checked, haspack=$("#haspack").checked;
+  let list=rows();
+  if(q) list=list.filter(x=>x.set.set.toLowerCase().includes(q));
+  if(modern) list=list.filter(x=>(x.set.release||"")>="2020-01-01");
+  if(haspack) list=list.filter(x=>x.r.packPrice!=null);
+  const val=(x)=>({
+    set:x.set.set, release:x.set.release||"", packPrice:x.r.packPrice, ev:x.r.ev,
+    packReturn:x.r.packReturn, boxPrice:x.r.boxPrice, boxEV:x.r.boxEV,
+    boxReturn:x.r.boxReturn, chase:x.chase, conf:x.conf.level,
+  })[sortKey];
+  list.sort((a,b)=>{
+    const A=val(a),B=val(b);
+    if(A==null&&B==null) return 0;
+    if(A==null) return 1; if(B==null) return -1;   // missing data always sinks
+    const c = typeof A==="number" ? A-B : String(A).localeCompare(String(B));
+    return asc?c:-c;
+  });
+  return list;
+}
+
+function retClass(v){ return v==null?"na":v>=1?"g":v>=0.8?"n":"b"; }
+function retCell(v){
+  if(v==null) return '<span class="na">—</span>';
+  return `<span class="ret ${retClass(v)}">${(v*100).toFixed(0)}%</span>`;
+}
+
+function render(){
+  if(!DATA) return;   // controls are live before the fetch lands
+  // header
+  $("#head").innerHTML = COLS.map(c=>
+    `<th class="${c.l?"l":""}" data-k="${c.k}">${c.t}${sortKey===c.k?` <span class="ar">${asc?"▲":"▼"}</span>`:""}</th>`
+  ).join("");
+  $("#head").querySelectorAll("th").forEach(th=>th.onclick=()=>{
+    const k=th.dataset.k;
+    if(sortKey===k) asc=!asc; else {sortKey=k;asc=(k==="set");}
+    render();
+  });
+
+  const list=filtered();
+  $("#count").textContent=`${list.length} set${list.length===1?"":"s"}`;
+  const body=$("#body"); body.innerHTML="";
+  if(!list.length){ body.innerHTML='<tr><td class="loading" colspan="10">Nothing matches.</td></tr>'; return; }
+
+  for(const x of list){
+    const id=`${x.game}::${x.set.set}`;
+    const isOpen=open.has(id);
+    const tr=document.createElement("tr");
+    tr.className="row"+(isOpen?" open":"");
+    tr.innerHTML=
+      `<td class="l"><div class="setname"><span class="dot" style="background:var(--${x.game})"></span>${x.set.set}</div></td>`+
+      `<td class="rel">${x.set.release||"—"}</td>`+
+      `<td>${money(x.r.packPrice)??'<span class="na">—</span>'}</td>`+
+      `<td class="ev">${money(x.r.ev)}</td>`+
+      `<td>${retCell(x.r.packReturn)}</td>`+
+      `<td>${money(x.r.boxPrice)??'<span class="na">—</span>'}</td>`+
+      `<td>${money(x.r.boxEV)??'<span class="na">—</span>'}</td>`+
+      `<td>${retCell(x.r.boxReturn)}</td>`+
+      `<td>${(x.chase*100).toFixed(0)}%</td>`+
+      `<td><span class="badge ${x.conf.level}">${x.conf.level}</span></td>`;
+    tr.onclick=()=>{ open.has(id)?open.delete(id):open.add(id); render(); };
+    body.appendChild(tr);
+    if(isOpen) body.appendChild(detail(x,id));
+  }
+}
+
+function detail(x,id){
+  const tr=document.createElement("tr"); tr.className="detail";
+  const td=document.createElement("td"); td.colSpan=COLS.length;
+
+  const lines=x.r.lines.map((l,i)=>{
+    const orig=x.tpl.rates.find(rt=>rt.label===l.label);
+    const baseTpl=BASE.templates[templateKey(x.game,x.set.release)];
+    const wasEdited=baseTpl && baseTpl.rates.find(rt=>rt.label===l.label)?.perPack!==orig.perPack;
+    return `<tr>
+      <td class="l">${l.label}${l.empty?' <span class="empty">· no cards</span>':""}</td>
+      <td><input class="rate${wasEdited?" edited":""}" type="number" step="0.001" min="0"
+           value="${l.perPack}" data-label="${encodeURIComponent(l.label)}"></td>
+      <td>${l.poolPrice==null?'<span class="na">—</span>':money(l.poolPrice,l.poolPrice<1?3:2)}</td>
+      <td>${money(l.value,l.value<1?3:2)}</td>
+      <td class="cov">${l.cards} card${l.cards===1?"":"s"}${l.coverage<0.999?` · ${(l.coverage*100).toFixed(0)}% priced`:""}</td>
+    </tr>`;
+  }).join("");
+
+  const cards=(x.set.top||[]).slice(0,12).map(c=>
+    `<a class="card" href="${c.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+       <img loading="lazy" src="${c.image}" alt="">
+       <div class="p">${money(c.price)}</div>
+       <div class="n">${c.name}</div>
+     </a>`).join("");
+
+  td.innerHTML=`<div class="dgrid">
+    <div class="dsec">
+      <h3>Where the value is</h3>
+      <p class="hint">Cards per pack for each rarity — edit any of them and every set on this
+        template recalculates. Pool price is the average market price of the cards that line can give you.</p>
+      <table class="mini">
+        <tr><th class="l">Slot</th><th style="text-align:right">Per pack</th>
+            <th style="text-align:right">Pool price</th><th style="text-align:right">Value</th>
+            <th style="text-align:right">Pool</th></tr>
+        ${lines}
+        <tr class="totrow"><td class="l">Pack EV</td><td></td><td></td><td>${money(x.r.ev)}</td>
+          <td class="cov">${x.r.cardsPerPack.toFixed(2)} priced${x.tpl.unpricedPerPack?` + ${x.tpl.unpricedPerPack} unpriced`:""}</td></tr>
+      </table>
+      <div class="noteline">
+        <strong>${x.tpl.label}</strong> — ${x.tpl.packsPerBox} packs per box, ${x.tpl.cardsPerPack} cards per pack.
+        ${x.tpl.note?`<br>${x.tpl.note}`:""}
+        <br>Odds: <a href="${x.tpl.source}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${x.tpl.sample}</a>
+        <ul class="reasons">${x.conf.reasons.map(r=>`<li>${r}</li>`).join("")}</ul>
+        <button class="btn" data-reset="1">Reset these odds</button>
+      </div>
+    </div>
+    <div class="dsec">
+      <h3>Biggest hits in the set</h3>
+      <p class="hint">Top market prices. These drive the chase share — ${(x.chase*100).toFixed(0)}% of this
+        pack's EV comes from rarities you pull less than once in 20 packs.</p>
+      <div class="cards">${cards||'<span class="na">No priced cards.</span>'}</div>
+    </div>
+  </div>`;
+
+  td.onclick=(e)=>e.stopPropagation();
+  td.querySelectorAll("input.rate").forEach(inp=>{
+    inp.onchange=()=>{
+      const label=decodeURIComponent(inp.dataset.label);
+      const tpl=RATES.templates[templateKey(x.game,x.set.release)];
+      const rate=tpl.rates.find(rt=>rt.label===label);
+      const v=parseFloat(inp.value);
+      if(rate && isFinite(v) && v>=0){ rate.perPack=v; render(); }
+    };
+  });
+  td.querySelector("[data-reset]").onclick=()=>{
+    const k=templateKey(x.game,x.set.release);
+    RATES.templates[k]=JSON.parse(JSON.stringify(BASE.templates[k]));
+    render();
+  };
+  tr.appendChild(td); return tr;
+}
+
+function templateKey(g,release){
+  const rules=RATES.assign[g]||[];
+  const d=release||"1900-01-01";
+  for(const r of rules) if(d>=r.from) return r.template;
+  return rules[rules.length-1]?.template;
+}
+
+for(const id of ["#q","#sort","#fees","#modern","#haspack"]){
+  $(id).addEventListener(id==="#q"?"input":"change",()=>{
+    if(id==="#sort"){ sortKey=$("#sort").value; asc=false; }
+    render();
+  });
+}
+load().catch(e=>{
+  $("#body").innerHTML=`<tr><td class="loading" colspan="10">Could not load prices: ${e}</td></tr>`;
+});
+</script>
+</body>
+</html>
