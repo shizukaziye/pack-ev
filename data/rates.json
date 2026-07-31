@@ -1268,6 +1268,69 @@
     ]
   },
   "setRates": {
+    "SV: Black Bolt": {
+      "manual": true,
+      "confidence": "measured",
+      "sample": "1,700 packs — 700 counted by the eBay Authentication Center for TCGplayer, plus 1,000 opened and logged by hand",
+      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Black-Bolt-and-White-Flare-Pull-Rates/bac92199-a2a7-4668-b4a4-2647a111776f/",
+      "note": "TCGplayer found no Black White Rare at all in 700 packs and published its rate as unknown. A separate 1,000-pack count turned up 2, so the two samples are pooled here: 2 in 1,700 packs, about 1 in 850. Both sets share one estimate because they were printed together and TCGplayer pooled them for the same reason.",
+      "rates": {
+        "Poké Ball / Master Ball foil": 0.3711,
+        "Double Rare (ex)": 0.2134,
+        "Ultra Rare": 0.0599,
+        "Illustration Rare": 0.1693,
+        "Special Illustration Rare": 0.0128,
+        "Shiny / other chase": 0.00118
+      }
+    },
+    "SV: White Flare": {
+      "manual": true,
+      "confidence": "measured",
+      "sample": "1,700 packs — 700 counted by the eBay Authentication Center for TCGplayer, plus 1,000 opened and logged by hand",
+      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Black-Bolt-and-White-Flare-Pull-Rates/bac92199-a2a7-4668-b4a4-2647a111776f/",
+      "note": "TCGplayer found no Black White Rare at all in 700 packs and published its rate as unknown. A separate 1,000-pack count turned up 2, so the two samples are pooled here: 2 in 1,700 packs, about 1 in 850. Both sets share one estimate because they were printed together and TCGplayer pooled them for the same reason.",
+      "rates": {
+        "Poké Ball / Master Ball foil": 0.3711,
+        "Double Rare (ex)": 0.2134,
+        "Ultra Rare": 0.0599,
+        "Illustration Rare": 0.1693,
+        "Special Illustration Rare": 0.0128,
+        "Shiny / other chase": 0.00118
+      }
+    },
+    "Origins": {
+      "confidence": "measured",
+      "sample": "release-window box openings; Riot published the Epic rate, the rest are counted from boxes",
+      "source": "https://harlequinsgames.com/blogs/riftbound/riftbound-tcg-pull-rates-and-set-overview-origins-and-spiritforged",
+      "rates": {
+        "Epic": 0.25,
+        "Showcase / alt art": 0.083,
+        "Overnumbered": 0.014,
+        "Signature overnumbered": 0.0014
+      }
+    },
+    "Unleashed": {
+      "confidence": "measured",
+      "sample": "168 packs opened at release (TCGTalk)",
+      "source": "https://tcgtalk.com/guides/unleashed-riftbound-pull-rates-box-opening",
+      "rates": {
+        "Epic": 0.27,
+        "Showcase / alt art": 0.1,
+        "Overnumbered": 0.017,
+        "Signature overnumbered": 0.0014
+      }
+    },
+    "Vendetta": {
+      "confidence": "measured",
+      "sample": "90 packs opened at release (TCGTalk) — creator boxes, which may have run hot",
+      "source": "https://tcgtalk.com/guides/vendetta-riftbound-pull-rates-box-opening",
+      "rates": {
+        "Epic": 0.27,
+        "Showcase / alt art": 0.09,
+        "Overnumbered": 0.02,
+        "Signature overnumbered": 0.0014
+      }
+    },
     "ME05: Pitch Black": {
       "confidence": "measured",
       "sample": "4,000 packs opened by the TCGplayer Authentication Center",
@@ -1339,66 +1402,6 @@
         "Illustration Rare": 0.10890000000000001,
         "Special Illustration Rare": 0.009899999999999999,
         "Mega Hyper Rare": 0.0008
-      }
-    },
-    "SV: Black Bolt": {
-      "confidence": "measured",
-      "sample": "350 packs opened by the TCGplayer Authentication Center",
-      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Black-Bolt-and-White-Flare-Pull-Rates/bac92199-a2a7-4668-b4a4-2647a111776f/",
-      "rates": {
-        "Poké Ball / Master Ball foil": 0.357,
-        "Double Rare (ex)": 0.21109999999999998,
-        "Ultra Rare": 0.0583,
-        "Illustration Rare": 0.16390000000000002,
-        "Special Illustration Rare": 0.0125,
-        "Shiny / other chase": 0.001
-      },
-      "unknown": [
-        "black white rare"
-      ],
-      "match": {
-        "Poké Ball / Master Ball foil": {
-          "rarity": [
-            "Common",
-            "Uncommon"
-          ],
-          "printing": [
-            "Holofoil"
-          ],
-          "variant": [
-            "base"
-          ]
-        }
-      }
-    },
-    "SV: White Flare": {
-      "confidence": "measured",
-      "sample": "350 packs opened by the TCGplayer Authentication Center",
-      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Black-Bolt-and-White-Flare-Pull-Rates/bac92199-a2a7-4668-b4a4-2647a111776f/",
-      "rates": {
-        "Poké Ball / Master Ball foil": 0.357,
-        "Double Rare (ex)": 0.21109999999999998,
-        "Ultra Rare": 0.0583,
-        "Illustration Rare": 0.16390000000000002,
-        "Special Illustration Rare": 0.0125,
-        "Shiny / other chase": 0.001
-      },
-      "unknown": [
-        "black white rare"
-      ],
-      "match": {
-        "Poké Ball / Master Ball foil": {
-          "rarity": [
-            "Common",
-            "Uncommon"
-          ],
-          "printing": [
-            "Holofoil"
-          ],
-          "variant": [
-            "base"
-          ]
-        }
       }
     },
     "SV10: Destined Rivals": {
@@ -1584,39 +1587,6 @@
         "Illustration Rare": 0.0767,
         "Special Illustration Rare": 0.0315,
         "Hyper / Mega Hyper Rare": 0.018500000000000003
-      }
-    },
-    "Origins": {
-      "confidence": "measured",
-      "sample": "release-window box openings; Riot published the Epic rate, the rest are counted from boxes",
-      "source": "https://harlequinsgames.com/blogs/riftbound/riftbound-tcg-pull-rates-and-set-overview-origins-and-spiritforged",
-      "rates": {
-        "Epic": 0.25,
-        "Showcase / alt art": 0.083,
-        "Overnumbered": 0.014,
-        "Signature overnumbered": 0.0014
-      }
-    },
-    "Unleashed": {
-      "confidence": "measured",
-      "sample": "168 packs opened at release (TCGTalk)",
-      "source": "https://tcgtalk.com/guides/unleashed-riftbound-pull-rates-box-opening",
-      "rates": {
-        "Epic": 0.27,
-        "Showcase / alt art": 0.1,
-        "Overnumbered": 0.017,
-        "Signature overnumbered": 0.0014
-      }
-    },
-    "Vendetta": {
-      "confidence": "measured",
-      "sample": "90 packs opened at release (TCGTalk) — creator boxes, which may have run hot",
-      "source": "https://tcgtalk.com/guides/vendetta-riftbound-pull-rates-box-opening",
-      "rates": {
-        "Epic": 0.27,
-        "Showcase / alt art": 0.09,
-        "Overnumbered": 0.02,
-        "Signature overnumbered": 0.0014
       }
     }
   }

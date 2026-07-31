@@ -74,6 +74,9 @@
   tr.row.open td{background:#1f2732}
   .setname{font-weight:600;display:flex;align-items:center;gap:8px}
   .dot{width:7px;height:7px;border-radius:50%;flex:none}
+  .code{font-size:10.5px;font-weight:700;letter-spacing:.3px;color:var(--dim);
+    background:var(--panel2);border:1px solid var(--line);border-radius:4px;
+    padding:1px 5px;flex:none;font-variant-numeric:tabular-nums}
   .rel{color:var(--dimmer);font-size:12px}
   .ev{font-weight:700}
   .ret{font-weight:700;padding:2px 7px;border-radius:5px;font-size:12.5px}
@@ -318,7 +321,11 @@ function filtered(){
   const q=$("#q").value.trim().toLowerCase();
   const modern=$("#modern").checked, haspack=$("#haspack").checked;
   let list=rows();
-  if(q) list=list.filter(x=>x.set.set.toLowerCase().includes(q));
+  // Match the code as well as the name, and ignore dashes so "op13", "OP-13" and
+  // "op 13" all find the same set.
+  const loose=(s)=>(s||"").toLowerCase().replace(/[-\s]/g,"");
+  if(q) list=list.filter(x=>
+    x.set.set.toLowerCase().includes(q) || loose(x.set.setCode).includes(loose(q)));
   if(modern) list=list.filter(x=>(x.set.release||"")>="2020-01-01");
   if(haspack) list=list.filter(x=>x.r.packPrice!=null);
   const val=(x)=>({
@@ -334,6 +341,23 @@ function filtered(){
     return asc?c:-c;
   });
   return list;
+}
+
+/**
+ * The set's own code as a chip — OP-15, EB-03, PRB-02. One Piece sets are known by
+ * their number far more than their name, and TCGplayer already carries the code.
+ * Pokemon names lead with it already (SV10:, ME05:) so those get nothing.
+ */
+function setCode(x){
+  const raw=(x.set.setCode||"").trim();
+  if(!raw) return "";
+  if(x.game==="pokemon" && new RegExp(`^${raw}`,"i").test(x.set.set)) return "";
+  // Codes arrive in three shapes: "OP01", "EB-03" and "OP15-EB04" for a set printed
+  // as both. Pull out every letters-then-digits pair rather than splitting on the
+  // dash, which would turn "EB-03" into two useless halves.
+  const parts=[...raw.matchAll(/([A-Za-z]+)-?(\d+)/g)].map(m=>`${m[1].toUpperCase()}-${m[2]}`);
+  if(!parts.length) return "";
+  return `<span class="code">${parts.join(" / ")}</span>`;
 }
 
 function retClass(v){ return v==null?"na":v>=1?"g":v>=0.8?"n":"b"; }
@@ -365,7 +389,8 @@ function render(){
     const tr=document.createElement("tr");
     tr.className="row"+(isOpen?" open":"");
     tr.innerHTML=
-      `<td class="l"><div class="setname"><span class="dot" style="background:var(--${x.game})"></span>${x.set.set}</div></td>`+
+      `<td class="l"><div class="setname"><span class="dot" style="background:var(--${x.game})"></span>`+
+        `${setCode(x)}${x.set.set}</div></td>`+
       `<td class="rel">${x.set.release||"—"}</td>`+
       `<td>${money(x.r.packPrice)??'<span class="na">—</span>'}</td>`+
       `<td class="ev">${money(x.r.ev)}</td>`+

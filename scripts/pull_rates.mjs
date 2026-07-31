@@ -242,14 +242,17 @@ async function main() {
 
   // Rebuilt each run so a pulled article cannot leave a stale entry behind — but
   // hand-entered rates for the other two games are not this script's to delete.
-  const setRates = Object.fromEntries(
-    Object.entries(rates.setRates || {}).filter(([, v]) => !/tcgplayer\.com/.test(v.source || ""))
+  const keep = Object.entries(rates.setRates || {}).filter(
+    ([, v]) => v.manual || !/tcgplayer\.com/.test(v.source || "")
   );
+  const setRates = Object.fromEntries(keep);
+  const manual = new Set(keep.filter(([, v]) => v.manual).map(([k]) => k));
   const unmapped = new Map();
   let wrote = 0, skipped = 0;
 
   for (const a of articles) {
     if (!known.has(a.set)) { console.log(`  – ${a.set} — no priced set by that name, skipping`); skipped++; continue; }
+    if (manual.has(a.set)) { console.log(`  = ${a.set} — keeping hand-counted rates`); skipped++; continue; }
     const body = a.body;
     const table = parseTable(body);
     if (!table) { console.log(`  ! ${a.set} — no table found`); skipped++; continue; }
