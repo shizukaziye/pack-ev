@@ -1164,7 +1164,7 @@
       "confidence": "estimated",
       "sample": "carried from neighbouring sets — this set has no count of its own",
       "source": "https://tcgtalk.com/guides/unleashed-riftbound-pull-rates-box-opening",
-      "note": "Two premium slots per pack plus a dedicated foil common/uncommon slot. About 65% of packs give nothing above Rare in both premium slots. The 14th card is a token or rune, which has no market value and is not priced here.",
+      "note": "Riot publishes the contents: 7 commons, 3 uncommons, 2 foil rare-or-better slots, 1 foil of any rarity and 1 token, for 14 cards. The two premium slots give exactly 2 cards between them, so the plain-Rare line is derived as 2 minus the rarer tiers rather than set by hand. The token slot has no market value and is not priced. The foil slot is modelled as a common or uncommon, which is the usual case; its chance of upgrading is not modelled.",
       "rates": [
         {
           "label": "Commons",
@@ -1197,7 +1197,7 @@
           }
         },
         {
-          "label": "Foil slot (common / uncommon)",
+          "label": "Foil slot (usually common / uncommon)",
           "perPack": 1,
           "match": {
             "rarity": [
@@ -1214,7 +1214,7 @@
         },
         {
           "label": "Rares (2 premium slots)",
-          "perPack": 1.63,
+          "perPack": 1.6111,
           "match": {
             "rarity": [
               "Rare"
@@ -1501,7 +1501,8 @@
         "Epic": 0.25,
         "Showcase / alt art": 0.083,
         "Overnumbered": 0.014,
-        "Signature overnumbered": 0.0014
+        "Signature overnumbered": 0.0014,
+        "Rares (2 premium slots)": 1.6511
       }
     },
     "Unleashed": {
@@ -1512,7 +1513,8 @@
         "Epic": 0.27,
         "Showcase / alt art": 0.1,
         "Overnumbered": 0.017,
-        "Signature overnumbered": 0.0014
+        "Signature overnumbered": 0.0014,
+        "Rares (2 premium slots)": 1.6111
       }
     },
     "Vendetta": {
@@ -1523,7 +1525,8 @@
         "Epic": 0.27,
         "Showcase / alt art": 0.09,
         "Overnumbered": 0.02,
-        "Signature overnumbered": 0.0014
+        "Signature overnumbered": 0.0014,
+        "Rares (2 premium slots)": 1.6181
       }
     },
     "Premium Booster -The Best-": {

@@ -46,6 +46,17 @@ for (const [game, sets] of Object.entries(cards.games)) {
       if (l.empty && l.perPack >= 0.05)
         problems.push(`${game}/${set.set}: rate "${l.label}" (${l.perPack}/pack) matched no cards`);
     if (r.ev === 0) problems.push(`${game}/${set.set}: EV is zero`);
+
+    // Riot publishes Riftbound's contents, and the two premium slots give exactly
+    // two cards between them. Per-set rates that change Epic or Showcase without
+    // rederiving the plain-Rare line quietly break that, so check it holds.
+    if (game === "riftbound") {
+      const premium = r.lines
+        .filter((l) => /^(Rares|Epic|Showcase|Overnumbered|Signature|Ultimate)/.test(l.label))
+        .reduce((a, l) => a + l.perPack, 0);
+      if (Math.abs(premium - 2) > 0.02)
+        problems.push(`${game}/${set.set}: premium slots hand out ${premium.toFixed(3)} cards, but the pack has exactly 2`);
+    }
     if (r.packReturn != null && r.packReturn > 3)
       problems.push(`${game}/${set.set}: pack return ${(r.packReturn * 100).toFixed(0)}% — implausibly high, check rates`);
   }
