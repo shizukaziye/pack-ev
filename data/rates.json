@@ -1089,6 +1089,26 @@
               "Treasure Rare"
             ]
           }
+        },
+        {
+          "label": "Full art",
+          "perPack": 0.02,
+          "match": {
+            "variant": [
+              "fullart"
+            ]
+          }
+        },
+        {
+          "label": "Textured / Pirate / Jolly Roger foil",
+          "perPack": 0.02,
+          "match": {
+            "variant": [
+              "textured",
+              "pirate",
+              "jollyroger"
+            ]
+          }
         }
       ]
     },
@@ -1225,14 +1245,23 @@
       "cardsPerPack": 10,
       "packsPerBox": 20,
       "confidence": "estimated",
-      "structureUnknown": true,
-      "sample": "no counted data — Bandai publishes neither odds nor a slot breakdown for these",
+      "structureUnknown": false,
+      "sample": "Bandai publishes the pack size and the two guaranteed Jolly Roger foils; the rest of the split is inferred",
       "source": "https://en.onepiece-cardgame.com/products/boosters/prb02.php",
-      "note": "A reprint set where every card is a premium foil, so its commons are worth dollars rather than cents. Ten cards a pack, twenty packs a box, and two guaranteed Jolly Roger parallels — but which slots hold what is not published anywhere. The split below is a guess at a plausible shape, and the total should be read as an order of magnitude at best, not a number to buy or sell against.",
+      "note": "Ten cards a pack, twenty packs a box, and two guaranteed Jolly Roger foils — those three are published. How the other eight slots divide is not, so they are inferred from the set's rarity counts. Every card here is a reprint of an older card, and the premium treatments (Full Art, Jolly Roger, Textured, Pirate) are priced in their own buckets rather than averaged in with the plain reprints, which is what the plain Common line means.",
       "rates": [
         {
+          "label": "Jolly Roger foils (2 guaranteed)",
+          "perPack": 2,
+          "match": {
+            "variant": [
+              "jollyroger"
+            ]
+          }
+        },
+        {
           "label": "Commons",
-          "perPack": 4,
+          "perPack": 3.5,
           "match": {
             "rarity": [
               "Common"
@@ -1244,7 +1273,7 @@
         },
         {
           "label": "Uncommons",
-          "perPack": 3,
+          "perPack": 2,
           "match": {
             "rarity": [
               "Uncommon"
@@ -1256,7 +1285,7 @@
         },
         {
           "label": "Rares",
-          "perPack": 1.5,
+          "perPack": 1.2,
           "match": {
             "rarity": [
               "Rare"
@@ -1303,8 +1332,27 @@
           }
         },
         {
-          "label": "Alternate art (any rarity)",
-          "perPack": 0.4,
+          "label": "Full art",
+          "perPack": 0.15,
+          "match": {
+            "variant": [
+              "fullart"
+            ]
+          }
+        },
+        {
+          "label": "Textured / Pirate foil",
+          "perPack": 0.08,
+          "match": {
+            "variant": [
+              "textured",
+              "pirate"
+            ]
+          }
+        },
+        {
+          "label": "Alternate art",
+          "perPack": 0.1,
           "match": {
             "variant": [
               "alt"
@@ -1312,7 +1360,7 @@
           }
         },
         {
-          "label": "Manga / special art",
+          "label": "Manga / gold",
           "perPack": 0.01,
           "match": {
             "variant": [

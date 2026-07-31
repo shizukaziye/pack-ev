@@ -29,8 +29,25 @@ const VARIANT_TESTS = [
 // of the truth.
 const NUMBER_RULE_GAMES = new Set(["riftbound", "onepiece"]);
 
+// One Piece reprint sets carry a stack of premium treatments that are separate
+// products at wildly different prices — a Full Art common runs $65 where its plain
+// reprint is 5 cents. Lumping them together made Premium Booster's commons average
+// $5.35 and its pack EV read 347%.
+//
+// These are deliberately NOT applied to Pokemon: "(Full Art)" appears there too, but
+// the rarity already separates those cards, and splitting them would strand every
+// counted Ultra Rare rate against an empty bucket.
+const ONEPIECE_TREATMENTS = [
+  [/\(jolly roger foil\)/i, "jollyroger"],
+  [/\(textured foil\)/i, "textured"],
+  [/\(pirate foil\)/i, "pirate"],
+  [/\(full art\)/i, "fullart"],
+  [/\(gold\)|\(silver\)/i, "special"],
+];
+
 export function variantOf(name, number, game) {
   for (const [re, v] of VARIANT_TESTS) if (re.test(name || "")) return v;
+  if (game === "onepiece") for (const [re, v] of ONEPIECE_TREATMENTS) if (re.test(name || "")) return v;
   if (NUMBER_RULE_GAMES.has(game)) {
     const m = /^(\d+)(\*?)\/(\d+)$/.exec((number || "").trim());
     if (m) {
