@@ -290,7 +290,7 @@ function rows(){
   for(const [g,sets] of Object.entries(DATA.games)){
     if(game!=="all" && game!==g) continue;
     for(const s of sets){
-      const tpl=templateFor(RATES,g,s.release);
+      const tpl=templateFor(RATES,g,s.release,s.set);
       if(!tpl) continue;
       const r=packEV(s,tpl,{netOfFees});
       const conf=confidenceOf(s,tpl,r);

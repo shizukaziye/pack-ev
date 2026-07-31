@@ -24,7 +24,7 @@ for (const [game, sets] of Object.entries(cards.games)) {
     "   box EV".padStart(10) + "box".padStart(10) + "  ret  conf"
   );
   for (const set of sets) {
-    const tpl = templateFor(rates, game, set.release);
+    const tpl = templateFor(rates, game, set.release, set.set);
     if (!tpl) { problems.push(`${game}/${set.set}: no template`); continue; }
     const r = packEV(set, tpl);
     const conf = confidenceOf(set, tpl, r);
@@ -56,7 +56,7 @@ console.log(`\n${"=".repeat(104)}\nUNMATCHED RARITIES (cards the model never pri
 for (const [game, sets] of Object.entries(cards.games)) {
   const seen = new Map();
   for (const set of sets) {
-    const tpl = templateFor(rates, game, set.release);
+    const tpl = templateFor(rates, game, set.release, set.set);
     if (!tpl) continue;
     for (const b of set.buckets) {
       const matched = tpl.rates.some((rt) => {

@@ -103,12 +103,48 @@ export function packEV(set, template, opts = {}) {
   };
 }
 
-/** Which era template applies to a set, by release date. */
-export function templateFor(rates, game, release) {
+/** The era template a set falls under, by release date. */
+export function eraTemplateFor(rates, game, release) {
   const rules = rates.assign[game] || [];
   const date = release || "1900-01-01";
   for (const r of rules) if (date >= r.from) return rates.templates[r.template];
   return rates.templates[rules[rules.length - 1]?.template] || null;
+}
+
+/**
+ * The rates that actually apply to a set.
+ *
+ * An era template is a fallback, not the goal — where a set has been counted in its
+ * own right, `setRates` carries those numbers and they win. The era template still
+ * supplies the structure (commons, uncommons, reverse slots), because the published
+ * studies only ever count the hit rarities.
+ */
+export function templateFor(rates, game, release, setName) {
+  const era = eraTemplateFor(rates, game, release);
+  const own = rates.setRates?.[setName];
+  if (!era || !own) return era;
+
+  const merged = {
+    ...era,
+    label: `${era.label} — ${setName} counted`,
+    confidence: own.confidence || "measured",
+    unknown: own.unknown || null,
+    sample: own.sample || era.sample,
+    source: own.source || era.source,
+    note: own.note || era.note,
+    rates: era.rates.map((r) =>
+      own.rates[r.label] == null ? r : { ...r, perPack: own.rates[r.label], counted: true }
+    ),
+  };
+  // A set-specific rate naming a slot the era template does not have (a rarity that
+  // only exists in this set) still has to be priced, so carry it across.
+  for (const [label, perPack] of Object.entries(own.rates)) {
+    if (!merged.rates.some((r) => r.label === label)) {
+      const match = own.match?.[label];
+      if (match) merged.rates.push({ label, perPack, match, counted: true });
+    }
+  }
+  return merged;
 }
 
 /** Days a set needs on shelves before its prices settle enough to trust. */
@@ -136,6 +172,16 @@ export function confidenceOf(set, template, result, now = Date.now()) {
     );
   }
 
+  // Some sets have a tier even the people who counted the packs could not pin down.
+  // Black Bolt's Black White Rare is one, and it is the most valuable card in the
+  // set, so the total leans on a number nobody measured.
+  if (template.unknown?.length) {
+    level = "thin";
+    reasons.push(
+      `the ${template.unknown.join(", ")} rate is listed as unknown even by the study — the figure used here is a placeholder, not a count`
+    );
+  }
+
   // Weight coverage by how much value each line carries — thin commons matter little,
   // a thin chase bucket matters a lot.
   const total = result.lines.reduce((a, l) => a + l.value, 0);
@@ -146,9 +192,14 @@ export function confidenceOf(set, template, result, now = Date.now()) {
     level = "thin";
     reasons.push(`only ${Math.round(covered * 100)}% of the value-weighted card pool has sold yet`);
   }
+  // An era line that matches nothing usually means the set simply lacks that
+  // rarity, which costs no value — the line contributes zero either way. It only
+  // signals a bad fit when the whole template was guessed at. Where the set has
+  // its own counted rates, a leftover era line is not evidence against them.
+  const counted = template.rates.some((r) => r.counted);
   const missing = result.lines.filter((l) => l.empty && l.perPack >= 0.05);
   if (missing.length) {
-    if (level === "measured") level = "estimated";
+    if (!counted && level === "measured") level = "estimated";
     reasons.push(`no cards found for: ${missing.map((l) => l.label).join(", ")}`);
   }
 
