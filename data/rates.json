@@ -1248,14 +1248,16 @@
       "structureUnknown": false,
       "sample": "Bandai publishes the pack size and the two guaranteed Jolly Roger foils; the rest of the split is inferred",
       "source": "https://en.onepiece-cardgame.com/products/boosters/prb02.php",
-      "note": "Ten cards a pack, twenty packs a box, and two guaranteed Jolly Roger foils — those three are published. How the other eight slots divide is not, so they are inferred from the set's rarity counts. Every card here is a reprint of an older card, and the premium treatments (Full Art, Jolly Roger, Textured, Pirate) are priced in their own buckets rather than averaged in with the plain reprints, which is what the plain Common line means.",
+      "note": "Ten cards a pack, twenty packs a box, and two guaranteed premium foils — Jolly Roger in the first set, Pirate Foil in the second — those three are published. How the other eight slots divide is not, so they are inferred from the set's rarity counts. Every card here is a reprint of an older card, and the premium treatments (Full Art, Jolly Roger, Textured, Pirate) are priced in their own buckets rather than averaged in with the plain reprints, which is what the plain Common line means.",
       "rates": [
         {
-          "label": "Jolly Roger foils (2 guaranteed)",
+          "label": "Premium foils (2 guaranteed)",
           "perPack": 2,
           "match": {
             "variant": [
-              "jollyroger"
+              "jollyroger",
+              "pirate",
+              "textured"
             ]
           }
         },
@@ -1337,16 +1339,6 @@
           "match": {
             "variant": [
               "fullart"
-            ]
-          }
-        },
-        {
-          "label": "Textured / Pirate foil",
-          "perPack": 0.08,
-          "match": {
-            "variant": [
-              "textured",
-              "pirate"
             ]
           }
         },
