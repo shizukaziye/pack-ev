@@ -46,6 +46,9 @@ jobs:
       - name: Refresh per-set pull rates from TCGplayer
         run: node scripts/pull_rates.mjs
 
+      - name: Apply One Piece case-collation rates
+        run: node scripts/apply_collation.mjs
+
       - name: Check the model against the data
         run: node scripts/qc.mjs
 

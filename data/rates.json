@@ -965,9 +965,9 @@
       "cardsPerPack": 12,
       "packsPerBox": 24,
       "confidence": "estimated",
-      "sample": "community box-opening aggregates; Bandai publishes no odds",
+      "sample": "era shape only — sets with their own case-collation figures override the chase lines",
       "source": "https://tcgtalk.com/guides/one-piece-tcg-box-pull-rates",
-      "note": "A Super Rare replaces the second Rare in its pack, so the Rare rate is under 2. Alt arts run about 2 per 24-pack box across all rarities. Bandai publishes nothing, so the top three lines are read off per-case reports and are the least certain numbers here — a $4,800 Sabo sits in the Super Alt line. Where the chase share is high, treat the total as a guess.",
+      "note": "A Super Rare replaces the second Rare in its pack, so the Rare rate is under 2. The chase lines here are placeholders: any set with its own collation figures overrides them, and those are the numbers to read.",
       "rates": [
         {
           "label": "Commons",
@@ -1030,49 +1030,6 @@
           }
         },
         {
-          "label": "Super Rare",
-          "perPack": 0.333,
-          "match": {
-            "rarity": [
-              "Super Rare"
-            ],
-            "variant": [
-              "base"
-            ]
-          }
-        },
-        {
-          "label": "Secret Rare",
-          "perPack": 0.042,
-          "match": {
-            "rarity": [
-              "Secret Rare"
-            ],
-            "variant": [
-              "base"
-            ]
-          }
-        },
-        {
-          "label": "Alternate art (any rarity)",
-          "perPack": 0.083,
-          "match": {
-            "variant": [
-              "alt"
-            ]
-          }
-        },
-        {
-          "label": "Manga / special art",
-          "perPack": 0.005,
-          "match": {
-            "variant": [
-              "manga",
-              "special"
-            ]
-          }
-        },
-        {
           "label": "Super alt art / Wanted Poster",
           "perPack": 0.002,
           "match": {
@@ -1107,6 +1064,91 @@
               "textured",
               "pirate",
               "jollyroger"
+            ]
+          }
+        },
+        {
+          "label": "Super Rare",
+          "perPack": 0.2917,
+          "match": {
+            "rarity": [
+              "Super Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Secret Rare",
+          "perPack": 0.0278,
+          "match": {
+            "rarity": [
+              "Secret Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Alternate art (not Leader)",
+          "perPack": 0.0556,
+          "match": {
+            "rarity": [
+              "Common",
+              "Uncommon",
+              "Rare",
+              "Super Rare",
+              "Secret Rare",
+              "DON!!",
+              "Promo",
+              "Treasure Rare"
+            ],
+            "variant": [
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Alt-art Leader",
+          "perPack": 0.0139,
+          "match": {
+            "rarity": [
+              "Leader"
+            ],
+            "variant": [
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Special art (SP)",
+          "perPack": 0.0069,
+          "match": {
+            "variant": [
+              "special"
+            ]
+          }
+        },
+        {
+          "label": "Manga rare",
+          "perPack": 0.00087,
+          "match": {
+            "variant": [
+              "manga"
+            ]
+          }
+        },
+        {
+          "label": "Gold DON!!",
+          "perPack": 0.0069,
+          "match": {
+            "rarity": [
+              "DON!!"
+            ],
+            "variant": [
+              "special"
             ]
           }
         }
@@ -1761,6 +1803,280 @@
       "rates": {
         "Manga (god pack only)": 0.000286,
         "Gold / special art": 0.002857
+      }
+    },
+    "Romance Dawn": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op01/box-ev",
+      "note": "Chase rates for OP01 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Paramount War": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op02/box-ev",
+      "note": "Chase rates for OP02 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Pillars of Strength": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op03/box-ev",
+      "note": "Chase rates for OP03 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Kingdoms of Intrigue": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op04/box-ev",
+      "note": "Chase rates for OP04 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Awakening of the New Era": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op05/box-ev",
+      "note": "Chase rates for OP05 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Wings of the Captain": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op06/box-ev",
+      "note": "Chase rates for OP06 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "500 Years in the Future": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op07/box-ev",
+      "note": "Chase rates for OP07 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Two Legends": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op08/box-ev",
+      "note": "Chase rates for OP08 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Emperors in the New World": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op09/box-ev",
+      "note": "Chase rates for OP09 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Royal Blood": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op10/box-ev",
+      "note": "Chase rates for OP10 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "A Fist of Divine Speed": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op11/box-ev",
+      "note": "Chase rates for OP11 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Legacy of the Master": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op12/box-ev",
+      "note": "Chase rates for OP12 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Carrying On His Will": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op13/box-ev",
+      "note": "Chase rates for OP13 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Gold DON!!": 0.006944,
+        "Manga rare": 0.000534,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "The Azure Sea's Seven": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op14/box-ev",
+      "note": "Chase rates for OP14 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Gold DON!!": 0.006944,
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Adventure on Kami's Island": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op15/box-ev",
+      "note": "Chase rates for OP15 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Gold DON!!": 0.006944,
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "The Time of Battle": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/op16/box-ev",
+      "note": "Chase rates for OP16 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Gold DON!!": 0.006944,
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Extra Booster: Memorial Collection": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/eb01/box-ev",
+      "note": "Chase rates for EB01 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Manga rare": 0.000868,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.055556,
+        "Super Rare": 0.291667
+      }
+    },
+    "Extra Booster: One Piece Heroines Edition": {
+      "manual": true,
+      "confidence": "estimated",
+      "sample": "derived from how a sealed case is collated — 12 boxes, each with known guaranteed hits — rather than from counted packs",
+      "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/eb03/box-ev",
+      "note": "Chase rates for EB03 read off the case collation: a case is 12 boxes of 24 packs, and the guaranteed hits per box fix how many of each turn up. Bandai publishes no odds, so this is the nearest thing to a structural figure. The common, uncommon and rare lines are still era estimates.",
+      "rates": {
+        "Gold DON!!": 0.006944,
+        "Manga rare": 0.000694,
+        "Special art (SP)": 0.006944,
+        "Alt-art Leader": 0.013889,
+        "Secret Rare": 0.027778,
+        "Alternate art (not Leader)": 0.069444,
+        "Super Rare": 0.291667
       }
     }
   },

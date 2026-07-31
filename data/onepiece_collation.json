@@ -1,0 +1,40 @@
+{
+  "_readme": [
+    "Per-set One Piece pull rates, as cards PER CASE, from tcgtrading.cards.",
+    "They are derived from how a sealed case is collated — a case is 12 boxes and each",
+    "box carries a known set of guaranteed hits — which is a real structural constraint",
+    "rather than a survey. The site is explicit that they are approximations calibrated",
+    "to community-reported box guarantees; Bandai publishes nothing.",
+    "",
+    "A case is 12 boxes of 24 packs, so per-pack = perCase / 288.",
+    "",
+    "REFRESHING: the site answers scripted requests with 429 no matter the headers, so",
+    "these cannot be curled. Open a set page in a browser and read the JSON-LD block:",
+    "  fetch('/one-piece-tcg/sets/op16/box-ev').then(r=>r.text()).then(h=>",
+    "    [...h.matchAll(/\"name\":\"([^\"]+?) per case\",\"value\":([\\d.]+)/g)].map(m=>[m[1],+m[2]]))",
+    "These are collation figures, not prices — they do not move day to day."
+  ],
+  "packsPerCase": 288,
+  "source": "https://www.tcgtrading.cards/one-piece-tcg/sets/{code}/box-ev",
+  "sets": {
+    "OP01": { "Manga Rare": 0.25, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP02": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP03": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP04": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP05": { "Manga Rare": 0.25, "Anniversary": 2, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP06": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP07": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP08": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP09": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP10": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP11": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP12": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP13": { "Gold DON!!": 2, "Manga Rare": 0.15384615384615385, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP14": { "Gold DON!!": 2, "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP15": { "Gold DON!!": 2, "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "OP16": { "Gold DON!!": 2, "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "EB01": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "EB02": { "Manga Rare": 0.25, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 16, "Super Rare": 84 },
+    "EB03": { "Gold DON!!": 2, "Manga Rare": 0.2, "Special Art": 2, "Alt-Art Leader": 4, "Secret Rare": 8, "Alt Art": 20, "Super Rare": 84 }
+  }
+}

@@ -47,11 +47,15 @@ What exists is counted packs, and how much has been counted differs sharply by g
 | --- | --- | --- |
 | Pokémon | 22 of 101 sets | TCGplayer's Authentication Center opens several thousand packs per set and publishes per-rarity odds with 95% confidence intervals |
 | Riftbound | 3 of 4 sets | Release-window box openings; Spiritforged has none |
-| One Piece | none | Every source publishes one rate covering the whole game |
+| One Piece | 18 of 21 sets | Case collation — 12 boxes to a case, each with known guaranteed hits — via tcgtrading.cards. Structural, not counted |
 
 `scripts/pull_rates.mjs` pulls the Pokémon numbers straight from TCGplayer, finding
 the articles by listing the editor who writes them, so a set published next month is
-picked up without touching the code. Anything with no count of its own falls back to
+picked up without touching the code. `scripts/apply_collation.mjs` turns the One Piece
+case-collation figures in `data/onepiece_collation.json` into per-set rates; that site
+answers scripted requests with 429 whatever headers you send, so the figures are kept
+in the repo and the file says how to refresh them from a browser. They are collation
+constants, not prices, so they do not move day to day. Anything with no count of its own falls back to
 an era template matched by release date (`assign` in `rates.json`).
 
 **The card prices are firm and the odds are not**, and the odds dominate the answer.
@@ -95,6 +99,9 @@ scripts/scrape_cards.mjs   prices every card and builds the buckets
 scripts/qc.mjs             runs the model over the data and reports what looks wrong
 scripts/lib.mjs            paced, retrying TCGplayer access
 scripts/buckets.mjs        rarity/printing/variant classification
+scripts/pull_rates.mjs     per-set Pokemon rates from TCGplayer's own studies
+scripts/apply_collation.mjs  per-set One Piece rates from case collation
+data/onepiece_collation.json  the collation figures, and how to refresh them
 ```
 
 ## Running it
