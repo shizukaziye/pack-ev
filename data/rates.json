@@ -1217,6 +1217,111 @@
           }
         }
       ]
+    },
+    "onepiece-premium": {
+      "label": "One Piece Premium Booster (reprint set)",
+      "game": "onepiece",
+      "from": "2024-11-08",
+      "cardsPerPack": 10,
+      "packsPerBox": 20,
+      "confidence": "estimated",
+      "structureUnknown": true,
+      "sample": "no counted data — Bandai publishes neither odds nor a slot breakdown for these",
+      "source": "https://en.onepiece-cardgame.com/products/boosters/prb02.php",
+      "note": "A reprint set where every card is a premium foil, so its commons are worth dollars rather than cents. Ten cards a pack, twenty packs a box, and two guaranteed Jolly Roger parallels — but which slots hold what is not published anywhere. The split below is a guess at a plausible shape, and the total should be read as an order of magnitude at best, not a number to buy or sell against.",
+      "rates": [
+        {
+          "label": "Commons",
+          "perPack": 4,
+          "match": {
+            "rarity": [
+              "Common"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Uncommons",
+          "perPack": 3,
+          "match": {
+            "rarity": [
+              "Uncommon"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Rares",
+          "perPack": 1.5,
+          "match": {
+            "rarity": [
+              "Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Super Rare",
+          "perPack": 0.9,
+          "match": {
+            "rarity": [
+              "Super Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Secret Rare",
+          "perPack": 0.05,
+          "match": {
+            "rarity": [
+              "Secret Rare"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "DON!!",
+          "perPack": 0.1,
+          "match": {
+            "rarity": [
+              "DON!!"
+            ],
+            "variant": [
+              "base"
+            ]
+          }
+        },
+        {
+          "label": "Alternate art (any rarity)",
+          "perPack": 0.4,
+          "match": {
+            "variant": [
+              "alt"
+            ]
+          }
+        },
+        {
+          "label": "Manga / special art",
+          "perPack": 0.01,
+          "match": {
+            "variant": [
+              "manga",
+              "special"
+            ]
+          }
+        }
+      ]
     }
   },
   "assign": {
@@ -1589,5 +1694,9 @@
         "Hyper / Mega Hyper Rare": 0.018500000000000003
       }
     }
+  },
+  "setTemplate": {
+    "Premium Booster -The Best-": "onepiece-premium",
+    "Premium Booster -The Best- Vol. 2": "onepiece-premium"
   }
 }

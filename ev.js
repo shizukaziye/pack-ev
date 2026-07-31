@@ -91,6 +91,10 @@ export function packEV(set, template, opts = {}) {
     ev,
     boxEV,
     lines,
+    // Where the pack's own contents are not published, the slot split is guesswork
+    // and the total would read as a recommendation it has not earned. The breakdown
+    // stays available to open and edit; the headline number is withheld.
+    unreliable: !!template.structureUnknown,
     cardsPerPack,
     packsPerBox,
     packPrice,
@@ -104,7 +108,12 @@ export function packEV(set, template, opts = {}) {
 }
 
 /** The era template a set falls under, by release date. */
-export function eraTemplateFor(rates, game, release) {
+export function eraTemplateFor(rates, game, release, setName) {
+  // A few sets are named explicitly because a date rule cannot pick them out —
+  // One Piece's Premium Boosters are reprint sets dropped in among normal releases
+  // and have a different pack entirely.
+  const named = rates.setTemplate?.[setName];
+  if (named && rates.templates[named]) return rates.templates[named];
   const rules = rates.assign[game] || [];
   const date = release || "1900-01-01";
   for (const r of rules) if (date >= r.from) return rates.templates[r.template];
@@ -120,7 +129,7 @@ export function eraTemplateFor(rates, game, release) {
  * studies only ever count the hit rarities.
  */
 export function templateFor(rates, game, release, setName) {
-  const era = eraTemplateFor(rates, game, release);
+  const era = eraTemplateFor(rates, game, release, setName);
   const own = rates.setRates?.[setName];
   if (!era || !own) return era;
 
@@ -175,6 +184,14 @@ export function confidenceOf(set, template, result, now = Date.now()) {
   // Some sets have a tier even the people who counted the packs could not pin down.
   // Black Bolt's Black White Rare is one, and it is the most valuable card in the
   // set, so the total leans on a number nobody measured.
+  // Some sets do not follow any published pack structure, so the slot split is a
+  // guess even where the prices are solid. Say so rather than let the total pass
+  // for a measurement.
+  if (template.structureUnknown) {
+    level = "thin";
+    reasons.push("nobody publishes what is actually in one of these packs, so the split across slots is a guess and the total is an order of magnitude at best");
+  }
+
   if (template.unknown?.length) {
     level = "thin";
     reasons.push(

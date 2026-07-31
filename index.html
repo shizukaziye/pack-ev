@@ -393,12 +393,12 @@ function render(){
         `${setCode(x)}${x.set.set}</div></td>`+
       `<td class="rel">${x.set.release||"—"}</td>`+
       `<td>${money(x.r.packPrice)??'<span class="na">—</span>'}</td>`+
-      `<td class="ev">${money(x.r.ev)}</td>`+
-      `<td>${retCell(x.r.packReturn)}</td>`+
+      `<td class="ev">${x.r.unreliable?'<span class="na" title="pack contents not published">—</span>':money(x.r.ev)}</td>`+
+      `<td>${x.r.unreliable?'<span class="na">—</span>':retCell(x.r.packReturn)}</td>`+
       `<td>${money(x.r.boxPrice)??'<span class="na">—</span>'}</td>`+
-      `<td>${money(x.r.boxEV)??'<span class="na">—</span>'}</td>`+
-      `<td>${retCell(x.r.boxReturn)}</td>`+
-      `<td>${(x.chase*100).toFixed(0)}%</td>`+
+      `<td>${x.r.unreliable?'<span class="na">—</span>':(money(x.r.boxEV)??'<span class="na">—</span>')}</td>`+
+      `<td>${x.r.unreliable?'<span class="na">—</span>':retCell(x.r.boxReturn)}</td>`+
+      `<td>${x.r.unreliable?'<span class="na">—</span>':(x.chase*100).toFixed(0)+"%"}</td>`+
       `<td><span class="badge ${x.conf.level}">${x.conf.level}</span></td>`;
     tr.onclick=()=>{ open.has(id)?open.delete(id):open.add(id); render(); };
     body.appendChild(tr);
