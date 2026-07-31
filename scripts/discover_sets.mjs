@@ -11,7 +11,11 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 // cards at a sleeve premium, so they get their own field rather than replacing pack.
 const isPlainPack = (n) => /\bbooster pack\b/i.test(n) && !/\[set of|art bundle|sleeved/i.test(n);
 const isSleevedPack = (n) => /sleeved booster pack/i.test(n) && !/\[set of|art bundle/i.test(n);
-const isBox = (n) => /\bbooster box\b/i.test(n) && !/\bcase\b|\[set of/i.test(n);
+// Riftbound calls its box a "Booster Display", Pokemon and One Piece call it a
+// "Booster Box". Matching only the latter left every Riftbound set with no box
+// price at all, so the whole box side of that game was missing. A "Display Case"
+// is a case of displays, not a box, and is excluded with the other cases.
+const isBox = (n) => /\bbooster (box|display)\b/i.test(n) && !/\bcase\b|\[set of/i.test(n);
 
 async function sealedFor(line) {
   let all = [];
