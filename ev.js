@@ -54,9 +54,15 @@ export function poolPrice(buckets, match) {
 /**
  * Full EV for one set under one rate template.
  * `opts.netOfFees` values cards at what you would actually clear selling them.
+ * `opts.weights` scales what a slot's cards are counted as worth, keyed by rate
+ * label — set Commons to 0 and bulk stops counting everywhere at once. It exists
+ * because a listed price is not always a realisable one: thin markets floor their
+ * commons at a shipping minimum, which is how Gem Pack's 118 near-identical foils
+ * came to "cost" more per pack than the pack does.
  */
 export function packEV(set, template, opts = {}) {
   const fee = opts.netOfFees ? 1 - FEE_RATE : 1;
+  const weights = opts.weights || {};
   const lines = [];
   let ev = 0;
   let cardsPerPack = 0;
@@ -64,14 +70,18 @@ export function packEV(set, template, opts = {}) {
   for (const rate of template.rates) {
     const pool = poolPrice(set.buckets, rate.match);
     const perPack = typeof rate.perPack === "number" ? rate.perPack : 0;
-    const value = pool.price == null ? 0 : pool.price * perPack * fee;
+    const weight = typeof weights[rate.label] === "number" ? weights[rate.label] : 1;
+    const value = pool.price == null ? 0 : pool.price * perPack * fee * weight;
     ev += value;
     cardsPerPack += perPack;
     lines.push({
       label: rate.label,
       perPack,
+      weight,
       match: rate.match,
-      poolPrice: pool.price == null ? null : pool.price * fee,
+      // The price shown is what the slot is being counted at, weight included.
+      poolPrice: pool.price == null ? null : pool.price * fee * weight,
+      fullPrice: pool.price == null ? null : pool.price * fee,
       value,
       cards: pool.cards,
       coverage: pool.coverage,

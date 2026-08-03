@@ -111,6 +111,15 @@
   }
   input.rate:focus{outline:none;border-color:var(--acc)}
   input.rate.edited{border-color:var(--warn);color:var(--warn)}
+  input.rate.wt{width:58px}
+  .was{color:var(--dimmer);font-size:10.5px;margin-left:4px}
+  .wtctl{display:flex;gap:6px;align-items:center}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+  .seg button{background:var(--panel2);border:0;color:var(--dim);padding:6px 12px;
+    cursor:pointer;font:inherit;font-size:12.5px;font-weight:600}
+  .seg button+button{border-left:1px solid var(--line)}
+  .seg button:hover{color:var(--tx)}
+  .seg button.on{background:var(--acc);color:#0b0e12}
   .empty{color:var(--bad);font-size:11px}
   .cov{color:var(--dimmer);font-size:11px}
   .totrow td{font-weight:700;border-top:1px solid var(--line);border-bottom:none}
@@ -156,18 +165,22 @@
 
 <div class="controls">
   <input type="search" id="q" placeholder="Search a set…" autocomplete="off">
+  <span class="seg" id="basis">
+    <button class="on" data-basis="pack">Per pack</button><button data-basis="box">Per box</button>
+  </span>
   <label class="ctl">Sort
     <select id="sort">
       <option value="release">Newest first</option>
-      <option value="packReturn">Pack return %</option>
-      <option value="boxReturn">Box return %</option>
-      <option value="ev">Pack EV $</option>
-      <option value="packPrice">Pack price</option>
+      <option value="return">Return %</option>
+      <option value="ev">EV $</option>
+      <option value="price">Price</option>
+      <option value="chase">Chase share</option>
     </select>
   </label>
   <label class="sw"><input type="checkbox" id="fees"> Net of TCGplayer fees (13.25%)</label>
   <label class="sw"><input type="checkbox" id="modern" checked> Modern only (2020+)</label>
-  <label class="sw"><input type="checkbox" id="haspack" checked> Priced packs only</label>
+  <label class="sw"><input type="checkbox" id="haspack" checked> Priced only</label>
+  <span class="wtctl" id="wtctl"></span>
   <span class="count" id="count"></span>
 </div>
 
@@ -225,6 +238,24 @@
     or even the study left a tier unmeasured. Open a row to see which. Change any rate there
     and everything recalculates.</p>
 
+    <h4>Weights: counting a slot at less than face value</h4>
+    <p>A listed price is not always a price you could get. Thin markets floor their
+    commons at roughly what shipping costs, so a stack of near-identical foils can
+    "price" at more than the pack they came in. The <strong>Weight</strong> column in
+    every open row fixes that: it is the share of a slot's listed price the total
+    counts. Set commons to 0% and bulk stops counting on every set in every game at
+    once, because weights key off the slot name and that name is shared across all
+    eleven templates. <strong>Ignore bulk</strong> in the toolbar does commons,
+    uncommons, reverse-holo and foil slots in one click. Weights live in the page only
+    — reload and the published numbers come back.</p>
+
+    <h4>Per pack or per box</h4>
+    <p>The toolbar switches the whole table between the two. <strong>Per box</strong>
+    is usually the more honest comparison: single packs carry a large markup over the
+    same packs bought by the box, and the <em>per pack</em> column there shows what a
+    pack really costs you inside a box. Fewer sets have a box price than a pack price,
+    so the list gets shorter when you switch.</p>
+
     <h4>Four reasons not to trust EV alone</h4>
     <ul>
       <li><strong>The average is not the typical pack.</strong> Value sits in cards you will
@@ -267,19 +298,21 @@ let DATA=null, RATES=null, BASE=null;
 // and its return looks great for reasons that have nothing to do with the odds, so
 // leading with the return column would put the least trustworthy rows on top.
 let game="all", sortKey="release", asc=false, open=new Set();
+// Weights are keyed by rate label, not by template, and the labels repeat across
+// all 11 templates ("Commons" is in every one). So dialling commons to 0% once
+// applies to every set in every game, which is the whole point of the control.
+let WEIGHTS={};
+let basis="pack";   // "pack" or "box"
 
-const COLS=[
-  {k:"set",     t:"Set", l:true},
-  {k:"release", t:"Released"},
-  {k:"packPrice",t:"Pack"},
-  {k:"ev",      t:"Pack EV"},
-  {k:"packReturn",t:"Return"},
-  {k:"boxPrice",t:"Box"},
-  {k:"boxEV",   t:"Box EV"},
-  {k:"boxReturn",t:"Box return"},
-  {k:"chase",   t:"Chase share"},
-  {k:"conf",    t:"Confidence"},
-];
+// Sort keys are roles, not fields: "return" means pack return or box return
+// depending on which basis is showing, so the sort survives flipping the toggle.
+const COLS=()=> basis==="box"
+  ? [{k:"set",t:"Set",l:true},{k:"release",t:"Released"},{k:"price",t:"Box"},
+     {k:"ev",t:"Box EV"},{k:"return",t:"Box return"},{k:"perpack",t:"Per pack"},
+     {k:"chase",t:"Chase share"},{k:"conf",t:"Confidence"}]
+  : [{k:"set",t:"Set",l:true},{k:"release",t:"Released"},{k:"price",t:"Pack"},
+     {k:"ev",t:"Pack EV"},{k:"return",t:"Return"},
+     {k:"chase",t:"Chase share"},{k:"conf",t:"Confidence"}];
 
 async function load(){
   const [c,r] = await Promise.all([
@@ -314,7 +347,7 @@ function rows(){
     for(const s of sets){
       const tpl=templateFor(RATES,g,s.release,s.set);
       if(!tpl) continue;
-      const r=packEV(s,tpl,{netOfFees});
+      const r=packEV(s,tpl,{netOfFees,weights:WEIGHTS});
       const conf=confidenceOf(s,tpl,r);
       // How much of the EV rides on things you almost never pull.
       const chaseVal=r.lines.filter(l=>l.perPack<0.05).reduce((a,l)=>a+l.value,0);
@@ -334,11 +367,15 @@ function filtered(){
   if(q) list=list.filter(x=>
     x.set.set.toLowerCase().includes(q) || loose(x.set.setCode).includes(loose(q)));
   if(modern) list=list.filter(x=>(x.set.release||"")>="2020-01-01");
-  if(haspack) list=list.filter(x=>x.r.packPrice!=null);
+  if(haspack) list=list.filter(x=>(basis==="box"?x.r.boxPrice:x.r.packPrice)!=null);
+  const box=basis==="box";
   const val=(x)=>({
-    set:x.set.set, release:x.set.release||"", packPrice:x.r.packPrice, ev:x.r.ev,
-    packReturn:x.r.packReturn, boxPrice:x.r.boxPrice, boxEV:x.r.boxEV,
-    boxReturn:x.r.boxReturn, chase:x.chase, conf:x.conf.level,
+    set:x.set.set, release:x.set.release||"",
+    price: box?x.r.boxPrice:x.r.packPrice,
+    ev:    box?x.r.boxEV:x.r.ev,
+    return:box?x.r.boxReturn:x.r.packReturn,
+    perpack:x.r.boxPerPack,
+    chase:x.chase, conf:x.conf.level,
   })[sortKey];
   list.sort((a,b)=>{
     const A=val(a),B=val(b);
@@ -367,6 +404,23 @@ function setCode(x){
   return `<span class="code">${parts.join(" / ")}</span>`;
 }
 
+/** Quick access to the weights people actually reach for, plus what is dialled down. */
+function renderWeightControl(){
+  const BULK=["Commons","Uncommons","Reverse holo slot","Reverse holo slots",
+              "Foil slot (usually common / uncommon)","DON!!"];
+  const off=Object.keys(WEIGHTS).length;
+  const bulkOff=BULK.every(l=>WEIGHTS[l]===0);
+  const el=$("#wtctl");
+  el.innerHTML=`<button class="btn" id="wtbulk">${bulkOff?"Count bulk again":"Ignore bulk"}</button>`+
+    (off?` <button class="btn" id="wtreset">reset ${off} weight${off===1?"":"s"}</button>`:"");
+  $("#wtbulk").onclick=()=>{
+    if(bulkOff) for(const l of BULK) delete WEIGHTS[l];
+    else for(const l of BULK) WEIGHTS[l]=0;
+    render();
+  };
+  const r=$("#wtreset"); if(r) r.onclick=()=>{ WEIGHTS={}; render(); };
+}
+
 function retClass(v){ return v==null?"na":v>=1?"g":v>=0.8?"n":"b"; }
 function retCell(v){
   if(v==null) return '<span class="na">—</span>';
@@ -376,7 +430,7 @@ function retCell(v){
 function render(){
   if(!DATA) return;   // controls are live before the fetch lands
   // header
-  $("#head").innerHTML = COLS.map(c=>
+  $("#head").innerHTML = COLS().map(c=>
     `<th class="${c.l?"l":""}" data-k="${c.k}">${c.t}${sortKey===c.k?` <span class="ar">${asc?"▲":"▼"}</span>`:""}</th>`
   ).join("");
   $("#head").querySelectorAll("th").forEach(th=>th.onclick=()=>{
@@ -387,6 +441,7 @@ function render(){
 
   const list=filtered();
   $("#count").textContent=`${list.length} set${list.length===1?"":"s"}`;
+  renderWeightControl();
   const body=$("#body"); body.innerHTML="";
   if(!list.length){ body.innerHTML='<tr><td class="loading" colspan="10">Nothing matches.</td></tr>'; return; }
 
@@ -395,17 +450,19 @@ function render(){
     const isOpen=open.has(id);
     const tr=document.createElement("tr");
     tr.className="row"+(isOpen?" open":"");
+    const price = basis==="box" ? x.r.boxPrice : x.r.packPrice;
+    const ev    = basis==="box" ? x.r.boxEV    : x.r.ev;
+    const ret   = basis==="box" ? x.r.boxReturn: x.r.packReturn;
+    const dash  = '<span class="na">\u2014</span>';
     tr.innerHTML=
       `<td class="l"><div class="setname"><span class="dot" style="background:var(--${x.game})"></span>`+
         `${setCode(x)}${x.set.set}</div></td>`+
-      `<td class="rel">${x.set.release||"—"}</td>`+
-      `<td>${money(x.r.packPrice)??'<span class="na">—</span>'}</td>`+
-      `<td class="ev">${x.r.unreliable?'<span class="na" title="pack contents not published">—</span>':money(x.r.ev)}</td>`+
-      `<td>${x.r.unreliable?'<span class="na">—</span>':retCell(x.r.packReturn)}</td>`+
-      `<td>${money(x.r.boxPrice)??'<span class="na">—</span>'}</td>`+
-      `<td>${x.r.unreliable?'<span class="na">—</span>':(money(x.r.boxEV)??'<span class="na">—</span>')}</td>`+
-      `<td>${x.r.unreliable?'<span class="na">—</span>':retCell(x.r.boxReturn)}</td>`+
-      `<td>${x.r.unreliable?'<span class="na">—</span>':(x.chase*100).toFixed(0)+"%"}</td>`+
+      `<td class="rel">${x.set.release||"\u2014"}</td>`+
+      `<td>${money(price)??dash}</td>`+
+      `<td class="ev">${x.r.unreliable?dash:(money(ev)??dash)}</td>`+
+      `<td>${x.r.unreliable?dash:retCell(ret)}</td>`+
+      (basis==="box"?`<td class="rel">${money(x.r.boxPerPack)??dash}</td>`:"")+
+      `<td>${x.r.unreliable?dash:(x.chase*100).toFixed(0)+"%"}</td>`+
       `<td><span class="badge ${x.conf.level}">${x.conf.level}</span></td>`;
     tr.onclick=()=>{ open.has(id)?open.delete(id):open.add(id); render(); };
     body.appendChild(tr);
@@ -415,17 +472,21 @@ function render(){
 
 function detail(x,id){
   const tr=document.createElement("tr"); tr.className="detail";
-  const td=document.createElement("td"); td.colSpan=COLS.length;
+  const td=document.createElement("td"); td.colSpan=COLS().length;
 
   const lines=x.r.lines.map((l,i)=>{
     const orig=x.tpl.rates.find(rt=>rt.label===l.label);
     const baseTpl=BASE.templates[templateKey(x.game,x.set.release)];
     const wasEdited=baseTpl && baseTpl.rates.find(rt=>rt.label===l.label)?.perPack!==orig.perPack;
+    const w=Math.round((l.weight??1)*100);
     return `<tr>
       <td class="l">${l.label}${l.empty?' <span class="empty">· no cards</span>':""}</td>
       <td><input class="rate${wasEdited?" edited":""}" type="number" step="0.001" min="0"
            value="${l.perPack}" data-label="${encodeURIComponent(l.label)}"></td>
-      <td>${l.poolPrice==null?'<span class="na">—</span>':money(l.poolPrice,l.poolPrice<1?3:2)}</td>
+      <td><input class="rate wt${w!==100?" edited":""}" type="number" step="5" min="0" max="100"
+           value="${w}" data-weight="${encodeURIComponent(l.label)}"></td>
+      <td>${l.poolPrice==null?'<span class="na">—</span>':money(l.poolPrice,l.poolPrice<1?3:2)}${
+           w!==100&&l.fullPrice!=null?`<span class="was"> of ${money(l.fullPrice,l.fullPrice<1?3:2)}</span>`:""}</td>
       <td>${money(l.value,l.value<1?3:2)}</td>
       <td class="cov">${l.cards} card${l.cards===1?"":"s"}${l.coverage<0.999?` · ${(l.coverage*100).toFixed(0)}% priced`:""}</td>
     </tr>`;
@@ -442,13 +503,16 @@ function detail(x,id){
     <div class="dsec">
       <h3>Where the value is</h3>
       <p class="hint">Cards per pack for each rarity — edit any of them and every set on this
-        template recalculates. Pool price is the average market price of the cards that line can give you.</p>
+        template recalculates. <strong>Weight</strong> is how much of a slot's listed price you
+        actually count: set commons to 0% and bulk stops counting on every set, in every game.
+        Pool price is the average market price of the cards that line can give you.</p>
       <table class="mini">
         <tr><th class="l">Slot</th><th style="text-align:right">Per pack</th>
+            <th style="text-align:right">Weight</th>
             <th style="text-align:right">Pool price</th><th style="text-align:right">Value</th>
             <th style="text-align:right">Pool</th></tr>
         ${lines}
-        <tr class="totrow"><td class="l">Pack EV</td><td></td><td></td><td>${money(x.r.ev)}</td>
+        <tr class="totrow"><td class="l">Pack EV</td><td></td><td></td><td></td><td>${money(x.r.ev)}</td>
           <td class="cov">${x.r.cardsPerPack.toFixed(2)} priced${x.tpl.unpricedPerPack?` + ${x.tpl.unpricedPerPack} unpriced`:""}</td></tr>
       </table>
       <div class="noteline">
@@ -477,6 +541,15 @@ function detail(x,id){
       if(rate && isFinite(v) && v>=0){ rate.perPack=v; render(); }
     };
   });
+  td.querySelectorAll("input.wt").forEach(inp=>{
+    inp.onchange=()=>{
+      const label=decodeURIComponent(inp.dataset.weight);
+      const v=parseFloat(inp.value);
+      if(!isFinite(v)||v<0) return;
+      if(Math.round(v)===100) delete WEIGHTS[label]; else WEIGHTS[label]=v/100;
+      render();
+    };
+  });
   td.querySelector("[data-reset]").onclick=()=>{
     const k=templateKey(x.game,x.set.release);
     RATES.templates[k]=JSON.parse(JSON.stringify(BASE.templates[k]));
@@ -491,6 +564,16 @@ function templateKey(g,release){
   for(const r of rules) if(d>=r.from) return r.template;
   return rules[rules.length-1]?.template;
 }
+
+$("#basis").querySelectorAll("button").forEach(b=>{
+  b.onclick=()=>{
+    basis=b.dataset.basis;
+    $("#basis").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+    // Box prices are missing far more often than pack prices, so the "priced only"
+    // filter has to follow the basis or the box view looks half empty for no reason.
+    render();
+  };
+});
 
 for(const id of ["#q","#sort","#fees","#modern","#haspack"]){
   $(id).addEventListener(id==="#q"?"input":"change",()=>{

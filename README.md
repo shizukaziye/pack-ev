@@ -75,6 +75,18 @@ the people who counted the packs, so it gets a placeholder and the set gets flag
 Any rate can be edited in an open row, and everything recalculates. Edits are in-page
 only; reload restores the published numbers.
 
+**Weights** sit next to the rates. A listed price is not always a realisable one —
+thin markets floor commons at about what shipping costs, which is how a stack of
+near-identical foils can price at more than its own pack. The weight column is the
+share of a slot's listed price the total counts; set commons to 0% and bulk stops
+counting everywhere at once, because weights key off the slot name and those names
+are shared across all eleven templates. **Ignore bulk** does commons, uncommons,
+reverse-holo and foil slots in one click.
+
+The table switches between **per pack** and **per box**. Per box is usually the
+fairer comparison: single packs carry a large markup over the same packs bought by
+the box, and the box view's *per pack* column shows what a pack costs inside one.
+
 ## What the page won't tell you
 
 - **The average is not the typical pack.** The *chase share* column shows how much of
