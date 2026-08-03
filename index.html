@@ -321,8 +321,8 @@ const COLS=()=> basis==="box"
 
 async function load(){
   const [c,r] = await Promise.all([
-    fetch("data/cards.json").then(x=>x.json()),
-    fetch("data/rates.json").then(x=>x.json()),
+    fetch("data/cards.json",{cache:"no-cache"}).then(x=>x.json()),
+    fetch("data/rates.json",{cache:"no-cache"}).then(x=>x.json()),
   ]);
   DATA=c; RATES=r; BASE=JSON.parse(JSON.stringify(r));
   $("#stamp").textContent =

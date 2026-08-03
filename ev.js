@@ -91,7 +91,6 @@ export function packEV(set, template, opts = {}) {
     });
   }
 
-  lines.sort((a, b) => b.value - a.value);
   const packsPerBox = template.packsPerBox || null;
   const packPrice = set.pack?.market ?? null;
   const boxPrice = set.box?.market ?? null;
