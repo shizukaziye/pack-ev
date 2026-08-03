@@ -153,7 +153,9 @@
 <header>
   <h1>Pack EV</h1>
   <div class="sub">
-    What the cards inside a booster pack are worth, against what the pack costs.
+    What the cards inside sealed product are worth, against what it costs. Shown per
+    box by default, because a single pack carries a large markup over the same packs
+    bought by the box — switch to per pack in the toolbar.
     Every card is priced at its TCGplayer market price. Pull rates come from community
     pack-opening studies — no publisher releases real odds — so the prices here are firm
     and the odds are not. Open any row to see the breakdown and change the odds yourself.
@@ -166,7 +168,7 @@
 <div class="controls">
   <input type="search" id="q" placeholder="Search a set…" autocomplete="off">
   <span class="seg" id="basis">
-    <button class="on" data-basis="pack">Per pack</button><button data-basis="box">Per box</button>
+    <button data-basis="pack">Per pack</button><button class="on" data-basis="box">Per box</button>
   </span>
   <label class="ctl">Sort
     <select id="sort">
@@ -250,11 +252,14 @@
     — reload and the published numbers come back.</p>
 
     <h4>Per pack or per box</h4>
-    <p>The toolbar switches the whole table between the two. <strong>Per box</strong>
-    is usually the more honest comparison: single packs carry a large markup over the
-    same packs bought by the box, and the <em>per pack</em> column there shows what a
-    pack really costs you inside a box. Fewer sets have a box price than a pack price,
-    so the list gets shorter when you switch.</p>
+    <p>The toolbar switches the whole table, and the breakdown inside each row, between
+    the two. <strong>Per box</strong> is the default and the more honest comparison:
+    single packs carry a large markup over the same packs bought by the box, and the
+    <em>per pack</em> column there shows what a pack really costs you inside one. Fewer
+    sets have a box price than a pack price, so the list is shorter this way.</p>
+    <p>Slots the set has no cards for are left out entirely — a Riftbound set with no
+    Ultimate does not list one at 0.0005 a pack. The QC script still reports them,
+    because a slot matching nothing is how a renamed rarity would show up.</p>
 
     <h4>Four reasons not to trust EV alone</h4>
     <ul>
@@ -302,7 +307,7 @@ let game="all", sortKey="release", asc=false, open=new Set();
 // all 11 templates ("Commons" is in every one). So dialling commons to 0% once
 // applies to every set in every game, which is the whole point of the control.
 let WEIGHTS={};
-let basis="pack";   // "pack" or "box"
+let basis="box";    // "box" or "pack" — box is the fairer read, so it leads
 
 // Sort keys are roles, not fields: "return" means pack return or box return
 // depending on which basis is showing, so the sort survives flipping the toggle.
@@ -474,20 +479,27 @@ function detail(x,id){
   const tr=document.createElement("tr"); tr.className="detail";
   const td=document.createElement("td"); td.colSpan=COLS().length;
 
-  const lines=x.r.lines.map((l,i)=>{
+  // The breakdown follows the basis: on box, counts and values are multiplied up by
+  // the pack count. The stored rate stays per pack — the input just shows and takes
+  // per-box figures and divides back down on the way in.
+  const perBox = basis==="box";
+  const mult = perBox ? (x.tpl.packsPerBox||1) : 1;
+  const unit = perBox ? "box" : "pack";
+  const shown=x.r.lines.filter(l=>!l.empty);
+  const lines=shown.map((l,i)=>{
     const orig=x.tpl.rates.find(rt=>rt.label===l.label);
     const baseTpl=BASE.templates[templateKey(x.game,x.set.release)];
     const wasEdited=baseTpl && baseTpl.rates.find(rt=>rt.label===l.label)?.perPack!==orig.perPack;
     const w=Math.round((l.weight??1)*100);
     return `<tr>
-      <td class="l">${l.label}${l.empty?' <span class="empty">· no cards</span>':""}</td>
-      <td><input class="rate${wasEdited?" edited":""}" type="number" step="0.001" min="0"
-           value="${l.perPack}" data-label="${encodeURIComponent(l.label)}"></td>
+      <td class="l">${l.label}</td>
+      <td><input class="rate${wasEdited?" edited":""}" type="number" step="${perBox?0.01:0.001}" min="0"
+           value="${+(l.perPack*mult).toFixed(4)}" data-label="${encodeURIComponent(l.label)}"></td>
       <td><input class="rate wt${w!==100?" edited":""}" type="number" step="5" min="0" max="100"
            value="${w}" data-weight="${encodeURIComponent(l.label)}"></td>
       <td>${l.poolPrice==null?'<span class="na">—</span>':money(l.poolPrice,l.poolPrice<1?3:2)}${
            w!==100&&l.fullPrice!=null?`<span class="was"> of ${money(l.fullPrice,l.fullPrice<1?3:2)}</span>`:""}</td>
-      <td>${money(l.value,l.value<1?3:2)}</td>
+      <td>${money(l.value*mult,l.value*mult<1?3:2)}</td>
       <td class="cov">${l.cards} card${l.cards===1?"":"s"}${l.coverage<0.999?` · ${(l.coverage*100).toFixed(0)}% priced`:""}</td>
     </tr>`;
   }).join("");
@@ -502,18 +514,18 @@ function detail(x,id){
   td.innerHTML=`<div class="dgrid">
     <div class="dsec">
       <h3>Where the value is</h3>
-      <p class="hint">Cards per pack for each rarity — edit any of them and every set on this
+      <p class="hint">Cards per ${unit} for each rarity — edit any of them and every set on this
         template recalculates. <strong>Weight</strong> is how much of a slot's listed price you
         actually count: set commons to 0% and bulk stops counting on every set, in every game.
         Pool price is the average market price of the cards that line can give you.</p>
       <table class="mini">
-        <tr><th class="l">Slot</th><th style="text-align:right">Per pack</th>
+        <tr><th class="l">Slot</th><th style="text-align:right">Per ${unit}</th>
             <th style="text-align:right">Weight</th>
             <th style="text-align:right">Pool price</th><th style="text-align:right">Value</th>
             <th style="text-align:right">Pool</th></tr>
         ${lines}
-        <tr class="totrow"><td class="l">Pack EV</td><td></td><td></td><td></td><td>${money(x.r.ev)}</td>
-          <td class="cov">${x.r.cardsPerPack.toFixed(2)} priced${x.tpl.unpricedPerPack?` + ${x.tpl.unpricedPerPack} unpriced`:""}</td></tr>
+        <tr class="totrow"><td class="l">${perBox?"Box":"Pack"} EV</td><td></td><td></td><td></td><td>${money(perBox?(x.r.boxEV??x.r.ev*mult):x.r.ev)}</td>
+          <td class="cov">${(shown.reduce((a,l)=>a+l.perPack,0)*mult).toFixed(2)} priced${x.tpl.unpricedPerPack?` + ${x.tpl.unpricedPerPack*mult} unpriced`:""}</td></tr>
       </table>
       <div class="noteline">
         <strong>${x.tpl.label}</strong> — ${x.tpl.packsPerBox} packs per box, ${x.tpl.cardsPerPack} cards per pack.
@@ -538,7 +550,7 @@ function detail(x,id){
       const tpl=RATES.templates[templateKey(x.game,x.set.release)];
       const rate=tpl.rates.find(rt=>rt.label===label);
       const v=parseFloat(inp.value);
-      if(rate && isFinite(v) && v>=0){ rate.perPack=v; render(); }
+      if(rate && isFinite(v) && v>=0){ rate.perPack=v/mult; render(); }
     };
   });
   td.querySelectorAll("input.wt").forEach(inp=>{

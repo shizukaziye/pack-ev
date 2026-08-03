@@ -83,9 +83,14 @@ counting everywhere at once, because weights key off the slot name and those nam
 are shared across all eleven templates. **Ignore bulk** does commons, uncommons,
 reverse-holo and foil slots in one click.
 
-The table switches between **per pack** and **per box**. Per box is usually the
-fairer comparison: single packs carry a large markup over the same packs bought by
-the box, and the box view's *per pack* column shows what a pack costs inside one.
+The table — and the breakdown inside each row — switches between **per pack** and
+**per box**, defaulting to per box. That is the fairer comparison: single packs carry
+a large markup over the same packs bought by the box, and the box view's *per pack*
+column shows what a pack costs inside one.
+
+Slots the set has no cards for are not listed. A Riftbound set with no Ultimate card
+does not show an Ultimate line at 0.0005 a pack. `qc.mjs` still reports them, since a
+slot matching nothing is how a renamed rarity would surface.
 
 ## What the page won't tell you
 
