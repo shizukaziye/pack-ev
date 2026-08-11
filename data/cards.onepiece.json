@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10T13:12:59.843Z",
+ "updated": "2026-08-11T13:10:42.988Z",
  "game": "onepiece",
  "sets": [
   {
@@ -10,7 +10,7 @@
    "pack": {
     "id": 704756,
     "name": "The World's Strongest Warriors Booster Pack",
-    "market": 17.89,
+    "market": 18.1,
     "url": "https://www.tcgplayer.com/product/704756"
    },
    "sleevedPack": {
@@ -22,26 +22,36 @@
    "box": {
     "id": 704752,
     "name": "The World's Strongest Warriors Booster Box",
-    "market": 384.32,
+    "market": 382.83,
     "url": "https://www.tcgplayer.com/product/704752"
    },
-   "cards": 64,
+   "cards": 63,
    "buckets": [
     {
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "alt",
-     "n": 7,
+     "n": 5,
      "nPriced": 1,
      "avg": 299.99,
      "median": 299.99,
      "max": 299.99
     },
     {
+     "rarity": "Secret Rare",
+     "printing": "Normal",
+     "variant": "base",
+     "n": 2,
+     "nPriced": 1,
+     "avg": 79.99,
+     "median": 79.99,
+     "max": 79.99
+    },
+    {
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 5,
+     "n": 6,
      "nPriced": 2,
      "avg": 29.99,
      "median": 29.99,
@@ -51,8 +61,8 @@
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "base",
-     "n": 5,
-     "nPriced": 5,
+     "n": 4,
+     "nPriced": 4,
      "avg": 9.99,
      "median": 9.99,
      "max": 9.99
@@ -61,7 +71,7 @@
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 11,
+     "n": 14,
      "nPriced": 2,
      "avg": 9.99,
      "median": 9.99,
@@ -71,7 +81,7 @@
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 14,
+     "n": 13,
      "nPriced": 0,
      "avg": null,
      "median": null,
@@ -101,7 +111,7 @@
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "special",
-     "n": 4,
+     "n": 3,
      "nPriced": 0,
      "avg": null,
      "median": null,
@@ -138,16 +148,6 @@
      "max": null
     },
     {
-     "rarity": "Secret Rare",
-     "printing": "Normal",
-     "variant": "base",
-     "n": 2,
-     "nPriced": 0,
-     "avg": null,
-     "median": null,
-     "max": null
-    },
-    {
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "manga",
@@ -171,15 +171,15 @@
      "url": "https://www.tcgplayer.com/product/705923"
     },
     {
-     "id": 707133,
-     "name": "Kaido (062)",
-     "num": "OP17-062",
-     "rarity": "Super Rare",
+     "id": 710585,
+     "name": "Loki",
+     "num": "OP17-119",
+     "rarity": "Secret Rare",
      "printing": null,
      "variant": "base",
-     "price": 29.99,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/707133_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/707133"
+     "price": 79.99,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/710585_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/710585"
     },
     {
      "id": 707120,
@@ -191,6 +191,17 @@
      "price": 29.99,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/707120_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/707120"
+    },
+    {
+     "id": 707133,
+     "name": "Kaido (062)",
+     "num": "OP17-062",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "base",
+     "price": 29.99,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/707133_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/707133"
     },
     {
      "id": 707123,
@@ -257,17 +268,6 @@
      "price": 9.99,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/708399_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/708399"
-    },
-    {
-     "id": 707117,
-     "name": "Kaido (058)",
-     "num": "OP17-058",
-     "rarity": "Leader",
-     "printing": null,
-     "variant": "base",
-     "price": 9.99,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/707117_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/707117"
     }
    ]
   },
@@ -279,19 +279,19 @@
    "pack": {
     "id": 689341,
     "name": "The Time of Battle Booster Pack",
-    "market": 6.43,
+    "market": 6.49,
     "url": "https://www.tcgplayer.com/product/689341"
    },
    "sleevedPack": {
     "id": 689347,
     "name": "The Time of Battle Sleeved Booster Pack",
-    "market": 10.17,
+    "market": 10.22,
     "url": "https://www.tcgplayer.com/product/689347"
    },
    "box": {
     "id": 689336,
     "name": "The Time of Battle Booster Box",
-    "market": 207.45,
+    "market": 209.18,
     "url": "https://www.tcgplayer.com/product/689336"
    },
    "cards": 159,
@@ -310,9 +310,9 @@
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "manga",
-     "n": 2,
-     "nPriced": 2,
-     "avg": 1107.38,
+     "n": 1,
+     "nPriced": 1,
+     "avg": 1161.82,
      "median": 1161.82,
      "max": 1161.82
     },
@@ -320,11 +320,11 @@
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "special",
-     "n": 3,
-     "nPriced": 3,
-     "avg": 318.37,
-     "median": 194.15,
-     "max": 638.81
+     "n": 4,
+     "nPriced": 4,
+     "avg": 286.378,
+     "median": 193.31,
+     "max": 638.79
     },
     {
      "rarity": "Rare",
@@ -332,9 +332,9 @@
      "variant": "special",
      "n": 3,
      "nPriced": 3,
-     "avg": 85.5,
-     "median": 92.74,
-     "max": 96.51
+     "avg": 84.09,
+     "median": 91.77,
+     "max": 95.75
     },
     {
      "rarity": "Leader",
@@ -342,9 +342,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 41.17,
-     "median": 54.88,
-     "max": 67.11
+     "avg": 42.113,
+     "median": 61.25,
+     "max": 66.04
     },
     {
      "rarity": "Secret Rare",
@@ -352,19 +352,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 37.415,
-     "median": 39.98,
-     "max": 39.98
-    },
-    {
-     "rarity": "Super Rare",
-     "printing": "Normal",
-     "variant": "alt",
-     "n": 9,
-     "nPriced": 9,
-     "avg": 26.31,
-     "median": 35.64,
-     "max": 47.97
+     "avg": 39.005,
+     "median": 40.07,
+     "max": 40.07
     },
     {
      "rarity": "Treasure Rare",
@@ -372,9 +362,19 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 25.31,
-     "median": 25.31,
-     "max": 25.31
+     "avg": 28.24,
+     "median": 28.24,
+     "max": 28.24
+    },
+    {
+     "rarity": "Super Rare",
+     "printing": "Normal",
+     "variant": "alt",
+     "n": 9,
+     "nPriced": 9,
+     "avg": 27.056,
+     "median": 34.9,
+     "max": 47.82
     },
     {
      "rarity": "Rare",
@@ -382,9 +382,9 @@
      "variant": "alt",
      "n": 8,
      "nPriced": 8,
-     "avg": 21.049,
-     "median": 10.08,
-     "max": 91.96
+     "avg": 20.965,
+     "median": 12.34,
+     "max": 88.9
     },
     {
      "rarity": "Secret Rare",
@@ -392,9 +392,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 17.155,
-     "median": 19.46,
-     "max": 19.46
+     "avg": 19.86,
+     "median": 20.33,
+     "max": 20.33
     },
     {
      "rarity": "Super Rare",
@@ -402,9 +402,9 @@
      "variant": "fullart",
      "n": 1,
      "nPriced": 1,
-     "avg": 9.38,
-     "median": 9.38,
-     "max": 9.38
+     "avg": 9.17,
+     "median": 9.17,
+     "max": 9.17
     },
     {
      "rarity": "DON!!",
@@ -412,9 +412,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 2.49,
-     "median": 4.28,
-     "max": 4.28
+     "avg": 2.425,
+     "median": 4.18,
+     "max": 4.18
     },
     {
      "rarity": "DON!!",
@@ -422,9 +422,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 2.085,
-     "median": 3.95,
-     "max": 3.95
+     "avg": 2.045,
+     "median": 3.85,
+     "max": 3.85
     },
     {
      "rarity": "Super Rare",
@@ -432,8 +432,8 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.307,
-     "median": 0.85,
+     "avg": 1.306,
+     "median": 0.93,
      "max": 6.05
     },
     {
@@ -442,9 +442,9 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.277,
+     "avg": 0.26,
      "median": 0.16,
-     "max": 2.56
+     "max": 2.3
     },
     {
      "rarity": "Uncommon",
@@ -454,7 +454,7 @@
      "nPriced": 30,
      "avg": 0.137,
      "median": 0.11,
-     "max": 0.51
+     "max": 0.5
     },
     {
      "rarity": "Leader",
@@ -462,9 +462,9 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.118,
+     "avg": 0.117,
      "median": 0.12,
-     "max": 0.15
+     "max": 0.16
     },
     {
      "rarity": "Common",
@@ -474,7 +474,7 @@
      "nPriced": 45,
      "avg": 0.074,
      "median": 0.07,
-     "max": 0.14
+     "max": 0.13
     }
    ],
    "top": [
@@ -501,24 +501,13 @@
      "url": "https://www.tcgplayer.com/product/696052"
     },
     {
-     "id": 696108,
-     "name": "Borsalino (Manga)",
-     "num": "OP16-073",
-     "rarity": "Rare",
-     "printing": null,
-     "variant": "manga",
-     "price": 1052.94,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/696108_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/696108"
-    },
-    {
      "id": 695324,
      "name": "Ms. All Sunday (SP)",
      "num": "OP14-084",
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 638.81,
+     "price": 638.79,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/695324_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/695324"
     },
@@ -529,7 +518,18 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 194.15,
+     "price": 193.31,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/695508_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/695508"
+    },
+    {
+     "id": 695508,
+     "name": "Portgas.D.Ace (SP)",
+     "num": "ST15-005",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 193.31,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/695508_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/695508"
     },
@@ -540,7 +540,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 122.15,
+     "price": 120.1,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/695325_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/695325"
     },
@@ -551,7 +551,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 96.51,
+     "price": 95.75,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/695509_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/695509"
     },
@@ -562,7 +562,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 92.74,
+     "price": 91.77,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/695117_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/695117"
     },
@@ -573,20 +573,9 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 91.96,
+     "price": 88.9,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/696100_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/696100"
-    },
-    {
-     "id": 695140,
-     "name": "Cavendish (SP)",
-     "num": "OP10-045",
-     "rarity": "Rare",
-     "printing": null,
-     "variant": "special",
-     "price": 67.25,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/695140_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/695140"
     },
     {
      "id": 694068,
@@ -595,9 +584,20 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 67.11,
+     "price": 66.04,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/694068_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/694068"
+    },
+    {
+     "id": 695140,
+     "name": "Cavendish (SP)",
+     "num": "OP10-045",
+     "rarity": "Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 64.75,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/695140_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/695140"
     },
     {
      "id": 696007,
@@ -606,7 +606,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 61.9,
+     "price": 62.33,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/696007_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/696007"
     },
@@ -617,7 +617,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 54.88,
+     "price": 61.25,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/693418_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/693418"
     },
@@ -628,20 +628,20 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 47.97,
+     "price": 47.82,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/695309_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/695309"
     },
     {
-     "id": 695757,
-     "name": "Marshall.D.Teach (119) (Alternate Art)",
-     "num": "OP16-119",
-     "rarity": "Secret Rare",
+     "id": 693420,
+     "name": "Monkey.D.Luffy (Alternate Art)",
+     "num": "OP16-015",
+     "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 39.98,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/695757_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/695757"
+     "price": 42.16,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/693420_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/693420"
     }
    ]
   },
@@ -653,7 +653,7 @@
    "pack": {
     "id": 682056,
     "name": "Adventure on Kami's Island Booster Pack",
-    "market": 6.89,
+    "market": 7.03,
     "url": "https://www.tcgplayer.com/product/682056"
    },
    "sleevedPack": {
@@ -665,7 +665,7 @@
    "box": {
     "id": 682057,
     "name": "Adventure on Kami's Island Booster Box",
-    "market": 255.45,
+    "market": 258.17,
     "url": "https://www.tcgplayer.com/product/682057"
    },
    "cards": 208,
@@ -696,8 +696,8 @@
      "variant": "special",
      "n": 5,
      "nPriced": 5,
-     "avg": 362.37,
-     "median": 244.73,
+     "avg": 360.946,
+     "median": 238.56,
      "max": 628.08
     },
     {
@@ -706,16 +706,16 @@
      "variant": "special",
      "n": 3,
      "nPriced": 3,
-     "avg": 301.79,
-     "median": 296.56,
+     "avg": 301.313,
+     "median": 296.16,
      "max": 481.68
     },
     {
      "rarity": "Treasure Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 2,
-     "nPriced": 2,
+     "n": 1,
+     "nPriced": 1,
      "avg": 273.96,
      "median": 273.96,
      "max": 273.96
@@ -736,8 +736,8 @@
      "variant": "alt",
      "n": 3,
      "nPriced": 3,
-     "avg": 57.077,
-     "median": 64.69,
+     "avg": 56.4,
+     "median": 63.02,
      "max": 78
     },
     {
@@ -746,9 +746,9 @@
      "variant": "alt",
      "n": 7,
      "nPriced": 7,
-     "avg": 44.75,
-     "median": 32.97,
-     "max": 98.97
+     "avg": 44.527,
+     "median": 32.7,
+     "max": 98.95
     },
     {
      "rarity": "Super Rare",
@@ -756,9 +756,9 @@
      "variant": "alt",
      "n": 14,
      "nPriced": 14,
-     "avg": 41.294,
-     "median": 25.2,
-     "max": 189.69
+     "avg": 39.154,
+     "median": 24.99,
+     "max": 163.68
     },
     {
      "rarity": "Rare",
@@ -766,9 +766,9 @@
      "variant": "alt",
      "n": 11,
      "nPriced": 11,
-     "avg": 25.075,
+     "avg": 24.963,
      "median": 8.74,
-     "max": 88.17
+     "max": 87.77
     },
     {
      "rarity": "Secret Rare",
@@ -776,9 +776,9 @@
      "variant": "base",
      "n": 3,
      "nPriced": 3,
-     "avg": 11.717,
-     "median": 9.82,
-     "max": 15.7
+     "avg": 11.57,
+     "median": 9.68,
+     "max": 15.57
     },
     {
      "rarity": "DON!!",
@@ -786,9 +786,9 @@
      "variant": "special",
      "n": 1,
      "nPriced": 1,
-     "avg": 6.92,
-     "median": 6.92,
-     "max": 6.92
+     "avg": 6.18,
+     "median": 6.18,
+     "max": 6.18
     },
     {
      "rarity": "Super Rare",
@@ -796,9 +796,9 @@
      "variant": "base",
      "n": 14,
      "nPriced": 14,
-     "avg": 5.283,
-     "median": 1.38,
-     "max": 23.52
+     "avg": 5.1,
+     "median": 1.7,
+     "max": 22.62
     },
     {
      "rarity": "DON!!",
@@ -806,19 +806,19 @@
      "variant": "base",
      "n": 3,
      "nPriced": 3,
-     "avg": 1.903,
-     "median": 1.18,
-     "max": 4.29
+     "avg": 1.94,
+     "median": 1.19,
+     "max": 4.39
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 40,
-     "nPriced": 39,
-     "avg": 0.511,
-     "median": 0.2,
-     "max": 6.06
+     "n": 41,
+     "nPriced": 40,
+     "avg": 0.529,
+     "median": 0.21,
+     "max": 5.8
     },
     {
      "rarity": "Uncommon",
@@ -826,9 +826,9 @@
      "variant": "base",
      "n": 32,
      "nPriced": 32,
-     "avg": 0.333,
+     "avg": 0.349,
      "median": 0.12,
-     "max": 5.71
+     "max": 6.16
     },
     {
      "rarity": "Leader",
@@ -837,8 +837,8 @@
      "n": 7,
      "nPriced": 7,
      "avg": 0.139,
-     "median": 0.14,
-     "max": 0.17
+     "median": 0.13,
+     "max": 0.18
     },
     {
      "rarity": "Common",
@@ -892,7 +892,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 562.88,
+     "price": 563.89,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685011_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685011"
     },
@@ -914,7 +914,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 296.56,
+     "price": 296.16,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685017_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685017"
     },
@@ -930,28 +930,6 @@
      "url": "https://www.tcgplayer.com/product/685335"
     },
     {
-     "id": 685335,
-     "name": "Roronoa Zoro (OP13-037)",
-     "num": "OP13-037",
-     "rarity": "Treasure Rare",
-     "printing": null,
-     "variant": "base",
-     "price": 273.96,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/685335_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/685335"
-    },
-    {
-     "id": 685019,
-     "name": "Edward.Newgate (SP)",
-     "num": "OP13-042",
-     "rarity": "Super Rare",
-     "printing": null,
-     "variant": "special",
-     "price": 244.73,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/685019_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/685019"
-    },
-    {
      "id": 685032,
      "name": "Sabo (PRB02-014) (SP)",
      "num": "PRB02-014",
@@ -963,13 +941,24 @@
      "url": "https://www.tcgplayer.com/product/685032"
     },
     {
+     "id": 685019,
+     "name": "Edward.Newgate (SP)",
+     "num": "OP13-042",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 238.06,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/685019_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/685019"
+    },
+    {
      "id": 685439,
      "name": "Nami (OP15-086) (Alternate Art)",
      "num": "OP15-086",
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 189.69,
+     "price": 163.68,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685439_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685439"
     },
@@ -980,7 +969,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 137.6,
+     "price": 136.14,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685008_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685008"
     },
@@ -991,7 +980,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 127.13,
+     "price": 126.1,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685482_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685482"
     },
@@ -1002,7 +991,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 103.01,
+     "price": 101.88,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685304_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685304"
     },
@@ -1013,9 +1002,20 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 98.97,
+     "price": 98.95,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685453_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685453"
+    },
+    {
+     "id": 685031,
+     "name": "Sabo (P-105) (SP)",
+     "num": "P-105",
+     "rarity": "Promo",
+     "printing": null,
+     "variant": "special",
+     "price": 97.65,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/685031_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/685031"
     }
    ]
   },
@@ -1032,7 +1032,7 @@
     "url": "https://www.tcgplayer.com/product/679503"
    },
    "box": null,
-   "cards": 103,
+   "cards": 102,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -1048,10 +1048,10 @@
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "special",
-     "n": 10,
-     "nPriced": 10,
-     "avg": 727.533,
-     "median": 477.89,
+     "n": 9,
+     "nPriced": 9,
+     "avg": 661.539,
+     "median": 375.3,
      "max": 1415.09
     },
     {
@@ -1060,7 +1060,7 @@
      "variant": "special",
      "n": 4,
      "nPriced": 4,
-     "avg": 77.418,
+     "avg": 77.375,
      "median": 83.15,
      "max": 110.55
     },
@@ -1070,9 +1070,9 @@
      "variant": "alt",
      "n": 9,
      "nPriced": 9,
-     "avg": 28.607,
-     "median": 18.18,
-     "max": 85.6
+     "avg": 28.333,
+     "median": 18.32,
+     "max": 83.22
     },
     {
      "rarity": "Secret Rare",
@@ -1080,9 +1080,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 17.17,
-     "median": 19.65,
-     "max": 19.65
+     "avg": 17.02,
+     "median": 19.4,
+     "max": 19.4
     },
     {
      "rarity": "Rare",
@@ -1090,9 +1090,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 9.223,
-     "median": 7.84,
-     "max": 16.38
+     "avg": 9.157,
+     "median": 7.93,
+     "max": 16.42
     },
     {
      "rarity": "Leader",
@@ -1100,9 +1100,9 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 8.84,
-     "median": 8.84,
-     "max": 8.84
+     "avg": 8.66,
+     "median": 8.66,
+     "max": 8.66
     },
     {
      "rarity": "Secret Rare",
@@ -1110,9 +1110,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 6.415,
-     "median": 7.77,
-     "max": 7.77
+     "avg": 6.42,
+     "median": 7.92,
+     "max": 7.92
     },
     {
      "rarity": "Super Rare",
@@ -1120,9 +1120,9 @@
      "variant": "base",
      "n": 11,
      "nPriced": 11,
-     "avg": 3.614,
-     "median": 0.94,
-     "max": 14.02
+     "avg": 3.591,
+     "median": 0.93,
+     "max": 14.12
     },
     {
      "rarity": "DON!!",
@@ -1130,9 +1130,9 @@
      "variant": "base",
      "n": 4,
      "nPriced": 4,
-     "avg": 2.185,
+     "avg": 2.168,
      "median": 2.5,
-     "max": 2.98
+     "max": 3
     },
     {
      "rarity": "Common",
@@ -1140,9 +1140,9 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 0.529,
-     "median": 0.07,
-     "max": 13.6
+     "avg": 0.554,
+     "median": 0.08,
+     "max": 14.25
     },
     {
      "rarity": "Rare",
@@ -1150,9 +1150,9 @@
      "variant": "base",
      "n": 22,
      "nPriced": 22,
-     "avg": 0.426,
-     "median": 0.21,
-     "max": 4.68
+     "avg": 0.429,
+     "median": 0.22,
+     "max": 4.78
     },
     {
      "rarity": "Leader",
@@ -1160,9 +1160,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.15,
-     "median": 0.15,
-     "max": 0.15
+     "avg": 0.16,
+     "median": 0.16,
+     "max": 0.16
     }
    ],
    "top": [
@@ -1187,17 +1187,6 @@
      "price": 1407.41,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/672823_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/672823"
-    },
-    {
-     "id": 672827,
-     "name": "Nami (053) (SP)",
-     "num": "EB03-053",
-     "rarity": "Super Rare",
-     "printing": null,
-     "variant": "special",
-     "price": 1322.26,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/672827_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/672827"
     },
     {
      "id": 672827,
@@ -1272,7 +1261,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 190.73,
+     "price": 191.51,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/672825_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/672825"
     },
@@ -1305,7 +1294,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 85.6,
+     "price": 83.22,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/672805_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/672805"
     },
@@ -1330,6 +1319,17 @@
      "price": 78.48,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/677569_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/677569"
+    },
+    {
+     "id": 672808,
+     "name": "Nico Robin (055) (Alternate Art)",
+     "num": "EB03-055",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "alt",
+     "price": 53.87,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/672808_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/672808"
     }
    ]
   },
@@ -1341,19 +1341,19 @@
    "pack": {
     "id": 666577,
     "name": "The Azure Sea's Seven Booster Pack",
-    "market": 7.14,
+    "market": 7.16,
     "url": "https://www.tcgplayer.com/product/666577"
    },
    "sleevedPack": {
     "id": 666576,
     "name": "The Azure Sea's Seven Sleeved Booster Pack",
-    "market": 11.58,
+    "market": 11.63,
     "url": "https://www.tcgplayer.com/product/666576"
    },
    "box": {
     "id": 665598,
     "name": "The Azure Sea's Seven Booster Box",
-    "market": 258.09,
+    "market": 257.7,
     "url": "https://www.tcgplayer.com/product/665598"
    },
    "cards": 211,
@@ -1364,18 +1364,18 @@
      "variant": "manga",
      "n": 1,
      "nPriced": 1,
-     "avg": 724.53,
-     "median": 724.53,
-     "max": 724.53
+     "avg": 721.13,
+     "median": 721.13,
+     "max": 721.13
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "special",
-     "n": 8,
-     "nPriced": 8,
-     "avg": 470.436,
-     "median": 100.59,
+     "n": 9,
+     "nPriced": 9,
+     "avg": 512.784,
+     "median": 98.92,
      "max": 1638.69
     },
     {
@@ -1384,8 +1384,8 @@
      "variant": "special",
      "n": 3,
      "nPriced": 3,
-     "avg": 278.123,
-     "median": 152.94,
+     "avg": 278.307,
+     "median": 153.49,
      "max": 535.78
     },
     {
@@ -1394,7 +1394,7 @@
      "variant": "alt",
      "n": 11,
      "nPriced": 11,
-     "avg": 44.853,
+     "avg": 44.634,
      "median": 17,
      "max": 220.55
     },
@@ -1414,9 +1414,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 39.105,
-     "median": 43.48,
-     "max": 43.48
+     "avg": 38.405,
+     "median": 42.08,
+     "max": 42.08
     },
     {
      "rarity": "Leader",
@@ -1424,9 +1424,9 @@
      "variant": "alt",
      "n": 7,
      "nPriced": 7,
-     "avg": 36.996,
-     "median": 25.45,
-     "max": 98.48
+     "avg": 37.179,
+     "median": 25.4,
+     "max": 99.32
     },
     {
      "rarity": "Super Rare",
@@ -1434,8 +1434,8 @@
      "variant": "alt",
      "n": 15,
      "nPriced": 15,
-     "avg": 31.734,
-     "median": 15.86,
+     "avg": 31.536,
+     "median": 15.19,
      "max": 97.08
     },
     {
@@ -1444,9 +1444,9 @@
      "variant": "special",
      "n": 2,
      "nPriced": 2,
-     "avg": 13.51,
-     "median": 17.2,
-     "max": 17.2
+     "avg": 13.565,
+     "median": 17.31,
+     "max": 17.31
     },
     {
      "rarity": "Secret Rare",
@@ -1454,9 +1454,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 5.18,
-     "median": 7.5,
-     "max": 7.5
+     "avg": 5.43,
+     "median": 8.03,
+     "max": 8.03
     },
     {
      "rarity": "Super Rare",
@@ -1464,9 +1464,9 @@
      "variant": "base",
      "n": 15,
      "nPriced": 15,
-     "avg": 2.775,
-     "median": 0.81,
-     "max": 11.63
+     "avg": 2.749,
+     "median": 0.83,
+     "max": 11.6
     },
     {
      "rarity": "DON!!",
@@ -1474,9 +1474,9 @@
      "variant": "base",
      "n": 4,
      "nPriced": 4,
-     "avg": 1.388,
-     "median": 2.26,
-     "max": 2.27
+     "avg": 1.343,
+     "median": 2.22,
+     "max": 2.26
     },
     {
      "rarity": "Rare",
@@ -1484,9 +1484,9 @@
      "variant": "base",
      "n": 44,
      "nPriced": 44,
-     "avg": 0.67,
-     "median": 0.26,
-     "max": 8.21
+     "avg": 0.663,
+     "median": 0.25,
+     "max": 8.01
     },
     {
      "rarity": "Leader",
@@ -1494,8 +1494,8 @@
      "variant": "base",
      "n": 7,
      "nPriced": 7,
-     "avg": 0.159,
-     "median": 0.15,
+     "avg": 0.169,
+     "median": 0.17,
      "max": 0.23
     },
     {
@@ -1504,19 +1504,19 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 0.128,
-     "median": 0.14,
-     "max": 0.23
+     "avg": 0.125,
+     "median": 0.13,
+     "max": 0.22
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 59,
-     "nPriced": 59,
-     "avg": 0.069,
+     "n": 58,
+     "nPriced": 58,
+     "avg": 0.071,
      "median": 0.06,
-     "max": 0.16
+     "max": 0.17
     }
    ],
    "top": [
@@ -1554,13 +1554,24 @@
      "url": "https://www.tcgplayer.com/product/671454"
     },
     {
+     "id": 671454,
+     "name": "Buggy - OP09-051 (SP)",
+     "num": "OP09-051",
+     "rarity": "Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 853.19,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/671454_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/671454"
+    },
+    {
      "id": 671448,
      "name": "Dracule Mihawk (Manga)",
      "num": "OP14-119",
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "manga",
-     "price": 724.53,
+     "price": 721.13,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/671448_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/671448"
     },
@@ -1593,7 +1604,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 152.94,
+     "price": 153.49,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/671451_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/671451"
     },
@@ -1615,20 +1626,9 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 135.77,
+     "price": 135.58,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/670874_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/670874"
-    },
-    {
-     "id": 671455,
-     "name": "Sugar - OP10-065 (SP)",
-     "num": "OP10-065",
-     "rarity": "Rare",
-     "printing": null,
-     "variant": "special",
-     "price": 100.59,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/671455_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/671455"
     },
     {
      "id": 668335,
@@ -1637,9 +1637,20 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 98.48,
+     "price": 99.32,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/668335_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/668335"
+    },
+    {
+     "id": 671455,
+     "name": "Sugar - OP10-065 (SP)",
+     "num": "OP10-065",
+     "rarity": "Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 98.92,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/671455_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/671455"
     },
     {
      "id": 668343,
@@ -1670,20 +1681,9 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 82.45,
+     "price": 82.5,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/671449_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/671449"
-    },
-    {
-     "id": 670254,
-     "name": "Nami (Alternate Art)",
-     "num": "OP14-031",
-     "rarity": "Super Rare",
-     "printing": null,
-     "variant": "alt",
-     "price": 77.44,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/670254_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/670254"
     }
    ]
   },
@@ -1695,31 +1695,31 @@
    "pack": {
     "id": 628351,
     "name": "Carrying On His Will Booster Pack",
-    "market": 11.15,
+    "market": 11.19,
     "url": "https://www.tcgplayer.com/product/628351"
    },
    "sleevedPack": {
     "id": 652643,
     "name": "Carrying On His Will Sleeved Booster Pack",
-    "market": 17.96,
+    "market": 17.7,
     "url": "https://www.tcgplayer.com/product/652643"
    },
    "box": {
     "id": 628352,
     "name": "Carrying On His Will Booster Box",
-    "market": 479.98,
+    "market": 484.32,
     "url": "https://www.tcgplayer.com/product/628352"
    },
-   "cards": 177,
+   "cards": 180,
    "buckets": [
     {
      "rarity": "Secret Rare",
      "printing": "Normal",
      "variant": "superalt",
-     "n": 12,
-     "nPriced": 10,
-     "avg": 1542.583,
-     "median": 749.98,
+     "n": 9,
+     "nPriced": 7,
+     "avg": 1108.404,
+     "median": 445.1,
      "max": 4800
     },
     {
@@ -1728,8 +1728,8 @@
      "variant": "special",
      "n": 5,
      "nPriced": 5,
-     "avg": 544.47,
-     "median": 93.28,
+     "avg": 543.93,
+     "median": 92.7,
      "max": 1559.56
     },
     {
@@ -1738,7 +1738,7 @@
      "variant": "special",
      "n": 2,
      "nPriced": 2,
-     "avg": 224.38,
+     "avg": 224.185,
      "median": 376.7,
      "max": 376.7
     },
@@ -1748,8 +1748,8 @@
      "variant": "alt",
      "n": 17,
      "nPriced": 17,
-     "avg": 137.096,
-     "median": 18.36,
+     "avg": 137.036,
+     "median": 18.17,
      "max": 494.4
     },
     {
@@ -1758,9 +1758,9 @@
      "variant": "special",
      "n": 1,
      "nPriced": 1,
-     "avg": 129.32,
-     "median": 129.32,
-     "max": 129.32
+     "avg": 128.8,
+     "median": 128.8,
+     "max": 128.8
     },
     {
      "rarity": "Treasure Rare",
@@ -1768,9 +1768,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 62.55,
-     "median": 62.55,
-     "max": 62.55
+     "avg": 58.25,
+     "median": 58.25,
+     "max": 58.25
     },
     {
      "rarity": "Secret Rare",
@@ -1778,9 +1778,9 @@
      "variant": "alt",
      "n": 3,
      "nPriced": 3,
-     "avg": 46.867,
-     "median": 19.53,
-     "max": 102.87
+     "avg": 46.688,
+     "median": 19.543,
+     "max": 102.43
     },
     {
      "rarity": "Leader",
@@ -1788,9 +1788,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 28.638,
-     "median": 25.38,
-     "max": 69.15
+     "avg": 28.528,
+     "median": 25.13,
+     "max": 69.04
     },
     {
      "rarity": "Super Rare",
@@ -1798,9 +1798,9 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 16.206,
-     "median": 16.25,
-     "max": 31.17
+     "avg": 15.886,
+     "median": 15.9,
+     "max": 30.85
     },
     {
      "rarity": "Secret Rare",
@@ -1808,9 +1808,9 @@
      "variant": "base",
      "n": 3,
      "nPriced": 3,
-     "avg": 11.507,
+     "avg": 11.607,
      "median": 3.04,
-     "max": 29.65
+     "max": 29.93
     },
     {
      "rarity": "DON!!",
@@ -1818,9 +1818,9 @@
      "variant": "special",
      "n": 1,
      "nPriced": 1,
-     "avg": 5.77,
-     "median": 5.77,
-     "max": 5.77
+     "avg": 5.68,
+     "median": 5.68,
+     "max": 5.68
     },
     {
      "rarity": "Super Rare",
@@ -1828,9 +1828,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 0.724,
-     "median": 0.51,
-     "max": 1.97
+     "avg": 0.714,
+     "median": 0.48,
+     "max": 1.67
     },
     {
      "rarity": "Rare",
@@ -1838,9 +1838,9 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.3,
-     "median": 0.21,
-     "max": 1.27
+     "avg": 0.298,
+     "median": 0.2,
+     "max": 1.39
     },
     {
      "rarity": "DON!!",
@@ -1848,9 +1848,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.28,
-     "median": 0.28,
-     "max": 0.28
+     "avg": 0.29,
+     "median": 0.29,
+     "max": 0.29
     },
     {
      "rarity": "Leader",
@@ -1858,29 +1858,29 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.147,
-     "median": 0.15,
-     "max": 0.16
+     "avg": 0.143,
+     "median": 0.16,
+     "max": 0.17
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 30,
-     "nPriced": 30,
-     "avg": 0.09,
-     "median": 0.09,
+     "n": 33,
+     "nPriced": 33,
+     "avg": 0.089,
+     "median": 0.08,
      "max": 0.2
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 43,
-     "nPriced": 43,
-     "avg": 0.056,
+     "n": 46,
+     "nPriced": 46,
+     "avg": 0.054,
      "median": 0.05,
-     "max": 0.11
+     "max": 0.09
     }
    ],
    "top": [
@@ -1894,28 +1894,6 @@
      "price": 4800,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/657411_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/657411"
-    },
-    {
-     "id": 657411,
-     "name": "Sabo (120) (Red Super Alternate Art)",
-     "num": "OP13-120",
-     "rarity": "Secret Rare",
-     "printing": null,
-     "variant": "superalt",
-     "price": 4800,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/657411_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/657411"
-    },
-    {
-     "id": 657402,
-     "name": "Monkey.D.Luffy (118) (Super Alternate Art)",
-     "num": "OP13-118",
-     "rarity": "Secret Rare",
-     "printing": null,
-     "variant": "superalt",
-     "price": 2116.43,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/657402_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/657402"
     },
     {
      "id": 657442,
@@ -1949,17 +1927,6 @@
      "price": 931.31,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/657443_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/657443"
-    },
-    {
-     "id": 657412,
-     "name": "Sabo (120) (Super Alternate Art)",
-     "num": "OP13-120",
-     "rarity": "Secret Rare",
-     "printing": null,
-     "variant": "superalt",
-     "price": 749.98,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/657412_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/657412"
     },
     {
      "id": 657412,
@@ -2048,6 +2015,39 @@
      "price": 372.87,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/657357_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/657357"
+    },
+    {
+     "id": 657404,
+     "name": "Monkey.D.Luffy (118) (Wanted Poster)",
+     "num": "OP13-118",
+     "rarity": "Secret Rare",
+     "printing": null,
+     "variant": "superalt",
+     "price": 338.76,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/657404_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/657404"
+    },
+    {
+     "id": 657446,
+     "name": "Gol.D.Roger - OP09-118 (SP) (Wanted Poster)",
+     "num": "OP09-118",
+     "rarity": "Secret Rare",
+     "printing": null,
+     "variant": "superalt",
+     "price": 192.94,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/657446_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/657446"
+    },
+    {
+     "id": 657414,
+     "name": "Sabo (120) (Wanted Poster)",
+     "num": "OP13-120",
+     "rarity": "Secret Rare",
+     "printing": null,
+     "variant": "superalt",
+     "price": 146.41,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/657414_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/657414"
     }
    ]
   },
@@ -2065,16 +2065,16 @@
    "sleevedPack": {
     "id": 657211,
     "name": "Premium Booster Vol. 2 - Sleeved Booster Pack",
-    "market": 23.83,
+    "market": 23.86,
     "url": "https://www.tcgplayer.com/product/657211"
    },
    "box": {
     "id": 628452,
     "name": "Premium Booster Vol. 2 - Booster Box",
-    "market": 394.3,
+    "market": 394.95,
     "url": "https://www.tcgplayer.com/product/628452"
    },
-   "cards": 377,
+   "cards": 379,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -2082,9 +2082,9 @@
      "variant": "manga",
      "n": 1,
      "nPriced": 1,
-     "avg": 2265.97,
-     "median": 2265.97,
-     "max": 2265.97
+     "avg": 2262.72,
+     "median": 2262.72,
+     "max": 2262.72
     },
     {
      "rarity": "Secret Rare",
@@ -2092,9 +2092,9 @@
      "variant": "special",
      "n": 2,
      "nPriced": 2,
-     "avg": 326.955,
-     "median": 485.89,
-     "max": 485.89
+     "avg": 328.485,
+     "median": 488.95,
+     "max": 488.95
     },
     {
      "rarity": "Super Rare",
@@ -2120,10 +2120,10 @@
      "rarity": "DON!!",
      "printing": "Normal",
      "variant": "special",
-     "n": 29,
-     "nPriced": 29,
-     "avg": 83.664,
-     "median": 59.32,
+     "n": 30,
+     "nPriced": 30,
+     "avg": 86.825,
+     "median": 61.66,
      "max": 206.95
     },
     {
@@ -2132,8 +2132,8 @@
      "variant": "alt",
      "n": 31,
      "nPriced": 31,
-     "avg": 79.949,
-     "median": 18.93,
+     "avg": 79.916,
+     "median": 18.82,
      "max": 881.37
     },
     {
@@ -2142,7 +2142,7 @@
      "variant": "alt",
      "n": 9,
      "nPriced": 9,
-     "avg": 47.072,
+     "avg": 47.039,
      "median": 36.86,
      "max": 104.46
     },
@@ -2152,7 +2152,7 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 16.375,
+     "avg": 16.37,
      "median": 26.31,
      "max": 26.31
     },
@@ -2162,9 +2162,9 @@
      "variant": "alt",
      "n": 3,
      "nPriced": 3,
-     "avg": 16.05,
+     "avg": 15.723,
      "median": 5.49,
-     "max": 39.01
+     "max": 38.03
     },
     {
      "rarity": "Secret Rare",
@@ -2172,9 +2172,9 @@
      "variant": "base",
      "n": 8,
      "nPriced": 8,
-     "avg": 5.323,
-     "median": 4.36,
-     "max": 15.48
+     "avg": 5.308,
+     "median": 4.24,
+     "max": 15.44
     },
     {
      "rarity": "Super Rare",
@@ -2182,9 +2182,9 @@
      "variant": "base",
      "n": 34,
      "nPriced": 34,
-     "avg": 1.915,
-     "median": 0.88,
-     "max": 21.9
+     "avg": 1.863,
+     "median": 0.96,
+     "max": 20.33
     },
     {
      "rarity": "Promo",
@@ -2202,9 +2202,9 @@
      "variant": "base",
      "n": 41,
      "nPriced": 41,
-     "avg": 1.341,
-     "median": 0.34,
-     "max": 12.74
+     "avg": 1.336,
+     "median": 0.33,
+     "max": 12.7
     },
     {
      "rarity": "DON!!",
@@ -2212,17 +2212,17 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 1.026,
-     "median": 0.79,
-     "max": 3.29
+     "avg": 1.032,
+     "median": 0.8,
+     "max": 3.4
     },
     {
      "rarity": "Promo",
      "printing": "Normal",
      "variant": "pirate",
-     "n": 15,
-     "nPriced": 15,
-     "avg": 0.703,
+     "n": 16,
+     "nPriced": 16,
+     "avg": 0.675,
      "median": 0.34,
      "max": 5.43
     },
@@ -2232,9 +2232,9 @@
      "variant": "base",
      "n": 15,
      "nPriced": 15,
-     "avg": 0.65,
-     "median": 0.34,
-     "max": 5.27
+     "avg": 0.656,
+     "median": 0.33,
+     "max": 5.39
     },
     {
      "rarity": "Common",
@@ -2242,9 +2242,9 @@
      "variant": "pirate",
      "n": 46,
      "nPriced": 46,
-     "avg": 0.527,
-     "median": 0.23,
-     "max": 4.46
+     "avg": 0.515,
+     "median": 0.24,
+     "max": 4.09
     },
     {
      "rarity": "Uncommon",
@@ -2254,25 +2254,25 @@
      "nPriced": 29,
      "avg": 0.297,
      "median": 0.22,
-     "max": 0.87
+     "max": 0.88
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 48,
-     "nPriced": 48,
-     "avg": 0.183,
+     "n": 46,
+     "nPriced": 46,
+     "avg": 0.185,
      "median": 0.09,
-     "max": 2.56
+     "max": 2.5
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 29,
-     "nPriced": 29,
-     "avg": 0.093,
+     "n": 31,
+     "nPriced": 31,
+     "avg": 0.091,
      "median": 0.09,
      "max": 0.19
     }
@@ -2285,7 +2285,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "manga",
-     "price": 2265.97,
+     "price": 2262.72,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/654637_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/654637"
     },
@@ -2307,7 +2307,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "special",
-     "price": 485.89,
+     "price": 488.95,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/654533_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/654533"
     },
@@ -2389,6 +2389,17 @@
      "url": "https://www.tcgplayer.com/product/655116"
     },
     {
+     "id": 655118,
+     "name": "DON!! Card (GEAR5 Luffy) (Gold)",
+     "num": null,
+     "rarity": "DON!!",
+     "printing": null,
+     "variant": "special",
+     "price": 178.5,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/655118_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/655118"
+    },
+    {
      "id": 654636,
      "name": "Trafalgar Law - OP10-119 (SP)",
      "num": "OP10-119",
@@ -2431,17 +2442,6 @@
      "price": 158.46,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/655914_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/655914"
-    },
-    {
-     "id": 654571,
-     "name": "Rebecca (SP)",
-     "num": "OP05-091",
-     "rarity": "Super Rare",
-     "printing": null,
-     "variant": "special",
-     "price": 137.07,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/654571_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/654571"
     }
    ]
   },
@@ -2459,7 +2459,7 @@
    "sleevedPack": {
     "id": 650645,
     "name": "Legacy of the Master - Sleeved Booster Pack",
-    "market": 16.49,
+    "market": 16.36,
     "url": "https://www.tcgplayer.com/product/650645"
    },
    "box": {
@@ -2468,7 +2468,7 @@
     "market": 274.39,
     "url": "https://www.tcgplayer.com/product/628346"
    },
-   "cards": 159,
+   "cards": 158,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -2476,9 +2476,9 @@
      "variant": "manga",
      "n": 1,
      "nPriced": 1,
-     "avg": 818.93,
-     "median": 818.93,
-     "max": 818.93
+     "avg": 810.52,
+     "median": 810.52,
+     "max": 810.52
     },
     {
      "rarity": "Super Rare",
@@ -2486,7 +2486,7 @@
      "variant": "special",
      "n": 6,
      "nPriced": 6,
-     "avg": 602.222,
+     "avg": 602.218,
      "median": 253.44,
      "max": 1894.05
     },
@@ -2506,9 +2506,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 68.4,
-     "median": 68.4,
-     "max": 68.4
+     "avg": 66.76,
+     "median": 66.76,
+     "max": 66.76
     },
     {
      "rarity": "Rare",
@@ -2516,18 +2516,18 @@
      "variant": "alt",
      "n": 8,
      "nPriced": 8,
-     "avg": 42.875,
-     "median": 17.77,
-     "max": 202.78
+     "avg": 42.882,
+     "median": 17.4,
+     "max": 203.42
     },
     {
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "alt",
-     "n": 7,
-     "nPriced": 7,
-     "avg": 32.201,
-     "median": 24.62,
+     "n": 6,
+     "nPriced": 6,
+     "avg": 33.393,
+     "median": 26.87,
      "max": 64.62
     },
     {
@@ -2536,9 +2536,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 30.8,
-     "median": 36.81,
-     "max": 36.81
+     "avg": 30.99,
+     "median": 37.27,
+     "max": 37.27
     },
     {
      "rarity": "Super Rare",
@@ -2546,9 +2546,9 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 24.632,
+     "avg": 24.433,
      "median": 24.21,
-     "max": 72.32
+     "max": 71.35
     },
     {
      "rarity": "Secret Rare",
@@ -2556,9 +2556,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 16.04,
-     "median": 17.44,
-     "max": 17.44
+     "avg": 16.125,
+     "median": 17.55,
+     "max": 17.55
     },
     {
      "rarity": "Super Rare",
@@ -2566,9 +2566,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 3.438,
-     "median": 1.07,
-     "max": 17.05
+     "avg": 3.507,
+     "median": 1.14,
+     "max": 17.77
     },
     {
      "rarity": "DON!!",
@@ -2576,9 +2576,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 2.605,
-     "median": 2.84,
-     "max": 2.84
+     "avg": 2.57,
+     "median": 2.92,
+     "max": 2.92
     },
     {
      "rarity": "Rare",
@@ -2586,9 +2586,9 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.495,
-     "median": 0.172,
-     "max": 6.89
+     "avg": 0.487,
+     "median": 0.17,
+     "max": 6.6
     },
     {
      "rarity": "DON!!",
@@ -2596,9 +2596,9 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.38,
-     "median": 0.38,
-     "max": 0.38
+     "avg": 0.408,
+     "median": 0.408,
+     "max": 0.408
     },
     {
      "rarity": "Leader",
@@ -2606,17 +2606,17 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.157,
+     "avg": 0.16,
      "median": 0.17,
-     "max": 0.18
+     "max": 0.2
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 29,
-     "nPriced": 29,
-     "avg": 0.108,
+     "n": 30,
+     "nPriced": 30,
+     "avg": 0.106,
      "median": 0.1,
      "max": 0.24
     },
@@ -2624,11 +2624,11 @@
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 46,
-     "nPriced": 46,
-     "avg": 0.068,
+     "n": 45,
+     "nPriced": 45,
+     "avg": 0.069,
      "median": 0.07,
-     "max": 0.11
+     "max": 0.13
     }
    ],
    "top": [
@@ -2661,7 +2661,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "manga",
-     "price": 818.93,
+     "price": 810.52,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/643867_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/643867"
     },
@@ -2683,7 +2683,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 202.78,
+     "price": 203.42,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/643769_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/643769"
     },
@@ -2727,7 +2727,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 72.32,
+     "price": 71.35,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/643765_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/643765"
     },
@@ -2738,7 +2738,7 @@
      "rarity": "Treasure Rare",
      "printing": null,
      "variant": "base",
-     "price": 68.4,
+     "price": 66.76,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/644882_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/644882"
     },
@@ -2793,7 +2793,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 42.74,
+     "price": 42.45,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/643799_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/643799"
     }
@@ -2807,7 +2807,7 @@
    "pack": {
     "id": 620179,
     "name": "A Fist of Divine Speed Booster Pack",
-    "market": 12.59,
+    "market": 12.55,
     "url": "https://www.tcgplayer.com/product/620179"
    },
    "sleevedPack": {
@@ -2822,7 +2822,7 @@
     "market": 650.06,
     "url": "https://www.tcgplayer.com/product/620180"
    },
-   "cards": 159,
+   "cards": 157,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -2850,8 +2850,8 @@
      "variant": "special",
      "n": 4,
      "nPriced": 4,
-     "avg": 188.545,
-     "median": 195.07,
+     "avg": 188.05,
+     "median": 194.12,
      "max": 314.05
     },
     {
@@ -2870,7 +2870,7 @@
      "variant": "alt",
      "n": 9,
      "nPriced": 9,
-     "avg": 59.976,
+     "avg": 59.96,
      "median": 13.56,
      "max": 351.77
     },
@@ -2880,9 +2880,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 40.767,
-     "median": 42.9,
-     "max": 77.52
+     "avg": 40.752,
+     "median": 43.23,
+     "max": 77.19
     },
     {
      "rarity": "Treasure Rare",
@@ -2900,19 +2900,19 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 26.94,
-     "median": 42.75,
-     "max": 42.75
+     "avg": 26.785,
+     "median": 42.48,
+     "max": 42.48
     },
     {
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "alt",
-     "n": 10,
-     "nPriced": 10,
-     "avg": 14.111,
-     "median": 11.56,
-     "max": 37.64
+     "n": 9,
+     "nPriced": 9,
+     "avg": 14.766,
+     "median": 11.49,
+     "max": 36.94
     },
     {
      "rarity": "DON!!",
@@ -2920,9 +2920,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 3.35,
-     "median": 5.19,
-     "max": 5.19
+     "avg": 3.355,
+     "median": 5.2,
+     "max": 5.2
     },
     {
      "rarity": "Secret Rare",
@@ -2930,9 +2930,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 3.195,
-     "median": 4.57,
-     "max": 4.57
+     "avg": 3.11,
+     "median": 4.43,
+     "max": 4.43
     },
     {
      "rarity": "Super Rare",
@@ -2940,9 +2940,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.697,
-     "median": 0.53,
-     "max": 7.29
+     "avg": 1.659,
+     "median": 0.54,
+     "max": 6.88
     },
     {
      "rarity": "DON!!",
@@ -2950,9 +2950,9 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.38,
-     "median": 0.38,
-     "max": 0.38
+     "avg": 0.39,
+     "median": 0.39,
+     "max": 0.39
     },
     {
      "rarity": "Rare",
@@ -2960,19 +2960,19 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.235,
+     "avg": 0.248,
      "median": 0.18,
-     "max": 1.78
+     "max": 2.08
     },
     {
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "base",
-     "n": 6,
-     "nPriced": 6,
-     "avg": 0.157,
-     "median": 0.17,
-     "max": 0.2
+     "n": 5,
+     "nPriced": 5,
+     "avg": 0.156,
+     "median": 0.18,
+     "max": 0.19
     },
     {
      "rarity": "Uncommon",
@@ -2980,9 +2980,9 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 0.121,
-     "median": 0.1,
-     "max": 0.51
+     "avg": 0.122,
+     "median": 0.09,
+     "max": 0.58
     },
     {
      "rarity": "Common",
@@ -3058,7 +3058,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 195.07,
+     "price": 194.12,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/632508_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/632508"
     },
@@ -3080,7 +3080,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 143.14,
+     "price": 141.92,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/632506_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/632506"
     },
@@ -3091,7 +3091,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 101.92,
+     "price": 102.11,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/632502_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/632502"
     },
@@ -3102,7 +3102,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 77.52,
+     "price": 77.19,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/632406_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/632406"
     },
@@ -3124,7 +3124,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 65.14,
+     "price": 65.54,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/632493_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/632493"
     },
@@ -3151,15 +3151,15 @@
      "url": "https://www.tcgplayer.com/product/632377"
     },
     {
-     "id": 632484,
-     "name": "Zeus (Alternate Art)",
-     "num": "OP11-106",
-     "rarity": "Rare",
+     "id": 632431,
+     "name": "Charlotte Katakuri (062) (Alternate Art)",
+     "num": "OP11-062",
+     "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 43.13,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/632484_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/632484"
+     "price": 43.23,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/632431_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/632431"
     }
    ]
   },
@@ -3183,10 +3183,10 @@
    "box": {
     "id": 586671,
     "name": "Royal Blood Booster Box",
-    "market": 244.2,
+    "market": 244.67,
     "url": "https://www.tcgplayer.com/product/586671"
    },
-   "cards": 156,
+   "cards": 151,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -3204,7 +3204,7 @@
      "variant": "special",
      "n": 2,
      "nPriced": 2,
-     "avg": 194.315,
+     "avg": 193.995,
      "median": 249.07,
      "max": 249.07
     },
@@ -3214,9 +3214,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 141.58,
-     "median": 141.58,
-     "max": 141.58
+     "avg": 139.97,
+     "median": 139.97,
+     "max": 139.97
     },
     {
      "rarity": "Common",
@@ -3224,9 +3224,9 @@
      "variant": "special",
      "n": 2,
      "nPriced": 2,
-     "avg": 87,
-     "median": 114,
-     "max": 114
+     "avg": 86.3,
+     "median": 112.56,
+     "max": 112.56
     },
     {
      "rarity": "Rare",
@@ -3234,7 +3234,7 @@
      "variant": "special",
      "n": 2,
      "nPriced": 2,
-     "avg": 50.055,
+     "avg": 50.02,
      "median": 63.28,
      "max": 63.28
     },
@@ -3244,9 +3244,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 46.97,
-     "median": 62.6,
-     "max": 62.6
+     "avg": 46.22,
+     "median": 61.63,
+     "max": 61.63
     },
     {
      "rarity": "Leader",
@@ -3254,9 +3254,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 22.852,
-     "median": 28.7,
-     "max": 38.45
+     "avg": 22.738,
+     "median": 28.67,
+     "max": 38.12
     },
     {
      "rarity": "Rare",
@@ -3264,19 +3264,19 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 20.465,
-     "median": 13.35,
+     "avg": 20.432,
+     "median": 13.14,
      "max": 73.87
     },
     {
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "alt",
-     "n": 10,
-     "nPriced": 10,
-     "avg": 13.559,
+     "n": 9,
+     "nPriced": 9,
+     "avg": 14.798,
      "median": 13.38,
-     "max": 26.48
+     "max": 26.76
     },
     {
      "rarity": "Secret Rare",
@@ -3284,9 +3284,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 7.31,
-     "median": 8.25,
-     "max": 8.25
+     "avg": 7.215,
+     "median": 8.12,
+     "max": 8.12
     },
     {
      "rarity": "Super Rare",
@@ -3294,9 +3294,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.978,
-     "median": 0.99,
-     "max": 8.29
+     "avg": 1.979,
+     "median": 1.06,
+     "max": 8.31
     },
     {
      "rarity": "DON!!",
@@ -3312,11 +3312,11 @@
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 27,
-     "nPriced": 27,
-     "avg": 0.312,
+     "n": 26,
+     "nPriced": 26,
+     "avg": 0.316,
      "median": 0.2,
-     "max": 2.28
+     "max": 2.27
     },
     {
      "rarity": "Leader",
@@ -3324,29 +3324,29 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.167,
-     "median": 0.18,
-     "max": 0.22
+     "avg": 0.163,
+     "median": 0.19,
+     "max": 0.21
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 31,
-     "nPriced": 31,
-     "avg": 0.105,
+     "n": 30,
+     "nPriced": 30,
+     "avg": 0.104,
      "median": 0.09,
-     "max": 0.27
+     "max": 0.25
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 47,
-     "nPriced": 47,
+     "n": 45,
+     "nPriced": 45,
      "avg": 0.067,
      "median": 0.05,
-     "max": 0.28
+     "max": 0.26
     }
    ],
    "top": [
@@ -3379,7 +3379,7 @@
      "rarity": "Treasure Rare",
      "printing": null,
      "variant": "base",
-     "price": 141.58,
+     "price": 139.97,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/620135_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/620135"
     },
@@ -3390,7 +3390,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 139.56,
+     "price": 138.92,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617175_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617175"
     },
@@ -3401,7 +3401,7 @@
      "rarity": "Common",
      "printing": null,
      "variant": "special",
-     "price": 114,
+     "price": 112.56,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617177_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617177"
     },
@@ -3434,7 +3434,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "alt",
-     "price": 62.6,
+     "price": 61.63,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617170_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617170"
     },
@@ -3445,7 +3445,7 @@
      "rarity": "Common",
      "printing": null,
      "variant": "special",
-     "price": 60,
+     "price": 60.04,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617174_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617174"
     },
@@ -3456,7 +3456,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 38.45,
+     "price": 38.12,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617148_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617148"
     },
@@ -3467,7 +3467,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 36.83,
+     "price": 36.76,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617029_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617029"
     },
@@ -3478,7 +3478,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "alt",
-     "price": 31.34,
+     "price": 30.81,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617172_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617172"
     },
@@ -3489,7 +3489,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 29.38,
+     "price": 29.06,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617082_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617082"
     },
@@ -3500,7 +3500,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 28.7,
+     "price": 28.67,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617058_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617058"
     },
@@ -3511,7 +3511,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 26.48,
+     "price": 26.76,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/617067_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/617067"
     }
@@ -3525,7 +3525,7 @@
    "pack": {
     "id": 563833,
     "name": "Emperors in the New World - Booster Pack",
-    "market": 14.27,
+    "market": 14.25,
     "url": "https://www.tcgplayer.com/product/563833"
    },
    "sleevedPack": {
@@ -3540,7 +3540,7 @@
     "market": 668.33,
     "url": "https://www.tcgplayer.com/product/563834"
    },
-   "cards": 160,
+   "cards": 162,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -3608,7 +3608,7 @@
      "variant": "superalt",
      "n": 2,
      "nPriced": 2,
-     "avg": 258.41,
+     "avg": 257.025,
      "median": 260.05,
      "max": 260.05
     },
@@ -3638,9 +3638,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 109.85,
-     "median": 109.85,
-     "max": 109.85
+     "avg": 101.83,
+     "median": 101.83,
+     "max": 101.83
     },
     {
      "rarity": "Secret Rare",
@@ -3648,9 +3648,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 65.676,
-     "median": 89.42,
-     "max": 89.42
+     "avg": 64.94,
+     "median": 88.98,
+     "max": 88.98
     },
     {
      "rarity": "Leader",
@@ -3658,8 +3658,8 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 52.313,
-     "median": 52.01,
+     "avg": 51.895,
+     "median": 50.7,
      "max": 133.71
     },
     {
@@ -3668,9 +3668,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 18.265,
-     "median": 29.3,
-     "max": 29.3
+     "avg": 18.04,
+     "median": 28.75,
+     "max": 28.75
     },
     {
      "rarity": "Rare",
@@ -3678,9 +3678,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 15.285,
-     "median": 15.63,
-     "max": 34.88
+     "avg": 15.2,
+     "median": 15.2,
+     "max": 35.02
     },
     {
      "rarity": "Super Rare",
@@ -3688,9 +3688,9 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 9.892,
+     "avg": 9.809,
      "median": 6.58,
-     "max": 29.8
+     "max": 29.16
     },
     {
      "rarity": "DON!!",
@@ -3698,7 +3698,7 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 4.33,
+     "avg": 4.39,
      "median": 5.28,
      "max": 5.28
     },
@@ -3708,9 +3708,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 0.76,
-     "median": 0.53,
-     "max": 1.76
+     "avg": 0.772,
+     "median": 0.57,
+     "max": 1.7
     },
     {
      "rarity": "DON!!",
@@ -3718,9 +3718,9 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.53,
-     "median": 0.53,
-     "max": 0.53
+     "avg": 0.46,
+     "median": 0.46,
+     "max": 0.46
     },
     {
      "rarity": "Rare",
@@ -3728,9 +3728,9 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.287,
+     "avg": 0.279,
      "median": 0.22,
-     "max": 1
+     "max": 0.98
     },
     {
      "rarity": "Leader",
@@ -3738,17 +3738,17 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.193,
+     "avg": 0.185,
      "median": 0.2,
-     "max": 0.26
+     "max": 0.23
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 29,
-     "nPriced": 29,
-     "avg": 0.117,
+     "n": 30,
+     "nPriced": 30,
+     "avg": 0.115,
      "median": 0.11,
      "max": 0.22
     },
@@ -3756,9 +3756,9 @@
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 44,
-     "nPriced": 44,
-     "avg": 0.086,
+     "n": 45,
+     "nPriced": 45,
+     "avg": 0.085,
      "median": 0.08,
      "max": 0.17
     }
@@ -3870,7 +3870,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "superalt",
-     "price": 256.77,
+     "price": 254,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/597037_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/597037"
     },
@@ -3925,7 +3925,7 @@
      "rarity": "Treasure Rare",
      "printing": null,
      "variant": "base",
-     "price": 109.85,
+     "price": 101.83,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/600658_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/600658"
     }
@@ -3939,22 +3939,22 @@
    "pack": {
     "id": 545398,
     "name": "Premium Booster - Booster Pack",
-    "market": 29.52,
+    "market": 29.83,
     "url": "https://www.tcgplayer.com/product/545398"
    },
    "sleevedPack": {
     "id": 622980,
     "name": "Premium Booster - Sleeved Booster Pack",
-    "market": 54.48,
+    "market": 54.92,
     "url": "https://www.tcgplayer.com/product/622980"
    },
    "box": {
     "id": 545399,
     "name": "Premium Booster - Booster Box",
-    "market": 932.17,
+    "market": 927.69,
     "url": "https://www.tcgplayer.com/product/545399"
    },
-   "cards": 323,
+   "cards": 325,
    "buckets": [
     {
      "rarity": "Rare",
@@ -3970,9 +3970,9 @@
      "rarity": "Secret Rare",
      "printing": "Normal",
      "variant": "manga",
-     "n": 4,
-     "nPriced": 4,
-     "avg": 2021.103,
+     "n": 5,
+     "nPriced": 5,
+     "avg": 1880.43,
      "median": 1250,
      "max": 5000
     },
@@ -3980,21 +3980,21 @@
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "manga",
-     "n": 6,
-     "nPriced": 5,
-     "avg": 1210,
-     "median": 748.02,
+     "n": 5,
+     "nPriced": 4,
+     "avg": 1349.753,
+     "median": 1000,
      "max": 3000
     },
     {
      "rarity": "DON!!",
      "printing": "Normal",
      "variant": "special",
-     "n": 29,
-     "nPriced": 29,
-     "avg": 131.474,
-     "median": 90.89,
-     "max": 729.46
+     "n": 30,
+     "nPriced": 30,
+     "avg": 130.525,
+     "median": 97.11,
+     "max": 728.26
     },
     {
      "rarity": "Leader",
@@ -4012,9 +4012,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 65.328,
+     "avg": 65.913,
      "median": 42.47,
-     "max": 209.86
+     "max": 213.45
     },
     {
      "rarity": "Common",
@@ -4022,7 +4022,7 @@
      "variant": "alt",
      "n": 4,
      "nPriced": 4,
-     "avg": 54.483,
+     "avg": 54.488,
      "median": 65.46,
      "max": 125.05
     },
@@ -4032,8 +4032,8 @@
      "variant": "fullart",
      "n": 4,
      "nPriced": 4,
-     "avg": 35.813,
-     "median": 46.24,
+     "avg": 35.903,
+     "median": 46.6,
      "max": 76.82
     },
     {
@@ -4042,7 +4042,7 @@
      "variant": "alt",
      "n": 25,
      "nPriced": 25,
-     "avg": 28.693,
+     "avg": 28.682,
      "median": 16.19,
      "max": 122.98
     },
@@ -4062,7 +4062,7 @@
      "variant": "alt",
      "n": 5,
      "nPriced": 5,
-     "avg": 18.648,
+     "avg": 18.642,
      "median": 13.56,
      "max": 35.22
     },
@@ -4072,7 +4072,7 @@
      "variant": "fullart",
      "n": 14,
      "nPriced": 14,
-     "avg": 16.541,
+     "avg": 16.669,
      "median": 6.58,
      "max": 66.4
     },
@@ -4080,31 +4080,21 @@
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "fullart",
-     "n": 17,
-     "nPriced": 17,
-     "avg": 10.687,
-     "median": 5.06,
+     "n": 16,
+     "nPriced": 16,
+     "avg": 11.076,
+     "median": 7.23,
      "max": 52.04
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "fullart",
-     "n": 14,
-     "nPriced": 14,
-     "avg": 6.857,
-     "median": 4.17,
-     "max": 29.92
-    },
-    {
-     "rarity": "Rare",
-     "printing": "Normal",
-     "variant": "textured",
-     "n": 5,
-     "nPriced": 5,
-     "avg": 3.694,
-     "median": 3.92,
-     "max": 6.37
+     "n": 15,
+     "nPriced": 15,
+     "avg": 6.941,
+     "median": 4.15,
+     "max": 30.01
     },
     {
      "rarity": "Uncommon",
@@ -4112,7 +4102,7 @@
      "variant": "textured",
      "n": 8,
      "nPriced": 8,
-     "avg": 3.62,
+     "avg": 3.619,
      "median": 3.05,
      "max": 9.25
     },
@@ -4120,11 +4110,21 @@
      "rarity": "Secret Rare",
      "printing": "Normal",
      "variant": "base",
+     "n": 5,
+     "nPriced": 5,
+     "avg": 3.52,
+     "median": 2.08,
+     "max": 10.2
+    },
+    {
+     "rarity": "Rare",
+     "printing": "Normal",
+     "variant": "textured",
      "n": 6,
      "nPriced": 6,
-     "avg": 3.483,
-     "median": 2.32,
-     "max": 10.37
+     "avg": 3.448,
+     "median": 3.92,
+     "max": 6.37
     },
     {
      "rarity": "DON!!",
@@ -4132,9 +4132,9 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 2.058,
-     "median": 1.75,
-     "max": 5.27
+     "avg": 2.071,
+     "median": 1.76,
+     "max": 5.26
     },
     {
      "rarity": "Common",
@@ -4142,9 +4142,9 @@
      "variant": "textured",
      "n": 9,
      "nPriced": 9,
-     "avg": 1.769,
+     "avg": 1.766,
      "median": 1.35,
-     "max": 4.78
+     "max": 4.75
     },
     {
      "rarity": "Promo",
@@ -4152,9 +4152,9 @@
      "variant": "jollyroger",
      "n": 4,
      "nPriced": 4,
-     "avg": 1.554,
-     "median": 2.35,
-     "max": 3.23
+     "avg": 1.505,
+     "median": 2.18,
+     "max": 3.2
     },
     {
      "rarity": "Super Rare",
@@ -4163,8 +4163,8 @@
      "n": 17,
      "nPriced": 17,
      "avg": 0.645,
-     "median": 0.48,
-     "max": 2.84
+     "median": 0.49,
+     "max": 2.83
     },
     {
      "rarity": "Leader",
@@ -4172,17 +4172,17 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.58,
-     "median": 0.58,
-     "max": 0.58
+     "avg": 0.57,
+     "median": 0.57,
+     "max": 0.57
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "jollyroger",
-     "n": 22,
-     "nPriced": 22,
-     "avg": 0.54,
+     "n": 23,
+     "nPriced": 23,
+     "avg": 0.528,
      "median": 0.2,
      "max": 4.43
     },
@@ -4190,9 +4190,9 @@
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "jollyroger",
-     "n": 24,
-     "nPriced": 24,
-     "avg": 0.44,
+     "n": 25,
+     "nPriced": 25,
+     "avg": 0.458,
      "median": 0.3,
      "max": 3.54
     },
@@ -4200,20 +4200,20 @@
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "jollyroger",
-     "n": 21,
-     "nPriced": 21,
-     "avg": 0.417,
-     "median": 0.27,
-     "max": 1.26
+     "n": 20,
+     "nPriced": 20,
+     "avg": 0.42,
+     "median": 0.28,
+     "max": 1.25
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 11,
-     "nPriced": 11,
-     "avg": 0.305,
-     "median": 0.15,
+     "n": 10,
+     "nPriced": 10,
+     "avg": 0.322,
+     "median": 0.19,
      "max": 0.89
     },
     {
@@ -4227,16 +4227,6 @@
      "max": 0.33
     },
     {
-     "rarity": "Common",
-     "printing": "Normal",
-     "variant": "base",
-     "n": 1,
-     "nPriced": 1,
-     "avg": 0.12,
-     "median": 0.12,
-     "max": 0.12
-    },
-    {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
@@ -4245,6 +4235,16 @@
      "avg": 0.117,
      "median": 0.11,
      "max": 0.26
+    },
+    {
+     "rarity": "Common",
+     "printing": "Normal",
+     "variant": "base",
+     "n": 2,
+     "nPriced": 2,
+     "avg": 0.07,
+     "median": 0.12,
+     "max": 0.12
     }
    ],
    "top": [
@@ -4282,15 +4282,15 @@
      "url": "https://www.tcgplayer.com/product/587966"
     },
     {
-     "id": 587708,
-     "name": "Shanks (Manga)",
-     "num": "OP01-120",
+     "id": 587964,
+     "name": "Roronoa Zoro (Manga)",
+     "num": "OP06-118",
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "manga",
-     "price": 1250,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/587708_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/587708"
+     "price": 1983.33,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/587964_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/587964"
     },
     {
      "id": 587708,
@@ -4332,7 +4332,7 @@
      "rarity": "DON!!",
      "printing": null,
      "variant": "special",
-     "price": 729.46,
+     "price": 728.26,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/587192_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/587192"
     },
@@ -4348,15 +4348,15 @@
      "url": "https://www.tcgplayer.com/product/587958"
     },
     {
-     "id": 587958,
-     "name": "Sabo (OP04-083) (Manga)",
-     "num": "OP04-083",
-     "rarity": "Super Rare",
+     "id": 587710,
+     "name": "Sogeking (Manga)",
+     "num": "OP03-122",
+     "rarity": "Secret Rare",
      "printing": null,
      "variant": "manga",
-     "price": 650.99,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/587958_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/587958"
+     "price": 584.41,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/587710_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/587710"
     },
     {
      "id": 587710,
@@ -4409,7 +4409,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "alt",
-     "price": 209.86,
+     "price": 213.45,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/586960_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/586960"
     }
@@ -4438,7 +4438,7 @@
     "market": 245.13,
     "url": "https://www.tcgplayer.com/product/542504"
    },
-   "cards": 156,
+   "cards": 153,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -4471,16 +4471,6 @@
      "max": 268.49
     },
     {
-     "rarity": "Common",
-     "printing": "Normal",
-     "variant": "special",
-     "n": 5,
-     "nPriced": 5,
-     "avg": 111.336,
-     "median": 70.98,
-     "max": 197.71
-    },
-    {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "special",
@@ -4491,14 +4481,24 @@
      "max": 97.13
     },
     {
+     "rarity": "Common",
+     "printing": "Normal",
+     "variant": "special",
+     "n": 4,
+     "nPriced": 4,
+     "avg": 89.705,
+     "median": 70.74,
+     "max": 197.71
+    },
+    {
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 32.505,
+     "avg": 32.582,
      "median": 20.45,
-     "max": 90.1
+     "max": 90.02
     },
     {
      "rarity": "Secret Rare",
@@ -4506,9 +4506,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 15.665,
-     "median": 16.51,
-     "max": 16.51
+     "avg": 14.925,
+     "median": 16.46,
+     "max": 16.46
     },
     {
      "rarity": "Super Rare",
@@ -4516,8 +4516,8 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 14.547,
-     "median": 11.58,
+     "avg": 14.405,
+     "median": 11.49,
      "max": 31.59
     },
     {
@@ -4526,9 +4526,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 5.847,
-     "median": 3.74,
-     "max": 16.99
+     "avg": 5.818,
+     "median": 3.64,
+     "max": 16.88
     },
     {
      "rarity": "Secret Rare",
@@ -4536,9 +4536,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 4.57,
-     "median": 4.77,
-     "max": 4.77
+     "avg": 4.375,
+     "median": 4.39,
+     "max": 4.39
     },
     {
      "rarity": "DON!!",
@@ -4546,9 +4546,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 3.645,
-     "median": 4.34,
-     "max": 4.34
+     "avg": 3.64,
+     "median": 4.31,
+     "max": 4.31
     },
     {
      "rarity": "Super Rare",
@@ -4556,9 +4556,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.004,
-     "median": 1.01,
-     "max": 2.99
+     "avg": 0.999,
+     "median": 0.97,
+     "max": 2.92
     },
     {
      "rarity": "Rare",
@@ -4566,9 +4566,9 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.525,
-     "median": 0.18,
-     "max": 7.81
+     "avg": 0.524,
+     "median": 0.17,
+     "max": 7.73
     },
     {
      "rarity": "DON!!",
@@ -4576,29 +4576,29 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.46,
-     "median": 0.46,
-     "max": 0.46
+     "avg": 0.47,
+     "median": 0.47,
+     "max": 0.47
     },
     {
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "base",
-     "n": 6,
-     "nPriced": 6,
-     "avg": 0.162,
-     "median": 0.15,
-     "max": 0.25
+     "n": 5,
+     "nPriced": 5,
+     "avg": 0.152,
+     "median": 0.14,
+     "max": 0.24
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 31,
-     "nPriced": 31,
-     "avg": 0.096,
-     "median": 0.08,
-     "max": 0.23
+     "n": 30,
+     "nPriced": 30,
+     "avg": 0.101,
+     "median": 0.09,
+     "max": 0.26
     },
     {
      "rarity": "Common",
@@ -4606,7 +4606,7 @@
      "variant": "base",
      "n": 45,
      "nPriced": 45,
-     "avg": 0.061,
+     "avg": 0.062,
      "median": 0.06,
      "max": 0.11
     }
@@ -4657,17 +4657,6 @@
      "url": "https://www.tcgplayer.com/product/558165"
     },
     {
-     "id": 558165,
-     "name": "Jewelry Bonney (SP)",
-     "num": "ST02-007",
-     "rarity": "Common",
-     "printing": null,
-     "variant": "special",
-     "price": 197.71,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/558165_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/558165"
-    },
-    {
      "id": 558020,
      "name": "Charlotte Pudding (SP)",
      "num": "OP03-112",
@@ -4685,7 +4674,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 90.1,
+     "price": 90.02,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558022_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558022"
     },
@@ -4696,7 +4685,7 @@
      "rarity": "Common",
      "printing": null,
      "variant": "special",
-     "price": 70.98,
+     "price": 70.74,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558168_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558168"
     },
@@ -4707,7 +4696,7 @@
      "rarity": "Common",
      "printing": null,
      "variant": "special",
-     "price": 48.05,
+     "price": 48.14,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558166_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558166"
     },
@@ -4729,7 +4718,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 40.68,
+     "price": 41.34,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558089_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558089"
     },
@@ -4751,7 +4740,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 25.21,
+     "price": 24.18,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558146_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558146"
     },
@@ -4762,7 +4751,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 20.63,
+     "price": 20.57,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558049_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558049"
     },
@@ -4776,6 +4765,17 @@
      "price": 20.45,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/558046_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/558046"
+    },
+    {
+     "id": 558144,
+     "name": "Jewelry Bonney (Parallel)",
+     "num": "OP08-105",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "alt",
+     "price": 19.25,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/558144_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/558144"
     }
    ]
   },
@@ -4787,7 +4787,7 @@
    "pack": {
     "id": 532104,
     "name": "500 Years in the Future - Booster Pack",
-    "market": 11.19,
+    "market": 11.18,
     "url": "https://www.tcgplayer.com/product/532104"
    },
    "sleevedPack": {
@@ -4802,7 +4802,7 @@
     "market": 345.32,
     "url": "https://www.tcgplayer.com/product/532106"
    },
-   "cards": 152,
+   "cards": 154,
    "buckets": [
     {
      "rarity": "Super Rare",
@@ -4815,24 +4815,24 @@
      "max": 2168.35
     },
     {
+     "rarity": "Rare",
+     "printing": "Normal",
+     "variant": "special",
+     "n": 4,
+     "nPriced": 4,
+     "avg": 155.978,
+     "median": 85.84,
+     "max": 453.69
+    },
+    {
      "rarity": "Treasure Rare",
      "printing": "Normal",
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 119.1,
-     "median": 119.1,
-     "max": 119.1
-    },
-    {
-     "rarity": "Rare",
-     "printing": "Normal",
-     "variant": "special",
-     "n": 2,
-     "nPriced": 2,
-     "avg": 65.52,
-     "median": 85.84,
-     "max": 85.84
+     "avg": 117.86,
+     "median": 117.86,
+     "max": 117.86
     },
     {
      "rarity": "Super Rare",
@@ -4850,7 +4850,7 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 44.393,
+     "avg": 44.41,
      "median": 40.65,
      "max": 120.63
     },
@@ -4858,11 +4858,11 @@
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "alt",
-     "n": 9,
-     "nPriced": 9,
-     "avg": 20.704,
-     "median": 11.52,
-     "max": 55.84
+     "n": 10,
+     "nPriced": 10,
+     "avg": 19.95,
+     "median": 13.79,
+     "max": 55.56
     },
     {
      "rarity": "Secret Rare",
@@ -4870,9 +4870,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 14.3,
-     "median": 18.99,
-     "max": 18.99
+     "avg": 14.035,
+     "median": 18.5,
+     "max": 18.5
     },
     {
      "rarity": "Rare",
@@ -4880,9 +4880,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 9.55,
-     "median": 5.69,
-     "max": 28.08
+     "avg": 9.488,
+     "median": 5.84,
+     "max": 27.64
     },
     {
      "rarity": "DON!!",
@@ -4890,9 +4890,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 7.68,
-     "median": 10.3,
-     "max": 10.3
+     "avg": 7.66,
+     "median": 10.26,
+     "max": 10.26
     },
     {
      "rarity": "Super Rare",
@@ -4900,9 +4900,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.645,
-     "median": 1.54,
-     "max": 5.72
+     "avg": 1.638,
+     "median": 1.53,
+     "max": 5.69
     },
     {
      "rarity": "Secret Rare",
@@ -4910,19 +4910,19 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 1.425,
-     "median": 1.49,
-     "max": 1.49
+     "avg": 1.405,
+     "median": 1.45,
+     "max": 1.45
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 27,
-     "nPriced": 27,
-     "avg": 0.636,
-     "median": 0.22,
-     "max": 4.88
+     "n": 26,
+     "nPriced": 26,
+     "avg": 0.658,
+     "median": 0.23,
+     "max": 4.5
     },
     {
      "rarity": "DON!!",
@@ -4930,9 +4930,9 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.61,
-     "median": 0.61,
-     "max": 0.61
+     "avg": 0.62,
+     "median": 0.62,
+     "max": 0.62
     },
     {
      "rarity": "Leader",
@@ -4940,9 +4940,9 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.162,
-     "median": 0.15,
-     "max": 0.21
+     "avg": 0.16,
+     "median": 0.16,
+     "max": 0.2
     },
     {
      "rarity": "Uncommon",
@@ -4960,9 +4960,9 @@
      "variant": "base",
      "n": 45,
      "nPriced": 45,
-     "avg": 0.082,
+     "avg": 0.083,
      "median": 0.07,
-     "max": 0.26
+     "max": 0.25
     }
    ],
    "top": [
@@ -4976,6 +4976,17 @@
      "price": 2168.35,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/545841_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/545841"
+    },
+    {
+     "id": 545927,
+     "name": "O-Nami (SP)",
+     "num": "OP06-101",
+     "rarity": "Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 453.69,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/545927_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/545927"
     },
     {
      "id": 545823,
@@ -4995,7 +5006,7 @@
      "rarity": "Treasure Rare",
      "printing": null,
      "variant": "base",
-     "price": 119.1,
+     "price": 117.86,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/555691_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/555691"
     },
@@ -5028,7 +5039,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 55.84,
+     "price": 55.56,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/545908_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/545908"
     },
@@ -5050,7 +5061,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "special",
-     "price": 45.2,
+     "price": 45.04,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/545922_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/545922"
     },
@@ -5088,13 +5099,24 @@
      "url": "https://www.tcgplayer.com/product/545925"
     },
     {
+     "id": 545924,
+     "name": "Izo (SP)",
+     "num": "OP03-003",
+     "rarity": "Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 39.34,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/545924_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/545924"
+    },
+    {
      "id": 545804,
      "name": "Otama (Parallel)",
      "num": "OP07-022",
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 28.08,
+     "price": 27.64,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/545804_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/545804"
     },
@@ -5105,31 +5127,9 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 25.73,
+     "price": 25.45,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/545809_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/545809"
-    },
-    {
-     "id": 545779,
-     "name": "Monkey.D.Dragon (001) (Parallel)",
-     "num": "OP07-001",
-     "rarity": "Leader",
-     "printing": null,
-     "variant": "alt",
-     "price": 21.45,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/545779_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/545779"
-    },
-    {
-     "id": 545850,
-     "name": "Foxy (059) (Parallel)",
-     "num": "OP07-059",
-     "rarity": "Leader",
-     "printing": null,
-     "variant": "alt",
-     "price": 20.93,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/545850_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/545850"
     }
    ]
   },
@@ -5151,7 +5151,7 @@
     "market": 865.89,
     "url": "https://www.tcgplayer.com/product/521161"
    },
-   "cards": 80,
+   "cards": 79,
    "buckets": [
     {
      "rarity": "Super Rare",
@@ -5179,8 +5179,8 @@
      "variant": "alt",
      "n": 8,
      "nPriced": 8,
-     "avg": 42.648,
-     "median": 21.16,
+     "avg": 42.604,
+     "median": 21.04,
      "max": 158.75
     },
     {
@@ -5199,9 +5199,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 17.84,
-     "median": 17.84,
-     "max": 17.84
+     "avg": 17.75,
+     "median": 17.75,
+     "max": 17.75
     },
     {
      "rarity": "Rare",
@@ -5209,8 +5209,8 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 14.412,
-     "median": 11.89,
+     "avg": 14.418,
+     "median": 11.91,
      "max": 35.47
     },
     {
@@ -5219,9 +5219,9 @@
      "variant": "base",
      "n": 8,
      "nPriced": 8,
-     "avg": 5.669,
-     "median": 2.67,
-     "max": 31.15
+     "avg": 5.674,
+     "median": 2.7,
+     "max": 31.13
     },
     {
      "rarity": "Rare",
@@ -5229,9 +5229,9 @@
      "variant": "base",
      "n": 21,
      "nPriced": 21,
-     "avg": 1.464,
+     "avg": 1.429,
      "median": 0.78,
-     "max": 4.99
+     "max": 4.58
     },
     {
      "rarity": "Leader",
@@ -5247,11 +5247,11 @@
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 28,
-     "nPriced": 28,
+     "n": 27,
+     "nPriced": 27,
      "avg": 0.103,
      "median": 0.09,
-     "max": 0.24
+     "max": 0.23
     }
    ],
    "top": [
@@ -5339,7 +5339,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "base",
-     "price": 31.15,
+     "price": 31.13,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/544530_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/544530"
     },
@@ -5383,7 +5383,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 21.16,
+     "price": 21.04,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/544539_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/544539"
     },
@@ -5394,7 +5394,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "base",
-     "price": 17.84,
+     "price": 17.75,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/544601_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/544601"
     },
@@ -5405,7 +5405,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 17.21,
+     "price": 17.06,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/544567_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/544567"
     },
@@ -5416,7 +5416,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 11.89,
+     "price": 11.91,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/544527_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/544527"
     }
@@ -5442,10 +5442,10 @@
    "box": {
     "id": 515080,
     "name": "Wings of the Captain - Booster Box",
-    "market": 381.1,
+    "market": 380.53,
     "url": "https://www.tcgplayer.com/product/515080"
    },
-   "cards": 152,
+   "cards": 154,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -5463,9 +5463,9 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 307.35,
-     "median": 307.35,
-     "max": 307.35
+     "avg": 306.98,
+     "median": 306.98,
+     "max": 306.98
     },
     {
      "rarity": "Uncommon",
@@ -5483,7 +5483,7 @@
      "variant": "special",
      "n": 5,
      "nPriced": 5,
-     "avg": 136.944,
+     "avg": 136.956,
      "median": 91.02,
      "max": 324.36
     },
@@ -5503,9 +5503,19 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 36.91,
+     "avg": 36.895,
      "median": 34.9,
-     "max": 72.33
+     "max": 72.31
+    },
+    {
+     "rarity": "Rare",
+     "printing": "Normal",
+     "variant": "alt",
+     "n": 5,
+     "nPriced": 5,
+     "avg": 14.744,
+     "median": 16.89,
+     "max": 25.35
     },
     {
      "rarity": "Super Rare",
@@ -5513,19 +5523,9 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 14.802,
-     "median": 14.5,
-     "max": 39.07
-    },
-    {
-     "rarity": "Rare",
-     "printing": "Normal",
-     "variant": "alt",
-     "n": 6,
-     "nPriced": 6,
-     "avg": 12.915,
-     "median": 16.97,
-     "max": 25.31
+     "avg": 14.606,
+     "median": 14.24,
+     "max": 38.84
     },
     {
      "rarity": "Secret Rare",
@@ -5533,9 +5533,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 7.45,
-     "median": 8.88,
-     "max": 8.88
+     "avg": 7.4,
+     "median": 8.9,
+     "max": 8.9
     },
     {
      "rarity": "DON!!",
@@ -5543,9 +5543,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 3.675,
-     "median": 5.35,
-     "max": 5.35
+     "avg": 3.625,
+     "median": 5.25,
+     "max": 5.25
     },
     {
      "rarity": "Super Rare",
@@ -5553,9 +5553,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.373,
-     "median": 1.38,
-     "max": 3.84
+     "avg": 1.38,
+     "median": 1.36,
+     "max": 3.86
     },
     {
      "rarity": "DON!!",
@@ -5563,19 +5563,19 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.75,
-     "median": 0.75,
-     "max": 0.75
+     "avg": 0.77,
+     "median": 0.77,
+     "max": 0.77
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 26,
-     "nPriced": 26,
-     "avg": 0.632,
+     "n": 27,
+     "nPriced": 27,
+     "avg": 0.597,
      "median": 0.2,
-     "max": 6.74
+     "max": 6.65
     },
     {
      "rarity": "Leader",
@@ -5583,17 +5583,17 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.177,
-     "median": 0.19,
-     "max": 0.2
+     "avg": 0.172,
+     "median": 0.18,
+     "max": 0.19
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 28,
-     "nPriced": 28,
-     "avg": 0.104,
+     "n": 30,
+     "nPriced": 30,
+     "avg": 0.105,
      "median": 0.09,
      "max": 0.24
     },
@@ -5604,7 +5604,7 @@
      "n": 45,
      "nPriced": 45,
      "avg": 0.068,
-     "median": 0.07,
+     "median": 0.06,
      "max": 0.15
     }
    ],
@@ -5638,7 +5638,7 @@
      "rarity": "Treasure Rare",
      "printing": null,
      "variant": "base",
-     "price": 307.35,
+     "price": 306.98,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/541664_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/541664"
     },
@@ -5693,7 +5693,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 72.33,
+     "price": 72.31,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/539490_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/539490"
     },
@@ -5715,7 +5715,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 57.49,
+     "price": 57.55,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/541044_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/541044"
     },
@@ -5726,7 +5726,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 52.06,
+     "price": 52.12,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/541669_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/541669"
     },
@@ -5737,7 +5737,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 39.07,
+     "price": 38.84,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/541060_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/541060"
     },
@@ -5770,7 +5770,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 34.46,
+     "price": 34.41,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/541007_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/541007"
     }
@@ -5784,7 +5784,7 @@
    "pack": {
     "id": 498733,
     "name": "Awakening of the New Era - Booster Pack",
-    "market": 32.51,
+    "market": 32.31,
     "url": "https://www.tcgplayer.com/product/498733"
    },
    "sleevedPack": {
@@ -5796,18 +5796,18 @@
    "box": {
     "id": 498734,
     "name": "Awakening of the New Era - Booster Box",
-    "market": 1150.99,
+    "market": 1142.99,
     "url": "https://www.tcgplayer.com/product/498734"
    },
-   "cards": 156,
+   "cards": 158,
    "buckets": [
     {
      "rarity": "Super Rare",
      "printing": "Normal",
      "variant": "manga",
-     "n": 1,
-     "nPriced": 1,
-     "avg": 1550,
+     "n": 2,
+     "nPriced": 2,
+     "avg": 1216.865,
      "median": 1550,
      "max": 1550
     },
@@ -5820,6 +5820,16 @@
      "avg": 553.94,
      "median": 553.94,
      "max": 553.94
+    },
+    {
+     "rarity": "Super Rare",
+     "printing": "Normal",
+     "variant": "alt",
+     "n": 13,
+     "nPriced": 13,
+     "avg": 396.592,
+     "median": 6.17,
+     "max": 4999.99
     },
     {
      "rarity": "Secret Rare",
@@ -5847,8 +5857,8 @@
      "variant": "special",
      "n": 3,
      "nPriced": 3,
-     "avg": 127.947,
-     "median": 156.59,
+     "avg": 127.783,
+     "median": 156.1,
      "max": 161.06
     },
     {
@@ -5857,19 +5867,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 41.912,
+     "avg": 41.732,
      "median": 23.74,
-     "max": 128.16
-    },
-    {
-     "rarity": "Super Rare",
-     "printing": "Normal",
-     "variant": "alt",
-     "n": 11,
-     "nPriced": 11,
-     "avg": 13.689,
-     "median": 6.13,
-     "max": 78.3
+     "max": 127.12
     },
     {
      "rarity": "Rare",
@@ -5877,9 +5877,9 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 10.77,
+     "avg": 10.725,
      "median": 5.56,
-     "max": 38.45
+     "max": 38.21
     },
     {
      "rarity": "DON!!",
@@ -5887,9 +5887,9 @@
      "variant": "manga",
      "n": 1,
      "nPriced": 1,
-     "avg": 7.59,
-     "median": 7.59,
-     "max": 7.59
+     "avg": 7.45,
+     "median": 7.45,
+     "max": 7.45
     },
     {
      "rarity": "Secret Rare",
@@ -5898,8 +5898,8 @@
      "n": 2,
      "nPriced": 2,
      "avg": 5.635,
-     "median": 9.82,
-     "max": 9.82
+     "median": 9.87,
+     "max": 9.87
     },
     {
      "rarity": "DON!!",
@@ -5917,9 +5917,9 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.9,
-     "median": 0.9,
-     "max": 0.9
+     "avg": 0.93,
+     "median": 0.93,
+     "max": 0.93
     },
     {
      "rarity": "Super Rare",
@@ -5927,9 +5927,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 0.742,
-     "median": 0.54,
-     "max": 2.36
+     "avg": 0.728,
+     "median": 0.51,
+     "max": 2.4
     },
     {
      "rarity": "Rare",
@@ -5937,8 +5937,8 @@
      "variant": "base",
      "n": 26,
      "nPriced": 26,
-     "avg": 0.334,
-     "median": 0.25,
+     "avg": 0.333,
+     "median": 0.26,
      "max": 0.96
     },
     {
@@ -5957,7 +5957,7 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 0.128,
+     "avg": 0.127,
      "median": 0.12,
      "max": 0.25
     },
@@ -5968,14 +5968,14 @@
      "n": 45,
      "nPriced": 45,
      "avg": 0.093,
-     "median": 0.07,
-     "max": 0.37
+     "median": 0.08,
+     "max": 0.34
     },
     {
      "rarity": "Secret Rare",
      "printing": "Normal",
      "variant": "manga",
-     "n": 2,
+     "n": 1,
      "nPriced": 0,
      "avg": null,
      "median": null,
@@ -5983,6 +5983,17 @@
     }
    ],
    "top": [
+    {
+     "id": 529850,
+     "name": "Monkey.D.Luffy (012) (Alternate Art) (Gold-Stamped Signature)",
+     "num": "ST01-012",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "alt",
+     "price": 4999.99,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/529850_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/529850"
+    },
     {
      "id": 527019,
      "name": "Trafalgar Law (069) (Alternate Art) (Manga)",
@@ -5993,6 +6004,17 @@
      "price": 1550,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/527019_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/527019"
+    },
+    {
+     "id": 527020,
+     "name": "Eustass\"Captain\"Kid (Alternate Art) (Manga)",
+     "num": "OP05-074",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "manga",
+     "price": 883.73,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/527020_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/527020"
     },
     {
      "id": 527035,
@@ -6056,7 +6078,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 156.59,
+     "price": 156.1,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/527041_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/527041"
     },
@@ -6067,7 +6089,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 128.16,
+     "price": 127.12,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/527014_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/527014"
     },
@@ -6078,7 +6100,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 78.3,
+     "price": 77.86,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/527027_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/527027"
     },
@@ -6111,7 +6133,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 38.45,
+     "price": 38.21,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/527665_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/527665"
     },
@@ -6125,28 +6147,6 @@
      "price": 23.74,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/527011_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/527011"
-    },
-    {
-     "id": 527008,
-     "name": "Belo Betty (002) (Alternate Art)",
-     "num": "OP05-002",
-     "rarity": "Leader",
-     "printing": null,
-     "variant": "alt",
-     "price": 22.59,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/527008_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/527008"
-    },
-    {
-     "id": 527010,
-     "name": "Donquixote Rosinante (022) (Alternate Art)",
-     "num": "OP05-022",
-     "rarity": "Leader",
-     "printing": null,
-     "variant": "alt",
-     "price": 21.14,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/527010_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/527010"
     }
    ]
   },
@@ -6158,7 +6158,7 @@
    "pack": {
     "id": 485832,
     "name": "Kingdoms of Intrigue - Booster Pack",
-    "market": 14.05,
+    "market": 13.99,
     "url": "https://www.tcgplayer.com/product/485832"
    },
    "sleevedPack": {
@@ -6191,7 +6191,7 @@
      "variant": "special",
      "n": 5,
      "nPriced": 5,
-     "avg": 300.552,
+     "avg": 299.796,
      "median": 146.48,
      "max": 995.56
     },
@@ -6201,7 +6201,7 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 58.743,
+     "avg": 58.747,
      "median": 49.01,
      "max": 144.52
     },
@@ -6211,9 +6211,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 26.845,
-     "median": 43.21,
-     "max": 43.21
+     "avg": 26.315,
+     "median": 42.22,
+     "max": 42.22
     },
     {
      "rarity": "Super Rare",
@@ -6221,7 +6221,7 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 17.548,
+     "avg": 17.452,
      "median": 9.48,
      "max": 55.72
     },
@@ -6231,9 +6231,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 6.165,
-     "median": 6.98,
-     "max": 6.98
+     "avg": 6.145,
+     "median": 6.94,
+     "max": 6.94
     },
     {
      "rarity": "Secret Rare",
@@ -6241,9 +6241,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 5.64,
-     "median": 9.09,
-     "max": 9.09
+     "avg": 5.608,
+     "median": 9.026,
+     "max": 9.026
     },
     {
      "rarity": "Rare",
@@ -6251,8 +6251,8 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 2.812,
-     "median": 3.17,
+     "avg": 2.822,
+     "median": 3.19,
      "max": 4.41
     },
     {
@@ -6261,9 +6261,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 0.794,
-     "median": 0.55,
-     "max": 2.52
+     "avg": 0.795,
+     "median": 0.57,
+     "max": 2.51
     },
     {
      "rarity": "DON!!",
@@ -6271,17 +6271,17 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.66,
-     "median": 0.66,
-     "max": 0.66
+     "avg": 0.63,
+     "median": 0.63,
+     "max": 0.63
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 30,
-     "nPriced": 30,
-     "avg": 0.468,
+     "n": 28,
+     "nPriced": 28,
+     "avg": 0.494,
      "median": 0.15,
      "max": 7.86
     },
@@ -6291,7 +6291,7 @@
      "variant": "base",
      "n": 32,
      "nPriced": 32,
-     "avg": 0.175,
+     "avg": 0.174,
      "median": 0.06,
      "max": 2.43
     },
@@ -6301,17 +6301,17 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 0.167,
-     "median": 0.18,
+     "avg": 0.163,
+     "median": 0.17,
      "max": 0.18
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 45,
-     "nPriced": 45,
-     "avg": 0.078,
+     "n": 47,
+     "nPriced": 47,
+     "avg": 0.081,
      "median": 0.05,
      "max": 0.58
     }
@@ -6346,7 +6346,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "special",
-     "price": 237.23,
+     "price": 233.31,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/516554_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/516554"
     },
@@ -6417,6 +6417,17 @@
      "url": "https://www.tcgplayer.com/product/510994"
     },
     {
+     "id": 516556,
+     "name": "Magellan (SP)",
+     "num": "OP02-085",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "special",
+     "price": 48.23,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/516556_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/516556"
+    },
+    {
      "id": 511766,
      "name": "Crocodile (058) (Alternate Art)",
      "num": "OP04-058",
@@ -6428,24 +6439,13 @@
      "url": "https://www.tcgplayer.com/product/511766"
     },
     {
-     "id": 516556,
-     "name": "Magellan (SP)",
-     "num": "OP02-085",
-     "rarity": "Super Rare",
-     "printing": null,
-     "variant": "special",
-     "price": 48.09,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/516556_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/516556"
-    },
-    {
      "id": 515333,
      "name": "Nefeltari Vivi (118) (Alternate Art)",
      "num": "OP04-118",
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "alt",
-     "price": 43.21,
+     "price": 42.22,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/515333_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/515333"
     },
@@ -6456,7 +6456,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 42.37,
+     "price": 41.69,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/515279_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/515279"
     },
@@ -6498,16 +6498,16 @@
    "sleevedPack": {
     "id": 531776,
     "name": "Pillars of Strength - Sleeved Booster Pack",
-    "market": 35.55,
+    "market": 35.87,
     "url": "https://www.tcgplayer.com/product/531776"
    },
    "box": {
     "id": 477176,
     "name": "Pillars of Strength - Booster Box",
-    "market": 543.18,
+    "market": 539.74,
     "url": "https://www.tcgplayer.com/product/477176"
    },
-   "cards": 157,
+   "cards": 155,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -6533,19 +6533,19 @@
      "rarity": "Leader",
      "printing": "Normal",
      "variant": "alt",
-     "n": 9,
-     "nPriced": 9,
-     "avg": 72.52,
-     "median": 39.73,
-     "max": 246.82
+     "n": 8,
+     "nPriced": 8,
+     "avg": 71.549,
+     "median": 39.79,
+     "max": 248.37
     },
     {
      "rarity": "Secret Rare",
      "printing": "Normal",
      "variant": "alt",
-     "n": 2,
-     "nPriced": 2,
-     "avg": 26.1,
+     "n": 3,
+     "nPriced": 3,
+     "avg": 28.06,
      "median": 32.18,
      "max": 32.18
     },
@@ -6553,21 +6553,11 @@
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "alt",
-     "n": 5,
-     "nPriced": 5,
-     "avg": 11.52,
-     "median": 10.46,
+     "n": 6,
+     "nPriced": 6,
+     "avg": 10.528,
+     "median": 10.43,
      "max": 21.44
-    },
-    {
-     "rarity": "Secret Rare",
-     "printing": "Normal",
-     "variant": "base",
-     "n": 2,
-     "nPriced": 2,
-     "avg": 10.865,
-     "median": 18.54,
-     "max": 18.54
     },
     {
      "rarity": "Super Rare",
@@ -6575,9 +6565,19 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 5.872,
+     "avg": 5.877,
      "median": 5.83,
      "max": 9.45
+    },
+    {
+     "rarity": "Secret Rare",
+     "printing": "Normal",
+     "variant": "base",
+     "n": 1,
+     "nPriced": 1,
+     "avg": 3.18,
+     "median": 3.18,
+     "max": 3.18
     },
     {
      "rarity": "DON!!",
@@ -6595,9 +6595,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 0.684,
+     "avg": 0.683,
      "median": 0.52,
-     "max": 1.6
+     "max": 1.57
     },
     {
      "rarity": "Leader",
@@ -6607,7 +6607,7 @@
      "nPriced": 8,
      "avg": 0.369,
      "median": 0.21,
-     "max": 1.31
+     "max": 1.3
     },
     {
      "rarity": "Rare",
@@ -6617,17 +6617,17 @@
      "nPriced": 26,
      "avg": 0.24,
      "median": 0.21,
-     "max": 0.49
+     "max": 0.48
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 33,
-     "nPriced": 33,
+     "n": 31,
+     "nPriced": 31,
      "avg": 0.119,
      "median": 0.09,
-     "max": 0.29
+     "max": 0.28
     },
     {
      "rarity": "Common",
@@ -6670,7 +6670,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 246.82,
+     "price": 248.37,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/498254_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/498254"
     },
@@ -6703,7 +6703,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 84.89,
+     "price": 84.98,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/498484_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/498484"
     },
@@ -6714,18 +6714,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 80.94,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/497934_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/497934"
-    },
-    {
-     "id": 497934,
-     "name": "Portgas.D.Ace (Alternate Art)",
-     "num": "OP03-001",
-     "rarity": "Leader",
-     "printing": null,
-     "variant": "alt",
-     "price": 80.94,
+     "price": 80.62,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/497934_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/497934"
     },
@@ -6747,7 +6736,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 39.73,
+     "price": 39.79,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/498064_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/498064"
     },
@@ -6774,13 +6763,24 @@
      "url": "https://www.tcgplayer.com/product/500116"
     },
     {
+     "id": 500116,
+     "name": "Sogeking (Alternate Art)",
+     "num": "OP03-122",
+     "rarity": "Secret Rare",
+     "printing": null,
+     "variant": "alt",
+     "price": 32.18,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/500116_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/500116"
+    },
+    {
      "id": 498297,
      "name": "Iceburg (Alternate Art)",
      "num": "OP03-058",
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 30.53,
+     "price": 30.54,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/498297_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/498297"
     },
@@ -6791,7 +6791,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 28.71,
+     "price": 28.63,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/498482_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/498482"
     },
@@ -6802,7 +6802,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 27.43,
+     "price": 26.77,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/498039_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/498039"
     }
@@ -6822,7 +6822,7 @@
    "sleevedPack": {
     "id": 531775,
     "name": "Paramount War - Sleeved Booster Pack",
-    "market": 30.74,
+    "market": 30.68,
     "url": "https://www.tcgplayer.com/product/531775"
    },
    "box": {
@@ -6831,7 +6831,7 @@
     "market": 605.01,
     "url": "https://www.tcgplayer.com/product/455866"
    },
-   "cards": 157,
+   "cards": 156,
    "buckets": [
     {
      "rarity": "Super Rare",
@@ -6849,8 +6849,8 @@
      "variant": "alt",
      "n": 8,
      "nPriced": 8,
-     "avg": 75.359,
-     "median": 88.87,
+     "avg": 75.159,
+     "median": 87.51,
      "max": 144.98
     },
     {
@@ -6859,9 +6859,9 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 29.826,
-     "median": 12.21,
-     "max": 90.2
+     "avg": 29.766,
+     "median": 12.2,
+     "max": 90.35
     },
     {
      "rarity": "Secret Rare",
@@ -6869,9 +6869,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 19.28,
-     "median": 26.79,
-     "max": 26.79
+     "avg": 19.24,
+     "median": 26.71,
+     "max": 26.71
     },
     {
      "rarity": "Rare",
@@ -6879,7 +6879,7 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 17.793,
+     "avg": 17.772,
      "median": 12.44,
      "max": 60.13
     },
@@ -6889,9 +6889,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 6.4,
-     "median": 10.33,
-     "max": 10.33
+     "avg": 6.38,
+     "median": 10.34,
+     "max": 10.34
     },
     {
      "rarity": "DON!!",
@@ -6899,9 +6899,9 @@
      "variant": "manga",
      "n": 1,
      "nPriced": 1,
-     "avg": 4.36,
-     "median": 4.36,
-     "max": 4.36
+     "avg": 4.26,
+     "median": 4.26,
+     "max": 4.26
     },
     {
      "rarity": "Super Rare",
@@ -6909,9 +6909,9 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.438,
+     "avg": 1.445,
      "median": 0.78,
-     "max": 4.63
+     "max": 4.68
     },
     {
      "rarity": "Leader",
@@ -6921,17 +6921,17 @@
      "nPriced": 8,
      "avg": 0.293,
      "median": 0.33,
-     "max": 0.36
+     "max": 0.38
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 27,
-     "nPriced": 27,
+     "n": 26,
+     "nPriced": 26,
      "avg": 0.265,
      "median": 0.23,
-     "max": 0.78
+     "max": 0.77
     },
     {
      "rarity": "DON!!",
@@ -6949,16 +6949,16 @@
      "variant": "base",
      "n": 30,
      "nPriced": 30,
-     "avg": 0.127,
-     "median": 0.12,
-     "max": 0.38
+     "avg": 0.125,
+     "median": 0.11,
+     "max": 0.37
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 45,
-     "nPriced": 45,
+     "n": 46,
+     "nPriced": 46,
      "avg": 0.071,
      "median": 0.06,
      "max": 0.19
@@ -7016,7 +7016,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 90.2,
+     "price": 90.35,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/482429_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/482429"
     },
@@ -7027,7 +7027,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 88.87,
+     "price": 87.51,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/484476_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/484476"
     },
@@ -7038,7 +7038,7 @@
      "rarity": "Super Rare",
      "printing": null,
      "variant": "alt",
-     "price": 79.82,
+     "price": 79.62,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/485814_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/485814"
     },
@@ -7082,7 +7082,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 39.14,
+     "price": 39.18,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/483949_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/483949"
     },
@@ -7093,7 +7093,7 @@
      "rarity": "Leader",
      "printing": null,
      "variant": "alt",
-     "price": 34.38,
+     "price": 34.1,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/483629_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/483629"
     },
@@ -7115,7 +7115,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "alt",
-     "price": 26.79,
+     "price": 26.71,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/483360_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/483360"
     },
@@ -7126,7 +7126,7 @@
      "rarity": "Rare",
      "printing": null,
      "variant": "alt",
-     "price": 19.88,
+     "price": 19.75,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/485813_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/485813"
     }
@@ -7140,7 +7140,7 @@
    "pack": {
     "id": 450085,
     "name": "Romance Dawn - Booster Pack",
-    "market": 69.47,
+    "market": 69.75,
     "url": "https://www.tcgplayer.com/product/450085"
    },
    "sleevedPack": {
@@ -7155,7 +7155,7 @@
     "market": 5622.48,
     "url": "https://www.tcgplayer.com/product/450086"
    },
-   "cards": 156,
+   "cards": 157,
    "buckets": [
     {
      "rarity": "Secret Rare",
@@ -7183,9 +7183,9 @@
      "variant": "alt",
      "n": 2,
      "nPriced": 2,
-     "avg": 121.03,
-     "median": 131.18,
-     "max": 131.18
+     "avg": 121.93,
+     "median": 132.98,
+     "max": 132.98
     },
     {
      "rarity": "Rare",
@@ -7193,8 +7193,8 @@
      "variant": "alt",
      "n": 6,
      "nPriced": 6,
-     "avg": 95.518,
-     "median": 26.68,
+     "avg": 95.533,
+     "median": 26.8,
      "max": 412.29
     },
     {
@@ -7203,9 +7203,9 @@
      "variant": "alt",
      "n": 10,
      "nPriced": 10,
-     "avg": 87.327,
-     "median": 54.08,
-     "max": 258.57
+     "avg": 87.504,
+     "median": 53.35,
+     "max": 261.13
     },
     {
      "rarity": "DON!!",
@@ -7213,9 +7213,9 @@
      "variant": "manga",
      "n": 1,
      "nPriced": 1,
-     "avg": 13.58,
-     "median": 13.58,
-     "max": 13.58
+     "avg": 13.27,
+     "median": 13.27,
+     "max": 13.27
     },
     {
      "rarity": "Secret Rare",
@@ -7223,9 +7223,9 @@
      "variant": "base",
      "n": 2,
      "nPriced": 2,
-     "avg": 6.925,
-     "median": 7.92,
-     "max": 7.92
+     "avg": 6.84,
+     "median": 7.95,
+     "max": 7.95
     },
     {
      "rarity": "Leader",
@@ -7233,9 +7233,9 @@
      "variant": "base",
      "n": 8,
      "nPriced": 8,
-     "avg": 3.226,
+     "avg": 3.183,
      "median": 0.35,
-     "max": 16.61
+     "max": 16.45
     },
     {
      "rarity": "Super Rare",
@@ -7243,27 +7243,27 @@
      "variant": "base",
      "n": 10,
      "nPriced": 10,
-     "avg": 1.442,
+     "avg": 1.43,
      "median": 1.22,
-     "max": 4.6
+     "max": 4.48
     },
     {
      "rarity": "Rare",
      "printing": "Normal",
      "variant": "base",
-     "n": 27,
-     "nPriced": 27,
-     "avg": 0.474,
+     "n": 26,
+     "nPriced": 26,
+     "avg": 0.482,
      "median": 0.27,
-     "max": 3.64
+     "max": 3.62
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 30,
-     "nPriced": 30,
-     "avg": 0.243,
+     "n": 31,
+     "nPriced": 31,
+     "avg": 0.239,
      "median": 0.15,
      "max": 0.92
     },
@@ -7273,19 +7273,19 @@
      "variant": "base",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.18,
-     "median": 0.18,
-     "max": 0.18
+     "avg": 0.19,
+     "median": 0.19,
+     "max": 0.19
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 44,
-     "nPriced": 44,
-     "avg": 0.115,
+     "n": 45,
+     "nPriced": 45,
+     "avg": 0.122,
      "median": 0.08,
-     "max": 0.83
+     "max": 1.13
     }
    ],
    "top": [
@@ -7345,6 +7345,17 @@
      "url": "https://www.tcgplayer.com/product/454536"
     },
     {
+     "id": 453511,
+     "name": "Roronoa Zoro (025) (Parallel)",
+     "num": "OP01-025",
+     "rarity": "Super Rare",
+     "printing": null,
+     "variant": "alt",
+     "price": 261.13,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/453511_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/453511"
+    },
+    {
      "id": 454586,
      "name": "Donquixote Doflamingo (060) (Parallel)",
      "num": "OP01-060",
@@ -7354,17 +7365,6 @@
      "price": 258.96,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/454586_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/454586"
-    },
-    {
-     "id": 453511,
-     "name": "Roronoa Zoro (025) (Parallel)",
-     "num": "OP01-025",
-     "rarity": "Super Rare",
-     "printing": null,
-     "variant": "alt",
-     "price": 258.57,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/453511_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/453511"
     },
     {
      "id": 453509,
@@ -7406,7 +7406,7 @@
      "rarity": "Secret Rare",
      "printing": null,
      "variant": "alt",
-     "price": 131.18,
+     "price": 132.98,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/454669_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/454669"
     },
