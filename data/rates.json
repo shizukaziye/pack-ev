@@ -1824,19 +1824,6 @@
         "Super Rare": 0.291667
       }
     },
-    "ME: 30th Celebration": {
-      "confidence": "measured",
-      "sample": "3,000 packs opened by the TCGplayer Authentication Center",
-      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-30th-Celebration-Pull-Rates/587b3657-481a-4ab8-827c-68cd3ab585b0/",
-      "rates": {
-        "Double Rare (ex)": 0.2102,
-        "Illustration Rare": 0.1972,
-        "Special Illustration Rare": 0.048799999999999996
-      },
-      "unknown": [
-        "rgb rare"
-      ]
-    },
     "ME05: Pitch Black": {
       "confidence": "measured",
       "sample": "4,000 packs opened by the TCGplayer Authentication Center",
@@ -1987,15 +1974,6 @@
         "Hyper / Mega Hyper Rare": 0.0073
       }
     },
-    "SWSH07: Evolving Skies": {
-      "confidence": "measured",
-      "sample": "8,000 packs opened by the TCGplayer Authentication Center",
-      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Evolving-Skies-Pull-Rates/6a743d7b-e5ee-4fd6-9d18-64a636990e8c/",
-      "rates": {
-        "Ultra Rare (V / VMAX / full art)": 0.2034,
-        "Secret / Rainbow / Gold": 0.0175
-      }
-    },
     "SV06: Twilight Masquerade": {
       "confidence": "measured",
       "sample": "8,000 packs opened by the TCGplayer Authentication Center",
@@ -2047,18 +2025,6 @@
         "Hyper / Mega Hyper Rare": 0.012199999999999999
       }
     },
-    "SV: Scarlet & Violet 151": {
-      "confidence": "measured",
-      "sample": "1,500 packs opened by the TCGplayer Authentication Center",
-      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Scarlet-%26-Violet%E2%80%94151-Pull-Rates/b237df74-fbb0-40d0-9e13-d69ee6e804d9/",
-      "rates": {
-        "Double Rare (ex)": 0.1328,
-        "Ultra Rare": 0.0644,
-        "Illustration Rare": 0.085,
-        "Special Illustration Rare": 0.0311,
-        "Hyper / Mega Hyper Rare": 0.0194
-      }
-    },
     "SV03: Obsidian Flames": {
       "confidence": "measured",
       "sample": "8,000 packs opened by the TCGplayer Authentication Center",
@@ -2093,6 +2059,18 @@
         "Illustration Rare": 0.0767,
         "Special Illustration Rare": 0.0315,
         "Hyper / Mega Hyper Rare": 0.018500000000000003
+      }
+    },
+    "SV: Scarlet & Violet 151": {
+      "confidence": "measured",
+      "sample": "1,500 packs opened by the TCGplayer Authentication Center",
+      "source": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Scarlet-%26-Violet%E2%80%94151-Pull-Rates/b237df74-fbb0-40d0-9e13-d69ee6e804d9/",
+      "rates": {
+        "Double Rare (ex)": 0.1328,
+        "Ultra Rare": 0.0644,
+        "Illustration Rare": 0.085,
+        "Special Illustration Rare": 0.0311,
+        "Hyper / Mega Hyper Rare": 0.0194
       }
     }
   },
