@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T18:29:59.619Z",
+  "updated": "2026-10-09T18:01:38.262Z",
   "games": {
     "pokemon": [
       {
@@ -7,7 +7,12 @@
         "set": "ME06: Delta Reign",
         "setCode": "DLR",
         "release": "2026-11-06",
-        "pack": null,
+        "pack": {
+          "id": 712099,
+          "name": "Delta Reign Booster Pack",
+          "market": 14.28,
+          "url": "https://www.tcgplayer.com/product/712099"
+        },
         "sleevedPack": {
           "id": 712112,
           "name": "Delta Reign Sleeved Booster Pack",
@@ -17,7 +22,7 @@
         "box": {
           "id": 712094,
           "name": "Delta Reign Booster Box",
-          "market": 260.91,
+          "market": 253.39,
           "url": "https://www.tcgplayer.com/product/712094"
         }
       },
@@ -29,7 +34,7 @@
         "pack": {
           "id": 696613,
           "name": "30th Celebration Booster Pack",
-          "market": 13.04,
+          "market": 12.61,
           "url": "https://www.tcgplayer.com/product/696613"
         },
         "sleevedPack": null,
@@ -43,19 +48,19 @@
         "pack": {
           "id": 692944,
           "name": "Pitch Black Booster Pack",
-          "market": 5.85,
+          "market": 5.92,
           "url": "https://www.tcgplayer.com/product/692944"
         },
         "sleevedPack": {
           "id": 692957,
           "name": "Pitch Black Sleeved Booster Pack",
-          "market": 6.29,
+          "market": 6.31,
           "url": "https://www.tcgplayer.com/product/692957"
         },
         "box": {
           "id": 692939,
           "name": "Pitch Black Booster Box",
-          "market": 188.43,
+          "market": 184.23,
           "url": "https://www.tcgplayer.com/product/692939"
         }
       },
@@ -67,19 +72,19 @@
         "pack": {
           "id": 684446,
           "name": "Chaos Rising Booster Pack",
-          "market": 5.91,
+          "market": 5.89,
           "url": "https://www.tcgplayer.com/product/684446"
         },
         "sleevedPack": {
           "id": 684448,
           "name": "Chaos Rising Sleeved Booster Pack",
-          "market": 6.62,
+          "market": 6.54,
           "url": "https://www.tcgplayer.com/product/684448"
         },
         "box": {
           "id": 684444,
           "name": "Chaos Rising Booster Box",
-          "market": 187.49,
+          "market": 184.71,
           "url": "https://www.tcgplayer.com/product/684444"
         }
       },
@@ -105,7 +110,7 @@
         "pack": {
           "id": 672398,
           "name": "Perfect Order Booster Pack",
-          "market": 6.05,
+          "market": 6.02,
           "url": "https://www.tcgplayer.com/product/672398"
         },
         "sleevedPack": {
@@ -117,7 +122,7 @@
         "box": {
           "id": 672394,
           "name": "Perfect Order Booster Box",
-          "market": 173.17,
+          "market": 172,
           "url": "https://www.tcgplayer.com/product/672394"
         }
       },
@@ -129,7 +134,7 @@
         "pack": {
           "id": 672434,
           "name": "Ascended Heroes Booster Pack",
-          "market": 12.14,
+          "market": 11.99,
           "url": "https://www.tcgplayer.com/product/672434"
         },
         "sleevedPack": null,
@@ -143,7 +148,7 @@
         "pack": {
           "id": 654144,
           "name": "Phantasmal Flames Booster Pack",
-          "market": 12.18,
+          "market": 12.26,
           "url": "https://www.tcgplayer.com/product/654144"
         },
         "sleevedPack": {
@@ -155,7 +160,7 @@
         "box": {
           "id": 654137,
           "name": "Phantasmal Flames Booster Box",
-          "market": 392.96,
+          "market": 392.16,
           "url": "https://www.tcgplayer.com/product/654137"
         }
       },
@@ -167,19 +172,19 @@
         "pack": {
           "id": 644352,
           "name": "Mega Evolution Booster Pack",
-          "market": 8.69,
+          "market": 8.77,
           "url": "https://www.tcgplayer.com/product/644352"
         },
         "sleevedPack": {
           "id": 644354,
           "name": "Mega Evolution Sleeved Booster Pack",
-          "market": 9.82,
+          "market": 9.62,
           "url": "https://www.tcgplayer.com/product/644354"
         },
         "box": {
           "id": 644298,
           "name": "Mega Evolution Booster Box",
-          "market": 304.11,
+          "market": 303.71,
           "url": "https://www.tcgplayer.com/product/644298"
         }
       },
@@ -191,7 +196,7 @@
         "pack": {
           "id": 630434,
           "name": "Black Bolt Booster Pack",
-          "market": 14.52,
+          "market": 14.51,
           "url": "https://www.tcgplayer.com/product/630434"
         },
         "sleevedPack": null,
@@ -205,7 +210,7 @@
         "pack": {
           "id": 630699,
           "name": "White Flare Booster Pack",
-          "market": 14.74,
+          "market": 14.3,
           "url": "https://www.tcgplayer.com/product/630699"
         },
         "sleevedPack": null,
@@ -219,13 +224,13 @@
         "pack": {
           "id": 624683,
           "name": "Destined Rivals Booster Pack",
-          "market": 8.49,
+          "market": 8.41,
           "url": "https://www.tcgplayer.com/product/624683"
         },
         "sleevedPack": {
           "id": 624684,
           "name": "Destined Rivals Sleeved Booster Pack",
-          "market": 9.8,
+          "market": 9.88,
           "url": "https://www.tcgplayer.com/product/624684"
         },
         "box": {
@@ -243,7 +248,7 @@
         "pack": {
           "id": 610935,
           "name": "Journey Together Booster Pack",
-          "market": 6.37,
+          "market": 6.3,
           "url": "https://www.tcgplayer.com/product/610935"
         },
         "sleevedPack": {
@@ -253,10 +258,10 @@
           "url": "https://www.tcgplayer.com/product/610934"
         },
         "box": {
-          "id": 623628,
-          "name": "Journey Together Enhanced Booster Box",
-          "market": 242.39,
-          "url": "https://www.tcgplayer.com/product/623628"
+          "id": 649492,
+          "name": "Journey Together Half Booster Box",
+          "market": 333.33,
+          "url": "https://www.tcgplayer.com/product/649492"
         }
       },
       {
@@ -267,7 +272,7 @@
         "pack": {
           "id": 593294,
           "name": "Prismatic Evolutions Booster Pack",
-          "market": 14.97,
+          "market": 14.88,
           "url": "https://www.tcgplayer.com/product/593294"
         },
         "sleevedPack": null,
@@ -281,7 +286,7 @@
         "pack": {
           "id": 565604,
           "name": "Surging Sparks Booster Pack",
-          "market": 8.95,
+          "market": 8.82,
           "url": "https://www.tcgplayer.com/product/565604"
         },
         "sleevedPack": {
@@ -317,7 +322,7 @@
         "box": {
           "id": 557354,
           "name": "Stellar Crown Booster Box",
-          "market": 302.1,
+          "market": 301.51,
           "url": "https://www.tcgplayer.com/product/557354"
         }
       },
@@ -329,7 +334,7 @@
         "pack": {
           "id": 579930,
           "name": "Trick or Trade BOOster Bundle 2024 - Mini Booster Pack",
-          "market": 2.2,
+          "market": 2.14,
           "url": "https://www.tcgplayer.com/product/579930"
         },
         "sleevedPack": null,
@@ -381,7 +386,7 @@
         "pack": {
           "id": 532841,
           "name": "Temporal Forces Booster Pack",
-          "market": 9.51,
+          "market": 9.47,
           "url": "https://www.tcgplayer.com/product/532841"
         },
         "sleevedPack": {
@@ -405,7 +410,7 @@
         "pack": {
           "id": 528038,
           "name": "Paldean Fates Booster Pack",
-          "market": 24.48,
+          "market": 24.39,
           "url": "https://www.tcgplayer.com/product/528038"
         },
         "sleevedPack": null,
@@ -425,7 +430,7 @@
         "sleevedPack": {
           "id": 517210,
           "name": "Paradox Rift Sleeved Booster Pack",
-          "market": 11.53,
+          "market": 11.48,
           "url": "https://www.tcgplayer.com/product/517210"
         },
         "box": {
@@ -443,7 +448,7 @@
         "pack": {
           "id": 504467,
           "name": "151 Booster Pack",
-          "market": 29.03,
+          "market": 29,
           "url": "https://www.tcgplayer.com/product/504467"
         },
         "sleevedPack": null,
@@ -457,7 +462,7 @@
         "pack": {
           "id": 505945,
           "name": "Trick or Trade BOOster Bundle 2023 - Mini Booster Pack",
-          "market": 2.39,
+          "market": 2.38,
           "url": "https://www.tcgplayer.com/product/505945"
         },
         "sleevedPack": null,
@@ -471,7 +476,7 @@
         "pack": {
           "id": 501256,
           "name": "Obsidian Flames Booster Pack",
-          "market": 12.69,
+          "market": 12.65,
           "url": "https://www.tcgplayer.com/product/501256"
         },
         "sleevedPack": {
@@ -483,7 +488,7 @@
         "box": {
           "id": 501257,
           "name": "Obsidian Flames Booster Box",
-          "market": 365.26,
+          "market": 366.27,
           "url": "https://www.tcgplayer.com/product/501257"
         }
       },
@@ -501,7 +506,7 @@
         "sleevedPack": {
           "id": 496927,
           "name": "Paldea Evolved Sleeved Booster Pack",
-          "market": 16.92,
+          "market": 16.87,
           "url": "https://www.tcgplayer.com/product/496927"
         },
         "box": {
@@ -519,7 +524,7 @@
         "pack": {
           "id": 476451,
           "name": "Scarlet & Violet Booster Pack",
-          "market": 8.95,
+          "market": 9,
           "url": "https://www.tcgplayer.com/product/476451"
         },
         "sleevedPack": {
@@ -531,7 +536,7 @@
         "box": {
           "id": 476452,
           "name": "Scarlet & Violet Booster Box",
-          "market": 295.26,
+          "market": 295.06,
           "url": "https://www.tcgplayer.com/product/476452"
         }
       },
@@ -581,7 +586,7 @@
         "pack": {
           "id": 277325,
           "name": "Lost Origin Booster Pack",
-          "market": 19.14,
+          "market": 19.12,
           "url": "https://www.tcgplayer.com/product/277325"
         },
         "sleevedPack": {
@@ -605,7 +610,7 @@
         "pack": {
           "id": 280301,
           "name": "Trick or Trade BOOster Bundle - Mini Booster Pack",
-          "market": 1.59,
+          "market": 1.82,
           "url": "https://www.tcgplayer.com/product/280301"
         },
         "sleevedPack": null,
@@ -619,7 +624,7 @@
         "pack": {
           "id": 274421,
           "name": "Pokemon GO Booster Pack",
-          "market": 15.03,
+          "market": 15.1,
           "url": "https://www.tcgplayer.com/product/274421"
         },
         "sleevedPack": null,
@@ -639,7 +644,7 @@
         "sleevedPack": {
           "id": 496130,
           "name": "Astral Radiance Sleeved Booster Pack Case",
-          "market": 1376.42,
+          "market": 1386.66,
           "url": "https://www.tcgplayer.com/product/496130"
         },
         "box": {
@@ -657,7 +662,7 @@
         "pack": {
           "id": 256124,
           "name": "Brilliant Stars Booster Pack",
-          "market": 16.57,
+          "market": 16.48,
           "url": "https://www.tcgplayer.com/product/256124"
         },
         "sleevedPack": {
@@ -687,7 +692,7 @@
         "sleevedPack": {
           "id": 247656,
           "name": "Fusion Strike Sleeved Booster Pack",
-          "market": 27.52,
+          "market": 27.57,
           "url": "https://www.tcgplayer.com/product/247656"
         },
         "box": {
@@ -705,7 +710,7 @@
         "pack": {
           "id": 248577,
           "name": "Celebrations Booster Pack",
-          "market": 33.63,
+          "market": 33.57,
           "url": "https://www.tcgplayer.com/product/248577"
         },
         "sleevedPack": null,
@@ -719,13 +724,13 @@
         "pack": {
           "id": 244337,
           "name": "Evolving Skies Booster Pack",
-          "market": 44.75,
+          "market": 44.39,
           "url": "https://www.tcgplayer.com/product/244337"
         },
         "sleevedPack": {
           "id": 242438,
           "name": "Evolving Skies Sleeved Booster Pack",
-          "market": 58.59,
+          "market": 58.09,
           "url": "https://www.tcgplayer.com/product/242438"
         },
         "box": {
@@ -743,19 +748,19 @@
         "pack": {
           "id": 236257,
           "name": "Chilling Reign Booster Pack",
-          "market": 12.79,
+          "market": 12.91,
           "url": "https://www.tcgplayer.com/product/236257"
         },
         "sleevedPack": {
           "id": 242013,
           "name": "Chilling Reign Sleeved Booster Pack",
-          "market": 19.4,
+          "market": 19.35,
           "url": "https://www.tcgplayer.com/product/242013"
         },
         "box": {
           "id": 236258,
           "name": "Chilling Reign Booster Box",
-          "market": 463.16,
+          "market": 461.52,
           "url": "https://www.tcgplayer.com/product/236258"
         }
       },
@@ -767,7 +772,7 @@
         "pack": {
           "id": 229276,
           "name": "Battle Styles Booster Pack",
-          "market": 9.63,
+          "market": 9.59,
           "url": "https://www.tcgplayer.com/product/229276"
         },
         "sleevedPack": {
@@ -779,7 +784,7 @@
         "box": {
           "id": 229277,
           "name": "Battle Styles Booster Box",
-          "market": 284.39,
+          "market": 284.17,
           "url": "https://www.tcgplayer.com/product/229277"
         }
       },
@@ -805,7 +810,7 @@
         "pack": {
           "id": 232748,
           "name": "McDonald's 25th Anniversary Booster Pack",
-          "market": 8.55,
+          "market": 8.57,
           "url": "https://www.tcgplayer.com/product/232748"
         },
         "sleevedPack": null,
@@ -831,7 +836,7 @@
         "box": {
           "id": 221313,
           "name": "Vivid Voltage Booster Box",
-          "market": 314.52,
+          "market": 314.8,
           "url": "https://www.tcgplayer.com/product/221313"
         }
       },
@@ -843,7 +848,7 @@
         "pack": {
           "id": 218789,
           "name": "Champion's Path Booster Pack",
-          "market": 19.43,
+          "market": 19.48,
           "url": "https://www.tcgplayer.com/product/218789"
         },
         "sleevedPack": null,
@@ -857,13 +862,13 @@
         "pack": {
           "id": 216852,
           "name": "Darkness Ablaze Booster Pack",
-          "market": 9.93,
+          "market": 9.96,
           "url": "https://www.tcgplayer.com/product/216852"
         },
         "sleevedPack": {
           "id": 257320,
           "name": "Darkness Ablaze Sleeved Booster Pack",
-          "market": 11.72,
+          "market": 11.68,
           "url": "https://www.tcgplayer.com/product/257320"
         },
         "box": {
@@ -881,7 +886,7 @@
         "pack": {
           "id": 210562,
           "name": "Rebel Clash Booster Pack",
-          "market": 12.55,
+          "market": 12.64,
           "url": "https://www.tcgplayer.com/product/210562"
         },
         "sleevedPack": {
@@ -927,7 +932,12 @@
           "market": 72.35,
           "url": "https://www.tcgplayer.com/product/199263"
         },
-        "sleevedPack": null,
+        "sleevedPack": {
+          "id": 546609,
+          "name": "SM - Cosmic Eclipse Sleeved Booster Pack",
+          "market": 125.32,
+          "url": "https://www.tcgplayer.com/product/546609"
+        },
         "box": {
           "id": 199261,
           "name": "Cosmic Eclipse Booster Box",
@@ -976,7 +986,7 @@
         "pack": {
           "id": 185718,
           "name": "Unbroken Bonds Booster Pack",
-          "market": 68.23,
+          "market": 67.91,
           "url": "https://www.tcgplayer.com/product/185718"
         },
         "sleevedPack": {
@@ -995,7 +1005,7 @@
         "pack": {
           "id": 187239,
           "name": "Detective Pikachu Booster Pack",
-          "market": 24.6,
+          "market": 24.61,
           "url": "https://www.tcgplayer.com/product/187239"
         },
         "sleevedPack": null,
@@ -1083,10 +1093,10 @@
         "setCode": "SM06",
         "release": "2018-05-04",
         "pack": {
-          "id": 164297,
-          "name": "Forbidden Light Booster Pack",
-          "market": 47.62,
-          "url": "https://www.tcgplayer.com/product/164297"
+          "id": 641117,
+          "name": "Forbidden Light 3-Card Booster Pack",
+          "market": 13.07,
+          "url": "https://www.tcgplayer.com/product/641117"
         },
         "sleevedPack": null,
         "box": null
@@ -1118,14 +1128,14 @@
         "pack": {
           "id": 146996,
           "name": "Crimson Invasion Booster Pack",
-          "market": 18.25,
+          "market": 18.33,
           "url": "https://www.tcgplayer.com/product/146996"
         },
         "sleevedPack": null,
         "box": {
           "id": 146995,
           "name": "Crimson Invasion Booster Box",
-          "market": 677.35,
+          "market": 676.91,
           "url": "https://www.tcgplayer.com/product/146995"
         }
       },
@@ -1160,11 +1170,25 @@
           "market": 35.86,
           "url": "https://www.tcgplayer.com/product/550677"
         },
+        "box": null
+      },
+      {
+        "game": "pokemon",
+        "set": "SM - Guardians Rising",
+        "setCode": "SM02",
+        "release": "2017-05-05",
+        "pack": null,
+        "sleevedPack": {
+          "id": 616825,
+          "name": "Guardians Rising Sleeved Booster Pack",
+          "market": 36.89,
+          "url": "https://www.tcgplayer.com/product/616825"
+        },
         "box": {
-          "id": 133773,
-          "name": "Burning Shadows Booster Box",
-          "market": 1270.62,
-          "url": "https://www.tcgplayer.com/product/133773"
+          "id": 129888,
+          "name": "Guardians Rising Booster Box",
+          "market": 1881.33,
+          "url": "https://www.tcgplayer.com/product/129888"
         }
       },
       {
@@ -1241,12 +1265,17 @@
           "url": "https://www.tcgplayer.com/product/168114"
         },
         "sleevedPack": {
-          "id": 504698,
-          "name": "XY - Fates Collide Sleeved Booster Pack [Delphox BREAK]",
-          "market": 47.5,
-          "url": "https://www.tcgplayer.com/product/504698"
+          "id": 504699,
+          "name": "XY - Fates Collide Sleeved Booster Pack [Lugia BREAK]",
+          "market": 50.96,
+          "url": "https://www.tcgplayer.com/product/504699"
         },
-        "box": null
+        "box": {
+          "id": 117478,
+          "name": "XY Fates Collide Booster Box",
+          "market": 2754.99,
+          "url": "https://www.tcgplayer.com/product/117478"
+        }
       },
       {
         "game": "pokemon",
@@ -1276,7 +1305,7 @@
         "sleevedPack": {
           "id": 542096,
           "name": "XY - BREAKpoint Sleeved Booster Pack",
-          "market": 53.82,
+          "market": 54.63,
           "url": "https://www.tcgplayer.com/product/542096"
         },
         "box": null
@@ -1361,7 +1390,7 @@
         "sleevedPack": {
           "id": 546608,
           "name": "XY - Primal Clash Sleeved Booster Pack",
-          "market": 98.64,
+          "market": 98.66,
           "url": "https://www.tcgplayer.com/product/546608"
         },
         "box": null
@@ -1377,12 +1406,7 @@
           "market": 225.48,
           "url": "https://www.tcgplayer.com/product/94622"
         },
-        "sleevedPack": {
-          "id": 550676,
-          "name": "Phantom Forces Sleeved Booster Pack",
-          "market": null,
-          "url": "https://www.tcgplayer.com/product/550676"
-        },
+        "sleevedPack": null,
         "box": {
           "id": 94623,
           "name": "XY Phantom Forces Booster Box",
@@ -1450,11 +1474,25 @@
           "market": 159.99,
           "url": "https://www.tcgplayer.com/product/562107"
         },
+        "box": null
+      },
+      {
+        "game": "pokemon",
+        "set": "Legendary Treasures",
+        "setCode": "LTR",
+        "release": "2013-11-06",
+        "pack": {
+          "id": 98581,
+          "name": "Legendary Treasures Booster Pack",
+          "market": 382.43,
+          "url": "https://www.tcgplayer.com/product/98581"
+        },
+        "sleevedPack": null,
         "box": {
-          "id": 91601,
-          "name": "XY Booster Box",
-          "market": 3900,
-          "url": "https://www.tcgplayer.com/product/91601"
+          "id": 98580,
+          "name": "Legendary Treasures Booster Box",
+          "market": 18750,
+          "url": "https://www.tcgplayer.com/product/98580"
         }
       },
       {
@@ -1479,11 +1517,16 @@
         "pack": {
           "id": 98517,
           "name": "Plasma Freeze Booster Pack",
-          "market": 323.86,
+          "market": 329.09,
           "url": "https://www.tcgplayer.com/product/98517"
         },
         "sleevedPack": null,
-        "box": null
+        "box": {
+          "id": 98516,
+          "name": "Plasma Freeze Booster Box",
+          "market": 14999,
+          "url": "https://www.tcgplayer.com/product/98516"
+        }
       },
       {
         "game": "pokemon",
@@ -1618,14 +1661,14 @@
       },
       {
         "game": "pokemon",
-        "set": "Undaunted",
-        "setCode": "UD",
-        "release": "2010-08-18",
+        "set": "Arceus",
+        "setCode": "AR",
+        "release": "2009-11-04",
         "pack": {
-          "id": 98586,
-          "name": "Undaunted Booster Pack",
-          "market": null,
-          "url": "https://www.tcgplayer.com/product/98586"
+          "id": 98594,
+          "name": "Arceus Booster Pack",
+          "market": 568.06,
+          "url": "https://www.tcgplayer.com/product/98594"
         },
         "sleevedPack": null,
         "box": null
@@ -1730,20 +1773,6 @@
       },
       {
         "game": "pokemon",
-        "set": "Mysterious Treasures",
-        "setCode": "MT",
-        "release": "2007-08-22",
-        "pack": {
-          "id": 98561,
-          "name": "Mysterious Treasures Booster Pack",
-          "market": 339.83,
-          "url": "https://www.tcgplayer.com/product/98561"
-        },
-        "sleevedPack": null,
-        "box": null
-      },
-      {
-        "game": "pokemon",
         "set": "Diamond and Pearl",
         "setCode": "DP",
         "release": "2007-05-23",
@@ -1808,6 +1837,20 @@
           "name": "Hidden Legends Booster Pack",
           "market": 800,
           "url": "https://www.tcgplayer.com/product/98595"
+        },
+        "sleevedPack": null,
+        "box": null
+      },
+      {
+        "game": "pokemon",
+        "set": "EX Team Magma vs Team Aqua",
+        "setCode": "MA",
+        "release": "2004-03-15",
+        "pack": {
+          "id": 98550,
+          "name": "Team Magma vs Team Aqua Booster Pack",
+          "market": null,
+          "url": "https://www.tcgplayer.com/product/98550"
         },
         "sleevedPack": null,
         "box": null
@@ -1884,20 +1927,6 @@
       },
       {
         "game": "pokemon",
-        "set": "Legendary Collection",
-        "setCode": "LC",
-        "release": "2002-05-24",
-        "pack": {
-          "id": 138150,
-          "name": "Legendary Collection Booster Pack",
-          "market": null,
-          "url": "https://www.tcgplayer.com/product/138150"
-        },
-        "sleevedPack": null,
-        "box": null
-      },
-      {
-        "game": "pokemon",
         "set": "Neo Revelation",
         "setCode": "N3",
         "release": "2001-09-21",
@@ -1930,10 +1959,10 @@
         "setCode": "G2",
         "release": "2000-10-16",
         "pack": {
-          "id": 138140,
-          "name": "Gym Challenge Booster Pack [1st Edition]",
-          "market": 825,
-          "url": "https://www.tcgplayer.com/product/138140"
+          "id": 138139,
+          "name": "Gym Challenge Booster Pack [Unlimited Edition]",
+          "market": 419.99,
+          "url": "https://www.tcgplayer.com/product/138139"
         },
         "sleevedPack": null,
         "box": {
@@ -2040,12 +2069,7 @@
           "url": "https://www.tcgplayer.com/product/138130"
         },
         "sleevedPack": null,
-        "box": {
-          "id": 185731,
-          "name": "Base Set Booster Box [Revised Unlimited Edition]",
-          "market": null,
-          "url": "https://www.tcgplayer.com/product/185731"
-        }
+        "box": null
       },
       {
         "game": "pokemon",
@@ -2072,10 +2096,10 @@
         "setCode": "MCAP",
         "release": null,
         "pack": {
-          "id": 190360,
-          "name": "General Mills Promo Booster Pack [Sun & Moon]",
-          "market": 32.56,
-          "url": "https://www.tcgplayer.com/product/190360"
+          "id": 190359,
+          "name": "General Mills Promo Booster Pack [Kanto]",
+          "market": 32.53,
+          "url": "https://www.tcgplayer.com/product/190359"
         },
         "sleevedPack": null,
         "box": null
@@ -2126,7 +2150,7 @@
         "box": {
           "id": 711385,
           "name": "Extra Booster: One Piece Heroines Edition Vol.2 - Booster Box",
-          "market": 361.75,
+          "market": 361.49,
           "url": "https://www.tcgplayer.com/product/711385"
         }
       },
@@ -2138,19 +2162,19 @@
         "pack": {
           "id": 704756,
           "name": "The World's Strongest Warriors Booster Pack",
-          "market": 8.8,
+          "market": 9.66,
           "url": "https://www.tcgplayer.com/product/704756"
         },
         "sleevedPack": {
           "id": 704755,
           "name": "The World's Strongest Warriors Sleeved Booster Pack",
-          "market": 13.09,
+          "market": 12.41,
           "url": "https://www.tcgplayer.com/product/704755"
         },
         "box": {
           "id": 704752,
           "name": "The World's Strongest Warriors Booster Box",
-          "market": 299.07,
+          "market": 294.57,
           "url": "https://www.tcgplayer.com/product/704752"
         }
       },
@@ -2162,19 +2186,19 @@
         "pack": {
           "id": 689341,
           "name": "The Time of Battle Booster Pack",
-          "market": 7.23,
+          "market": 7.15,
           "url": "https://www.tcgplayer.com/product/689341"
         },
         "sleevedPack": {
           "id": 689347,
           "name": "The Time of Battle Sleeved Booster Pack",
-          "market": 10.12,
+          "market": 10.02,
           "url": "https://www.tcgplayer.com/product/689347"
         },
         "box": {
           "id": 689336,
           "name": "The Time of Battle Booster Box",
-          "market": 224.9,
+          "market": 222.16,
           "url": "https://www.tcgplayer.com/product/689336"
         }
       },
@@ -2186,7 +2210,7 @@
         "pack": {
           "id": 682056,
           "name": "Adventure on Kami's Island Booster Pack",
-          "market": 8.01,
+          "market": 8.09,
           "url": "https://www.tcgplayer.com/product/682056"
         },
         "sleevedPack": {
@@ -2198,7 +2222,7 @@
         "box": {
           "id": 682057,
           "name": "Adventure on Kami's Island Booster Box",
-          "market": 255.75,
+          "market": 256.31,
           "url": "https://www.tcgplayer.com/product/682057"
         }
       },
@@ -2224,7 +2248,7 @@
         "pack": {
           "id": 666577,
           "name": "The Azure Sea's Seven Booster Pack",
-          "market": 8.66,
+          "market": 8.68,
           "url": "https://www.tcgplayer.com/product/666577"
         },
         "sleevedPack": {
@@ -2236,7 +2260,7 @@
         "box": {
           "id": 665598,
           "name": "The Azure Sea's Seven Booster Box",
-          "market": 268.06,
+          "market": 267.77,
           "url": "https://www.tcgplayer.com/product/665598"
         }
       },
@@ -2248,19 +2272,19 @@
         "pack": {
           "id": 628351,
           "name": "Carrying On His Will Booster Pack",
-          "market": 10.89,
+          "market": 10.99,
           "url": "https://www.tcgplayer.com/product/628351"
         },
         "sleevedPack": {
           "id": 652643,
           "name": "Carrying On His Will Sleeved Booster Pack",
-          "market": 20.52,
+          "market": 20.37,
           "url": "https://www.tcgplayer.com/product/652643"
         },
         "box": {
           "id": 628352,
           "name": "Carrying On His Will Booster Box",
-          "market": 439.74,
+          "market": 439.98,
           "url": "https://www.tcgplayer.com/product/628352"
         }
       },
@@ -2272,7 +2296,7 @@
         "pack": {
           "id": 628451,
           "name": "Premium Booster Vol. 2 - Booster Pack",
-          "market": 13.16,
+          "market": 13.18,
           "url": "https://www.tcgplayer.com/product/628451"
         },
         "sleevedPack": {
@@ -2296,7 +2320,7 @@
         "pack": {
           "id": 628345,
           "name": "Legacy of the Master Booster Pack",
-          "market": 8.51,
+          "market": 8.56,
           "url": "https://www.tcgplayer.com/product/628345"
         },
         "sleevedPack": {
@@ -2308,7 +2332,7 @@
         "box": {
           "id": 628346,
           "name": "Legacy of the Master Booster Box",
-          "market": 290.37,
+          "market": 288.57,
           "url": "https://www.tcgplayer.com/product/628346"
         }
       },
@@ -2320,7 +2344,7 @@
         "pack": {
           "id": 620179,
           "name": "A Fist of Divine Speed Booster Pack",
-          "market": 12.08,
+          "market": 12.05,
           "url": "https://www.tcgplayer.com/product/620179"
         },
         "sleevedPack": {
@@ -2344,7 +2368,7 @@
         "pack": {
           "id": 586670,
           "name": "Royal Blood Booster Pack",
-          "market": 10.12,
+          "market": 10.24,
           "url": "https://www.tcgplayer.com/product/586670"
         },
         "sleevedPack": {
@@ -2368,7 +2392,7 @@
         "pack": {
           "id": 563833,
           "name": "Emperors in the New World - Booster Pack",
-          "market": 18.82,
+          "market": 18.71,
           "url": "https://www.tcgplayer.com/product/563833"
         },
         "sleevedPack": {
@@ -2404,7 +2428,7 @@
         "box": {
           "id": 545399,
           "name": "Premium Booster - Booster Box",
-          "market": 900.28,
+          "market": 903.88,
           "url": "https://www.tcgplayer.com/product/545399"
         }
       },
@@ -2428,7 +2452,7 @@
         "box": {
           "id": 542504,
           "name": "Two Legends - Booster Box",
-          "market": 247.27,
+          "market": 246.75,
           "url": "https://www.tcgplayer.com/product/542504"
         }
       },
@@ -2483,7 +2507,7 @@
         "pack": {
           "id": 515077,
           "name": "Wings of the Captain - Booster Pack",
-          "market": 14.41,
+          "market": 14.61,
           "url": "https://www.tcgplayer.com/product/515077"
         },
         "sleevedPack": {
@@ -2495,7 +2519,7 @@
         "box": {
           "id": 515080,
           "name": "Wings of the Captain - Booster Box",
-          "market": 402.34,
+          "market": 402.74,
           "url": "https://www.tcgplayer.com/product/515080"
         }
       },
@@ -2519,7 +2543,7 @@
         "box": {
           "id": 498734,
           "name": "Awakening of the New Era - Booster Box",
-          "market": 1055.89,
+          "market": 1053.09,
           "url": "https://www.tcgplayer.com/product/498734"
         }
       },
@@ -2660,7 +2684,7 @@
         "box": {
           "id": 711365,
           "name": "Radiance - Booster Display",
-          "market": 168.46,
+          "market": 150.09,
           "url": "https://www.tcgplayer.com/product/711365"
         }
       },
@@ -2672,7 +2696,7 @@
         "pack": {
           "id": 693377,
           "name": "Vendetta - Booster Pack",
-          "market": 7.44,
+          "market": 7.42,
           "url": "https://www.tcgplayer.com/product/693377"
         },
         "sleevedPack": {
@@ -2684,7 +2708,7 @@
         "box": {
           "id": 693380,
           "name": "Vendetta - Booster Display",
-          "market": 146.56,
+          "market": 147.63,
           "url": "https://www.tcgplayer.com/product/693380"
         }
       },
@@ -2708,7 +2732,7 @@
         "box": {
           "id": 678150,
           "name": "Unleashed - Booster Display",
-          "market": 171.94,
+          "market": 173.94,
           "url": "https://www.tcgplayer.com/product/678150"
         }
       },
@@ -2726,13 +2750,13 @@
         "sleevedPack": {
           "id": 678766,
           "name": "Spiritforged - Sleeved Booster Pack",
-          "market": 11.87,
+          "market": 11.95,
           "url": "https://www.tcgplayer.com/product/678766"
         },
         "box": {
           "id": 661934,
           "name": "Spiritforged - Booster Display",
-          "market": 187.3,
+          "market": 184.93,
           "url": "https://www.tcgplayer.com/product/661934"
         }
       },
@@ -2744,7 +2768,7 @@
         "pack": {
           "id": 635366,
           "name": "Origins - Booster Pack",
-          "market": 12.6,
+          "market": 12.52,
           "url": "https://www.tcgplayer.com/product/635366"
         },
         "sleevedPack": {
@@ -2756,7 +2780,7 @@
         "box": {
           "id": 635368,
           "name": "Origins - Booster Display",
-          "market": 235.38,
+          "market": 228.98,
           "url": "https://www.tcgplayer.com/product/635368"
         }
       }
