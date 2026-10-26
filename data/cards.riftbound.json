@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T15:49:45.050Z",
+ "updated": "2026-10-26T18:30:11.661Z",
  "game": "riftbound",
  "sets": [
   {
@@ -10,32 +10,32 @@
    "pack": {
     "id": 711362,
     "name": "Radiance - Booster Pack",
-    "market": 6.82,
+    "market": 6.63,
     "url": "https://www.tcgplayer.com/product/711362"
    },
    "sleevedPack": {
     "id": 711363,
     "name": "Radiance - Sleeved Booster Pack",
-    "market": 19.99,
+    "market": 16.25,
     "url": "https://www.tcgplayer.com/product/711363"
    },
    "box": {
     "id": 711365,
     "name": "Radiance - Booster Display",
-    "market": 133.82,
+    "market": 130.77,
     "url": "https://www.tcgplayer.com/product/711365"
    },
-   "cards": 325,
+   "cards": 328,
    "buckets": [
     {
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "n": 14,
-     "nPriced": 5,
-     "avg": 679.148,
-     "median": 702.75,
-     "max": 999.99
+     "n": 15,
+     "nPriced": 9,
+     "avg": 793.962,
+     "median": 740,
+     "max": 1281.94
     },
     {
      "rarity": "Showcase",
@@ -43,19 +43,19 @@
      "variant": "ultimate",
      "n": 1,
      "nPriced": 1,
-     "avg": 590.46,
-     "median": 590.46,
-     "max": 590.46
+     "avg": 560.62,
+     "median": 560.62,
+     "max": 560.62
     },
     {
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "n": 17,
-     "nPriced": 17,
-     "avg": 109.046,
-     "median": 81.48,
-     "max": 268.74
+     "n": 16,
+     "nPriced": 16,
+     "avg": 99.259,
+     "median": 72.25,
+     "max": 263.91
     },
     {
      "rarity": "Showcase",
@@ -63,19 +63,9 @@
      "variant": "base",
      "n": 11,
      "nPriced": 11,
-     "avg": 14.978,
-     "median": 5.184,
-     "max": 41.61
-    },
-    {
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "alt",
-     "n": 18,
-     "nPriced": 18,
-     "avg": 4.709,
-     "median": 3.84,
-     "max": 13.23
+     "avg": 15.985,
+     "median": 4.93,
+     "max": 49.95
     },
     {
      "rarity": "Epic",
@@ -83,9 +73,19 @@
      "variant": "base",
      "n": 28,
      "nPriced": 28,
-     "avg": 4.493,
-     "median": 2.1,
-     "max": 40.3472
+     "avg": 5.079,
+     "median": 1.964,
+     "max": 52.99
+    },
+    {
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "alt",
+     "n": 18,
+     "nPriced": 18,
+     "avg": 4.478,
+     "median": 3.64,
+     "max": 12.16
     },
     {
      "rarity": "Uncommon",
@@ -93,29 +93,29 @@
      "variant": "base",
      "n": 46,
      "nPriced": 46,
-     "avg": 0.902,
-     "median": 0.48,
-     "max": 5.99
+     "avg": 0.841,
+     "median": 0.47,
+     "max": 5.29
     },
     {
      "rarity": "Common",
      "printing": "Foil",
      "variant": "base",
-     "n": 47,
-     "nPriced": 47,
-     "avg": 0.423,
-     "median": 0.38,
-     "max": 1.75
+     "n": 48,
+     "nPriced": 48,
+     "avg": 0.398,
+     "median": 0.35,
+     "max": 1.63
     },
     {
      "rarity": "Rare",
      "printing": "Foil",
      "variant": "base",
-     "n": 44,
-     "nPriced": 44,
-     "avg": 0.274,
-     "median": 0.23,
-     "max": 1.03
+     "n": 45,
+     "nPriced": 45,
+     "avg": 0.225,
+     "median": 0.18,
+     "max": 1.1724
     },
     {
      "rarity": "Uncommon",
@@ -123,22 +123,44 @@
      "variant": "base",
      "n": 46,
      "nPriced": 46,
-     "avg": 0.203,
-     "median": 0.17,
-     "max": 0.83
+     "avg": 0.176,
+     "median": 0.15,
+     "max": 0.86
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 53,
-     "nPriced": 53,
-     "avg": 0.158,
-     "median": 0.15,
-     "max": 0.47
+     "n": 54,
+     "nPriced": 54,
+     "avg": 0.13,
+     "median": 0.13,
+     "max": 0.26
     }
    ],
    "top": [
+    {
+     "id": 724654,
+     "name": "Riven, The Exile (Signature)",
+     "num": "173*/167",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "signature",
+     "price": 1281.94,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/724654_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/724654"
+    },
+    {
+     "id": 724655,
+     "name": "Seraphine, Starry-Eyed Songstress (Signature)",
+     "num": "174*/167",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "signature",
+     "price": 1110.98,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/724655_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/724655"
+    },
     {
      "id": 724651,
      "name": "Mordekaiser, Iron Revenant (Signature)",
@@ -162,6 +184,17 @@
      "url": "https://www.tcgplayer.com/product/724664"
     },
     {
+     "id": 724658,
+     "name": "Ezreal, Dashing (Heartsteel Signature)",
+     "num": "180*/167",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "signature",
+     "price": 740,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/724658_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/724658"
+    },
+    {
      "id": 724638,
      "name": "Ekko, Boy Who Shattered Time (Signature)",
      "num": "168*/167",
@@ -171,17 +204,6 @@
      "price": 702.75,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/724638_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/724638"
-    },
-    {
-     "id": 722900,
-     "name": "Packed Amphitheater (Ultimate)",
-     "num": "184/167",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "ultimate",
-     "price": 590.46,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722900_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722900"
     },
     {
      "id": 724653,
@@ -195,81 +217,26 @@
      "url": "https://www.tcgplayer.com/product/724653"
     },
     {
-     "id": 723435,
-     "name": "Riven, The Exile (Overnumbered)",
-     "num": "173/167",
+     "id": 722900,
+     "name": "Packed Amphitheater (Ultimate)",
+     "num": "184/167",
      "rarity": "Showcase",
      "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 268.74,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/723435_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/723435"
+     "variant": "ultimate",
+     "price": 560.62,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722900_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/722900"
     },
     {
-     "id": 722338,
-     "name": "Seraphine, Starry-Eyed Songstress (Overnumbered)",
-     "num": "174/167",
+     "id": 724650,
+     "name": "K'Sante, Pride of Nazumah (Signature)",
+     "num": "172*/167",
      "rarity": "Showcase",
      "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 199.2,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722338_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722338"
-    },
-    {
-     "id": 722843,
-     "name": "Evelynn, Agony's Embrace (Overnumbered)",
-     "num": "175/167",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 162.49,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722843_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722843"
-    },
-    {
-     "id": 722887,
-     "name": "Mordekaiser, Iron Revenant (Overnumbered)",
-     "num": "170/167",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 160.11,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722887_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722887"
-    },
-    {
-     "id": 722323,
-     "name": "Orianna, Lady of Clockwork (Overnumbered)",
-     "num": "171/167",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 129.02,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722323_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722323"
-    },
-    {
-     "id": 722323,
-     "name": "Orianna, Lady of Clockwork (Overnumbered)",
-     "num": "171/167",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 129.02,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722323_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722323"
-    },
-    {
-     "id": 722345,
-     "name": "Ziggs, Hexplosives Expert (Overnumbered)",
-     "num": "169/167",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 125.84,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722345_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722345"
+     "variant": "signature",
+     "price": 399.5,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/724650_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/724650"
     },
     {
      "id": 724659,
@@ -278,31 +245,64 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "price": 115,
+     "price": 332.5,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/724659_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/724659"
     },
     {
-     "id": 722856,
-     "name": "Ekko, Boy Who Shattered Time (Overnumbered)",
-     "num": "168/167",
+     "id": 723435,
+     "name": "Riven, The Exile (Overnumbered)",
+     "num": "173/167",
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 94.26,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722856_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722856"
+     "price": 263.91,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/723435_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/723435"
     },
     {
-     "id": 722306,
-     "name": "Jarvan IV, Exemplar of Demacia (Overnumbered)",
-     "num": "176/167",
+     "id": 722843,
+     "name": "Evelynn, Agony's Embrace (Overnumbered)",
+     "num": "175/167",
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 81.48,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722306_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/722306"
+     "price": 174.2,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722843_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/722843"
+    },
+    {
+     "id": 722338,
+     "name": "Seraphine, Starry-Eyed Songstress (Overnumbered)",
+     "num": "174/167",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 147.95,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722338_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/722338"
+    },
+    {
+     "id": 722887,
+     "name": "Mordekaiser, Iron Revenant (Overnumbered)",
+     "num": "170/167",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 138.33,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722887_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/722887"
+    },
+    {
+     "id": 722345,
+     "name": "Ziggs, Hexplosives Expert (Overnumbered)",
+     "num": "169/167",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 121.85,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/722345_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/722345"
     }
    ]
   },
@@ -314,7 +314,7 @@
    "pack": {
     "id": 693377,
     "name": "Vendetta - Booster Pack",
-    "market": 6.76,
+    "market": 6.72,
     "url": "https://www.tcgplayer.com/product/693377"
    },
    "sleevedPack": {
@@ -326,10 +326,10 @@
    "box": {
     "id": 693380,
     "name": "Vendetta - Booster Display",
-    "market": 129.39,
+    "market": 126.86,
     "url": "https://www.tcgplayer.com/product/693380"
    },
-   "cards": 347,
+   "cards": 348,
    "buckets": [
     {
      "rarity": "Showcase",
@@ -337,7 +337,7 @@
      "variant": "signature",
      "n": 9,
      "nPriced": 9,
-     "avg": 1105.364,
+     "avg": 1102.462,
      "median": 1106.44,
      "max": 3229.71
     },
@@ -347,8 +347,8 @@
      "variant": "overnumbered",
      "n": 31,
      "nPriced": 31,
-     "avg": 111.075,
-     "median": 88.74,
+     "avg": 109.29,
+     "median": 88.38,
      "max": 451.07
     },
     {
@@ -357,9 +357,9 @@
      "variant": "base",
      "n": 12,
      "nPriced": 12,
-     "avg": 18.957,
-     "median": 9.75,
-     "max": 73.8
+     "avg": 18.872,
+     "median": 9.64,
+     "max": 76.8
     },
     {
      "rarity": "Epic",
@@ -367,9 +367,9 @@
      "variant": "base",
      "n": 27,
      "nPriced": 27,
-     "avg": 3.22,
+     "avg": 3.533,
      "median": 0.6,
-     "max": 59.89
+     "max": 68.56
     },
     {
      "rarity": "Showcase",
@@ -377,19 +377,9 @@
      "variant": "alt",
      "n": 16,
      "nPriced": 16,
-     "avg": 2.315,
-     "median": 1.42,
-     "max": 7.6
-    },
-    {
-     "rarity": "Rare",
-     "printing": "Foil",
-     "variant": "alt",
-     "n": 1,
-     "nPriced": 1,
-     "avg": 0.9,
-     "median": 0.9,
-     "max": 0.9
+     "avg": 2.223,
+     "median": 1.5,
+     "max": 7.03
     },
     {
      "rarity": "Epic",
@@ -397,56 +387,66 @@
      "variant": "alt",
      "n": 1,
      "nPriced": 1,
-     "avg": 0.9,
-     "median": 0.9,
-     "max": 0.9
+     "avg": 1.05,
+     "median": 1.05,
+     "max": 1.05
+    },
+    {
+     "rarity": "Rare",
+     "printing": "Foil",
+     "variant": "alt",
+     "n": 1,
+     "nPriced": 1,
+     "avg": 0.92,
+     "median": 0.92,
+     "max": 0.92
     },
     {
      "rarity": "Common",
      "printing": "Foil",
      "variant": "base",
-     "n": 53,
-     "nPriced": 53,
-     "avg": 0.816,
-     "median": 0.22,
+     "n": 55,
+     "nPriced": 55,
+     "avg": 0.79,
+     "median": 0.21,
      "max": 10.19
     },
     {
      "rarity": "Uncommon",
      "printing": "Foil",
      "variant": "base",
-     "n": 46,
-     "nPriced": 46,
-     "avg": 0.347,
+     "n": 45,
+     "nPriced": 45,
+     "avg": 0.345,
      "median": 0.3,
-     "max": 1.2
+     "max": 1.19
     },
     {
      "rarity": "Rare",
      "printing": "Foil",
      "variant": "base",
-     "n": 45,
-     "nPriced": 45,
-     "avg": 0.168,
-     "median": 0.13,
-     "max": 0.47
+     "n": 44,
+     "nPriced": 44,
+     "avg": 0.184,
+     "median": 0.14,
+     "max": 0.58
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 46,
-     "nPriced": 46,
-     "avg": 0.083,
-     "median": 0.08,
-     "max": 0.24
+     "n": 45,
+     "nPriced": 45,
+     "avg": 0.085,
+     "median": 0.07,
+     "max": 0.27
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 60,
-     "nPriced": 59,
+     "n": 62,
+     "nPriced": 61,
      "avg": 0.07,
      "median": 0.06,
      "max": 0.56
@@ -471,7 +471,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "price": 1288.96,
+     "price": 1276.92,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/709666_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/709666"
     },
@@ -482,7 +482,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "price": 1199.92,
+     "price": 1193.04,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/709103_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/709103"
     },
@@ -559,7 +559,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "price": 372.19,
+     "price": 364.99,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/708197_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/708197"
     },
@@ -570,7 +570,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 205.23,
+     "price": 201.64,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/706033_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/706033"
     },
@@ -581,20 +581,9 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 195.94,
+     "price": 194.91,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/707626_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/707626"
-    },
-    {
-     "id": 707646,
-     "name": "Irelia, Fervent (Overnumbered)",
-     "num": "174/166",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "overnumbered",
-     "price": 188.47,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/707646_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/707646"
     },
     {
      "id": 706059,
@@ -603,9 +592,20 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 175.16,
+     "price": 174.36,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/706059_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/706059"
+    },
+    {
+     "id": 707646,
+     "name": "Irelia, Fervent (Overnumbered)",
+     "num": "174/166",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 173.7,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/707646_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/707646"
     },
     {
      "id": 706091,
@@ -614,7 +614,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 154.41,
+     "price": 152.71,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/706091_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/706091"
     }
@@ -628,7 +628,7 @@
    "pack": {
     "id": 678149,
     "name": "Unleashed - Booster Pack",
-    "market": 7.96,
+    "market": 7.85,
     "url": "https://www.tcgplayer.com/product/678149"
    },
    "sleevedPack": {
@@ -640,10 +640,10 @@
    "box": {
     "id": 678150,
     "name": "Unleashed - Booster Display",
-    "market": 151.09,
+    "market": 148.58,
     "url": "https://www.tcgplayer.com/product/678150"
    },
-   "cards": 435,
+   "cards": 431,
    "buckets": [
     {
      "rarity": "Showcase",
@@ -651,18 +651,18 @@
      "variant": "ultimate",
      "n": 1,
      "nPriced": 1,
-     "avg": 1851.86,
-     "median": 1851.86,
-     "max": 1851.86
+     "avg": 1872.8,
+     "median": 1872.8,
+     "max": 1872.8
     },
     {
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "n": 13,
-     "nPriced": 13,
-     "avg": 640.238,
-     "median": 573.47,
+     "n": 11,
+     "nPriced": 11,
+     "avg": 663.807,
+     "median": 589.26,
      "max": 1529.86
     },
     {
@@ -671,8 +671,8 @@
      "variant": "overnumbered",
      "n": 18,
      "nPriced": 18,
-     "avg": 141.736,
-     "median": 165.58,
+     "avg": 140.017,
+     "median": 163.34,
      "max": 355.87
     },
     {
@@ -681,9 +681,9 @@
      "variant": "alt",
      "n": 30,
      "nPriced": 30,
-     "avg": 8.644,
-     "median": 4.33,
-     "max": 37.47
+     "avg": 8.729,
+     "median": 3.99,
+     "max": 41.19
     },
     {
      "rarity": "Showcase",
@@ -691,19 +691,9 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 5.548,
-     "median": 4.55,
-     "max": 9.37
-    },
-    {
-     "rarity": "Promo",
-     "printing": "Foil",
-     "variant": "base",
-     "n": 6,
-     "nPriced": 6,
-     "avg": 5.278,
-     "median": 5.97,
-     "max": 7.84
+     "avg": 5.68,
+     "median": 4.72,
+     "max": 8.88
     },
     {
      "rarity": "Epic",
@@ -711,9 +701,19 @@
      "variant": "base",
      "n": 36,
      "nPriced": 36,
-     "avg": 5.082,
-     "median": 1.34,
-     "max": 41.44
+     "avg": 5.411,
+     "median": 1.3,
+     "max": 50.59
+    },
+    {
+     "rarity": "Promo",
+     "printing": "Foil",
+     "variant": "base",
+     "n": 6,
+     "nPriced": 6,
+     "avg": 5.193,
+     "median": 5.84,
+     "max": 7.43
     },
     {
      "rarity": "Uncommon",
@@ -721,9 +721,9 @@
      "variant": "base",
      "n": 63,
      "nPriced": 63,
-     "avg": 0.574,
+     "avg": 0.57,
      "median": 0.28,
-     "max": 5.33
+     "max": 5.04
     },
     {
      "rarity": "Rare",
@@ -731,17 +731,17 @@
      "variant": "base",
      "n": 60,
      "nPriced": 60,
-     "avg": 0.477,
+     "avg": 0.488,
      "median": 0.21,
-     "max": 4.6
+     "max": 4.49
     },
     {
      "rarity": "Common",
      "printing": "Foil",
      "variant": "base",
-     "n": 63,
-     "nPriced": 63,
-     "avg": 0.233,
+     "n": 62,
+     "nPriced": 62,
+     "avg": 0.237,
      "median": 0.2,
      "max": 0.99
     },
@@ -751,9 +751,9 @@
      "variant": "base",
      "n": 63,
      "nPriced": 63,
-     "avg": 0.143,
+     "avg": 0.148,
      "median": 0.09,
-     "max": 2.07
+     "max": 2.23
     },
     {
      "rarity": "None",
@@ -763,17 +763,17 @@
      "nPriced": 10,
      "avg": 0.098,
      "median": 0.11,
-     "max": 0.13
+     "max": 0.12
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 66,
-     "nPriced": 66,
-     "avg": 0.068,
+     "n": 65,
+     "nPriced": 65,
+     "avg": 0.07,
      "median": 0.06,
-     "max": 0.24
+     "max": 0.29
     }
    ],
    "top": [
@@ -784,7 +784,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "ultimate",
-     "price": 1851.86,
+     "price": 1872.8,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/685925_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/685925"
     },
@@ -866,28 +866,6 @@
      "url": "https://www.tcgplayer.com/product/685526"
     },
     {
-     "id": 684502,
-     "name": "Lillia, Bashful Bloom (Signature)",
-     "num": "230*/219",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "signature",
-     "price": 510.61,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/684502_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/684502"
-    },
-    {
-     "id": 684502,
-     "name": "Lillia, Bashful Bloom (Signature)",
-     "num": "230*/219",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "signature",
-     "price": 510.61,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/684502_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/684502"
-    },
-    {
      "id": 685605,
      "name": "Master Yi, Wuju Master (Signature)",
      "num": "231*/219",
@@ -941,6 +919,28 @@
      "price": 355.87,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/684632_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/684632"
+    },
+    {
+     "id": 685608,
+     "name": "LeBlanc, Deceiver (Overnumbered)",
+     "num": "235/219",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 216.64,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/685608_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/685608"
+    },
+    {
+     "id": 684505,
+     "name": "Diana, Scorn of the Moon (Overnumbered)",
+     "num": "234/219",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 212.02,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/684505_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/684505"
     }
    ]
   },
@@ -952,7 +952,7 @@
    "pack": {
     "id": 661954,
     "name": "Spiritforged - Booster Pack",
-    "market": 8.85,
+    "market": 8.63,
     "url": "https://www.tcgplayer.com/product/661954"
    },
    "sleevedPack": {
@@ -964,10 +964,10 @@
    "box": {
     "id": 661934,
     "name": "Spiritforged - Booster Display",
-    "market": 155.43,
+    "market": 158.91,
     "url": "https://www.tcgplayer.com/product/661934"
    },
-   "cards": 433,
+   "cards": 431,
    "buckets": [
     {
      "rarity": "Showcase",
@@ -985,8 +985,8 @@
      "variant": "overnumbered",
      "n": 30,
      "nPriced": 30,
-     "avg": 111.786,
-     "median": 75.69,
+     "avg": 111.054,
+     "median": 74.25,
      "max": 666.54
     },
     {
@@ -995,9 +995,9 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 11.073,
-     "median": 10.18,
-     "max": 16.48
+     "avg": 11.102,
+     "median": 10.15,
+     "max": 16.81
     },
     {
      "rarity": "Epic",
@@ -1005,9 +1005,9 @@
      "variant": "base",
      "n": 38,
      "nPriced": 38,
-     "avg": 3.846,
-     "median": 1.217,
-     "max": 30.02
+     "avg": 3.822,
+     "median": 1.24,
+     "max": 29.68
     },
     {
      "rarity": "Showcase",
@@ -1015,19 +1015,19 @@
      "variant": "base",
      "n": 6,
      "nPriced": 6,
-     "avg": 3.52,
+     "avg": 3.783,
      "median": 3.78,
-     "max": 5.03
+     "max": 6.13
     },
     {
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "alt",
-     "n": 24,
-     "nPriced": 24,
-     "avg": 2.854,
-     "median": 1.46,
-     "max": 16.95
+     "n": 23,
+     "nPriced": 23,
+     "avg": 2.217,
+     "median": 1.27,
+     "max": 8.17
     },
     {
      "rarity": "Uncommon",
@@ -1035,19 +1035,19 @@
      "variant": "base",
      "n": 63,
      "nPriced": 63,
-     "avg": 0.605,
+     "avg": 0.595,
      "median": 0.32,
-     "max": 3.06
+     "max": 2.9
     },
     {
      "rarity": "Rare",
      "printing": "Foil",
      "variant": "base",
-     "n": 61,
-     "nPriced": 61,
-     "avg": 0.38,
+     "n": 60,
+     "nPriced": 60,
+     "avg": 0.403,
      "median": 0.2,
-     "max": 3.54
+     "max": 3.68
     },
     {
      "rarity": "Common",
@@ -1055,9 +1055,9 @@
      "variant": "base",
      "n": 60,
      "nPriced": 60,
-     "avg": 0.256,
+     "avg": 0.254,
      "median": 0.21,
-     "max": 1.65
+     "max": 1.59
     },
     {
      "rarity": "Uncommon",
@@ -1065,9 +1065,9 @@
      "variant": "base",
      "n": 63,
      "nPriced": 63,
-     "avg": 0.181,
+     "avg": 0.188,
      "median": 0.11,
-     "max": 1.43
+     "max": 1.66
     },
     {
      "rarity": "Common",
@@ -1077,7 +1077,7 @@
      "nPriced": 70,
      "avg": 0.084,
      "median": 0.07,
-     "max": 0.38
+     "max": 0.34
     }
    ],
    "top": [
@@ -1242,7 +1242,7 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 189.33,
+     "price": 189.49,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/664937_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/664937"
     }
@@ -1256,7 +1256,7 @@
    "pack": {
     "id": 635366,
     "name": "Origins - Booster Pack",
-    "market": 12.43,
+    "market": 12.42,
     "url": "https://www.tcgplayer.com/product/635366"
    },
    "sleevedPack": {
@@ -1268,19 +1268,19 @@
    "box": {
     "id": 635368,
     "name": "Origins - Booster Display",
-    "market": 223.02,
+    "market": 224.06,
     "url": "https://www.tcgplayer.com/product/635368"
    },
-   "cards": 521,
+   "cards": 519,
    "buckets": [
     {
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "signature",
-     "n": 14,
-     "nPriced": 14,
-     "avg": 1510.509,
-     "median": 1355.35,
+     "n": 12,
+     "nPriced": 12,
+     "avg": 1389.789,
+     "median": 1055.43,
      "max": 3711.35
     },
     {
@@ -1289,9 +1289,9 @@
      "variant": "overnumbered",
      "n": 12,
      "nPriced": 12,
-     "avg": 131.043,
-     "median": 125.43,
-     "max": 359.14
+     "avg": 128.318,
+     "median": 118.43,
+     "max": 356.91
     },
     {
      "rarity": "Epic",
@@ -1299,9 +1299,9 @@
      "variant": "base",
      "n": 42,
      "nPriced": 42,
-     "avg": 9.471,
-     "median": 3.04,
-     "max": 68.84
+     "avg": 9.726,
+     "median": 3.29,
+     "max": 69.15
     },
     {
      "rarity": "Showcase",
@@ -1309,9 +1309,9 @@
      "variant": "alt",
      "n": 30,
      "nPriced": 30,
-     "avg": 6.101,
-     "median": 3.61,
-     "max": 66.73
+     "avg": 6.039,
+     "median": 3.7,
+     "max": 66.36
     },
     {
      "rarity": "Rare",
@@ -1319,49 +1319,49 @@
      "variant": "base",
      "n": 85,
      "nPriced": 85,
-     "avg": 1.204,
+     "avg": 1.35,
      "median": 0.29,
-     "max": 19.95
+     "max": 25.72
     },
     {
      "rarity": "Uncommon",
      "printing": "Foil",
      "variant": "base",
-     "n": 84,
-     "nPriced": 84,
-     "avg": 1.06,
+     "n": 85,
+     "nPriced": 85,
+     "avg": 1.081,
      "median": 0.53,
-     "max": 7.36
+     "max": 7.37
     },
     {
      "rarity": "Common",
      "printing": "Foil",
      "variant": "base",
-     "n": 81,
-     "nPriced": 81,
-     "avg": 0.685,
+     "n": 80,
+     "nPriced": 80,
+     "avg": 0.683,
      "median": 0.27,
-     "max": 6.91
+     "max": 7.2
     },
     {
      "rarity": "Uncommon",
      "printing": "Normal",
      "variant": "base",
-     "n": 84,
-     "nPriced": 84,
-     "avg": 0.238,
-     "median": 0.16,
-     "max": 3.35
+     "n": 85,
+     "nPriced": 85,
+     "avg": 0.249,
+     "median": 0.17,
+     "max": 3.3
     },
     {
      "rarity": "Common",
      "printing": "Normal",
      "variant": "base",
-     "n": 89,
-     "nPriced": 89,
-     "avg": 0.147,
+     "n": 88,
+     "nPriced": 88,
+     "avg": 0.159,
      "median": 0.1,
-     "max": 2.08
+     "max": 2.39
     }
    ],
    "top": [
@@ -1375,17 +1375,6 @@
      "price": 3711.35,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/653102_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/653102"
-    },
-    {
-     "id": 653094,
-     "name": "Kai'Sa, Daughter of the Void (Signature)",
-     "num": "299*/298",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "signature",
-     "price": 3114.31,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/653094_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/653094"
     },
     {
      "id": 653094,
@@ -1419,17 +1408,6 @@
      "price": 1359.58,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/653104_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/653104"
-    },
-    {
-     "id": 653098,
-     "name": "Jinx, Loose Cannon (Signature)",
-     "num": "301*/298",
-     "rarity": "Showcase",
-     "printing": "Foil",
-     "variant": "signature",
-     "price": 1355.35,
-     "image": "https://tcgplayer-cdn.tcgplayer.com/product/653098_in_400x400.jpg",
-     "url": "https://www.tcgplayer.com/product/653098"
     },
     {
      "id": 653098,
@@ -1526,9 +1504,31 @@
      "rarity": "Showcase",
      "printing": "Foil",
      "variant": "overnumbered",
-     "price": 359.14,
+     "price": 356.91,
      "image": "https://tcgplayer-cdn.tcgplayer.com/product/653101_in_400x400.jpg",
      "url": "https://www.tcgplayer.com/product/653101"
+    },
+    {
+     "id": 653093,
+     "name": "Kai'Sa, Daughter of the Void (Overnumbered)",
+     "num": "299/298",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 245.18,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/653093_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/653093"
+    },
+    {
+     "id": 653097,
+     "name": "Jinx, Loose Cannon (Overnumbered)",
+     "num": "301/298",
+     "rarity": "Showcase",
+     "printing": "Foil",
+     "variant": "overnumbered",
+     "price": 138.47,
+     "image": "https://tcgplayer-cdn.tcgplayer.com/product/653097_in_400x400.jpg",
+     "url": "https://www.tcgplayer.com/product/653097"
     }
    ]
   }
